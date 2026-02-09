@@ -6,20 +6,18 @@
 
 A module is a class annotated with the `@Module()` decorator. The `@Module()` decorator provides metadata that NestJS uses to organize the application structure.
 
-```
-┌─────────────────────────────┐
-│       AppModule (Root)      │
-└──────────────┬──────────────┘
-               │
-       ┌───────┴───────┐
-       │               │
-┌──────▼──────┐ ┌─────▼──────┐
-│ UsersModule │ │ CatsModule │
-└──────┬──────┘ └─────┬──────┘
-       │               │
-  ┌────┴────┐     ┌───┴────┐
-  │ Feature │     │Feature │
-  └─────────┘     └────────┘
+```mermaid
+flowchart TD
+    A[AppModule - Root] --> B[UsersModule]
+    A --> C[CatsModule]
+    B --> D[Users Feature]
+    C --> E[Cats Feature]
+    
+    style A fill:#e74c3c,color:#fff
+    style B fill:#3498db,color:#fff
+    style C fill:#3498db,color:#fff
+    style D fill:#2ecc71,color:#fff
+    style E fill:#2ecc71,color:#fff
 ```
 
 ### Module Decorator

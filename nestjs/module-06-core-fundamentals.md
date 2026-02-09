@@ -346,11 +346,17 @@ export class CatsController {}
 
 Node.js uses a **single-threaded, event-driven** architecture:
 
-```
-Request 1 ──┐
-Request 2 ──┼──→ [Event Loop] ──→ [Handlers]
-Request 3 ──┘         ↓
-                  [Shared Memory]
+```mermaid
+flowchart LR
+    A[Request 1] --> D[Event Loop]
+    B[Request 2] --> D
+    C[Request 3] --> D
+    D --> E[Handlers]
+    E --> F[Shared Memory]
+    
+    style D fill:#f39c12,color:#fff
+    style E fill:#3498db,color:#fff
+    style F fill:#9b59b6,color:#fff
 ```
 
 ### Singleton Providers (Safe)

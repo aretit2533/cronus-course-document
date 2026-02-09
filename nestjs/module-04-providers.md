@@ -15,20 +15,14 @@ Providers are a fundamental concept in NestJS. Many basic NestJS classes can be 
 
 The main idea of a provider is that it can be **injected** as a dependency. This means objects can create various relationships with each other, and the responsibility of "wiring up" these instances is largely delegated to the NestJS runtime system.
 
-```
-┌─────────────┐
-│ Controller  │
-└──────┬──────┘
-       │ depends on
-       ↓
-┌─────────────┐
-│   Service   │ ← Provider
-└──────┬──────┘
-       │ depends on
-       ↓
-┌─────────────┐
-│ Repository  │ ← Provider
-└─────────────┘
+```mermaid
+flowchart TD
+    A[Controller] -->|depends on| B[Service Provider]
+    B -->|depends on| C[Repository Provider]
+    
+    style A fill:#e74c3c,color:#fff
+    style B fill:#3498db,color:#fff
+    style C fill:#2ecc71,color:#fff
 ```
 
 ### The @Injectable() Decorator

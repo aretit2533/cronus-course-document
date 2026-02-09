@@ -6,30 +6,16 @@
 
 Controllers are responsible for handling incoming **requests** and returning **responses** to the client.
 
-```
-Client Request → Router → Controller → Service → Controller → Client Response
-```
-
-**Diagram**:
-```
-┌─────────────┐
-│   Client    │
-└──────┬──────┘
-       │ HTTP Request
-       ↓
-┌─────────────┐
-│   Router    │
-└──────┬──────┘
-       │
-       ↓
-┌─────────────┐
-│ Controller  │ ← Handles requests
-└──────┬──────┘
-       │
-       ↓
-┌─────────────┐
-│  Provider   │ ← Business logic
-└─────────────┘
+```mermaid
+flowchart TD
+    A[Client] -->|HTTP Request| B[Router]
+    B --> C[Controller]
+    C -->|Delegate| D[Service/Provider]
+    D -->|Return Data| C
+    C -->|HTTP Response| A
+    
+    style C fill:#e74c3c,color:#fff
+    style D fill:#3498db,color:#fff
 ```
 
 ### Purpose of Controllers

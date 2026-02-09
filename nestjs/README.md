@@ -256,12 +256,21 @@ Each module includes:
 
 ## 🎓 Learning Path
 
-```
-Introduction → Setup → Controllers → Providers
-       ↓
-    Modules → Core Concepts → Advanced Features
-       ↓
-  Practical Application → Production Ready
+```mermaid
+flowchart TD
+    A[Introduction] --> B[Setup]
+    B --> C[Controllers]
+    C --> D[Providers]
+    D --> E[Modules]
+    E --> F[Core Concepts]
+    F --> G[Advanced Features]
+    G --> H[Practical Application]
+    H --> I[Production Ready]
+    
+    style A fill:#3498db,color:#fff
+    style E fill:#e74c3c,color:#fff
+    style H fill:#2ecc71,color:#fff
+    style I fill:#f39c12,color:#fff
 ```
 
 ---

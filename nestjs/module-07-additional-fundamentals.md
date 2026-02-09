@@ -10,8 +10,16 @@ Middleware is a function called **before** the route handler. Middleware functio
 - End the request-response cycle
 - Call the next middleware in the stack
 
-```
-Client → Middleware → Middleware → Route Handler → Response
+```mermaid
+flowchart LR
+    A[Client] --> B[Middleware 1]
+    B --> C[Middleware 2]
+    C --> D[Route Handler]
+    D --> E[Response]
+    
+    style B fill:#f39c12,color:#fff
+    style C fill:#f39c12,color:#fff
+    style D fill:#e74c3c,color:#fff
 ```
 
 ### Function Middleware
@@ -160,8 +168,13 @@ Pipes have two typical use cases:
 1. **Transformation**: Transform input data
 2. **Validation**: Validate input data
 
-```
-Client → Pipe (validate/transform) → Route Handler
+```mermaid
+flowchart LR
+    A[Client] --> B[Pipe]
+    B -->|Validate/Transform| C[Route Handler]
+    
+    style B fill:#3498db,color:#fff
+    style C fill:#e74c3c,color:#fff
 ```
 
 ### Built-in Pipes
@@ -366,8 +379,15 @@ Guards determine whether a request will be handled by the route handler. They ar
 - Authorization
 - Role-based access control
 
-```
-Client → Guards (can access?) → Route Handler
+```mermaid
+flowchart LR
+    A[Client] --> B{Guards}
+    B -->|Authorized| C[Route Handler]
+    B -->|Denied| D[401/403 Error]
+    
+    style B fill:#9b59b6,color:#fff
+    style C fill:#e74c3c,color:#fff
+    style D fill:#e67e22,color:#fff
 ```
 
 ### Creating a Guard
@@ -493,8 +513,16 @@ Interceptors can:
 - Extend basic function behavior
 - Override a function entirely
 
-```
-Client → Interceptor (before) → Handler → Interceptor (after) → Response
+```mermaid
+flowchart LR
+    A[Client] --> B[Interceptor Before]
+    B --> C[Route Handler]
+    C --> D[Interceptor After]
+    D --> E[Response]
+    
+    style B fill:#2ecc71,color:#fff
+    style C fill:#e74c3c,color:#fff
+    style D fill:#2ecc71,color:#fff
 ```
 
 ### Creating an Interceptor
@@ -729,24 +757,28 @@ findAll() {}
 
 ## Request Lifecycle Summary
 
-```
-1. Incoming Request
-   ↓
-2. Middleware (if any)
-   ↓
-3. Guards
-   ↓
-4. Interceptors (before)
-   ↓
-5. Pipes
-   ↓
-6. Route Handler
-   ↓
-7. Interceptors (after)
-   ↓
-8. Exception Filters (if error)
-   ↓
-9. Response
+```mermaid
+flowchart TD
+    A[1. Incoming Request] --> B[2. Middleware]
+    B --> C[3. Guards]
+    C --> D[4. Interceptors Before]
+    D --> E[5. Pipes]
+    E --> F[6. Route Handler]
+    F --> G[7. Interceptors After]
+    G --> H{Error?}
+    H -->|Yes| I[8. Exception Filters]
+    H -->|No| J[9. Response]
+    I --> J
+    
+    style A fill:#95a5a6,color:#fff
+    style B fill:#f39c12,color:#fff
+    style C fill:#9b59b6,color:#fff
+    style D fill:#2ecc71,color:#fff
+    style E fill:#3498db,color:#fff
+    style F fill:#e74c3c,color:#fff
+    style G fill:#2ecc71,color:#fff
+    style I fill:#e67e22,color:#fff
+    style J fill:#95a5a6,color:#fff
 ```
 
 ---
