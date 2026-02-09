@@ -5,16 +5,19 @@
 
 ## 📖 Course Modules
 
-| Module | Topic | Link |
-|--------|-------|------|
-| Module 1 | Introduction to NestJS | [View Content](module-01-introduction.md) |
-| Module 2 | Getting Started | [View Content](module-02-getting-started.md) |
-| Module 3 | Controllers | [View Content](module-03-controllers.md) |
-| Module 4 | Providers | [View Content](module-04-providers.md) |
-| Module 5 | Modules | [View Content](module-05-modules.md) |
-| Module 6 | Core Fundamentals | [View Content](module-06-core-fundamentals.md) |
-| Module 7 | Additional Fundamentals | [View Content](module-07-additional-fundamentals.md) |
-| Module 8 | Practical Application | [View Content](module-08-practical-application.md) |
+| Module | Topic | Content | Exercises |
+|--------|-------|---------|-----------|
+| Module 1 | Introduction to NestJS | [View Content](module-01-introduction.md) | [Exercises](exercise/module-01-exercises.md) |
+| Module 2 | Getting Started | [View Content](module-02-getting-started.md) | [Exercises](exercise/module-02-exercises.md) |
+| Module 3 | Controllers | [View Content](module-03-controllers.md) | [Exercises](exercise/module-03-exercises.md) |
+| Module 4 | Providers | [View Content](module-04-providers.md) | [Exercises](exercise/module-04-exercises.md) |
+| Module 5 | Modules | [View Content](module-05-modules.md) | [Exercises](exercise/module-05-exercises.md) |
+| Module 6 | Core Fundamentals | [View Content](module-06-core-fundamentals.md) | [Exercises](exercise/module-06-exercises.md) |
+| Module 7 | Additional Fundamentals | [View Content](module-07-additional-fundamentals.md) | [Exercises](exercise/module-07-exercises.md) |
+| Module 8 | Practical Application | [View Content](module-08-practical-application.md) | [Exercises](exercise/module-08-exercises.md) |
+
+### 💡 [Complete Exercise Guide](exercise/README.md)
+Access comprehensive hands-on exercises for all modules.
 
 ---
 

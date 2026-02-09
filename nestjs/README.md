@@ -37,6 +37,9 @@ By the end of this course, you will be able to:
 ### [📋 Course Outline](course-outline.md)
 View the complete course structure and topics covered in each module.
 
+### [💡 Hands-On Exercises](exercise/README.md)
+Access comprehensive practical exercises for each module to reinforce your learning.
+
 ---
 
 ### Module 1: Introduction to NestJS
@@ -51,7 +54,8 @@ Learn what NestJS is, its philosophy, and why it's a powerful framework for Node
 - SOLID Principles
 - Platform Support (Express & Fastify)
 
-**Duration**: ~2 hours
+**Duration**: ~2 hours  
+**[💡 Exercises](exercise/module-01-exercises.md)**
 
 ---
 
@@ -67,7 +71,8 @@ Set up your development environment and create your first NestJS application.
 - Running the Application
 - Development Tools (ESLint, Prettier)
 
-**Duration**: ~2 hours
+**Duration**: ~2 hours  
+**[💡 Exercises](exercise/module-02-exercises.md)**
 
 ---
 
@@ -87,7 +92,8 @@ Master HTTP request handling, routing, and working with controllers.
 - Advanced Routing Features
 - Asynchronous Operations
 
-**Duration**: ~3 hours
+**Duration**: ~3 hours  
+**[💡 Exercises](exercise/module-03-exercises.md)**
 
 ---
 
@@ -107,7 +113,8 @@ Understand dependency injection and learn to create services and providers.
 - Provider Registration
 - Manual Instantiation
 
-**Duration**: ~3 hours
+**Duration**: ~3 hours  
+**[💡 Exercises](exercise/module-04-exercises.md)**
 
 ---
 
@@ -125,7 +132,8 @@ Organize your application into logical, reusable modules.
 - Dynamic Modules (forRoot, forFeature)
 - Module Best Practices
 
-**Duration**: ~3 hours
+**Duration**: ~3 hours  
+**[💡 Exercises](exercise/module-05-exercises.md)**
 
 ---
 
@@ -143,7 +151,8 @@ Dive deep into core NestJS concepts and application architecture.
 - Development Best Practices
 - Testing Fundamentals
 
-**Duration**: ~3 hours
+**Duration**: ~3 hours  
+**[💡 Exercises](exercise/module-06-exercises.md)**
 
 ---
 
@@ -160,7 +169,8 @@ Learn about the request/response lifecycle and advanced features.
 - Custom Decorators
 - Request Lifecycle
 
-**Duration**: ~4 hours
+**Duration**: ~4 hours  
+**[💡 Exercises](exercise/module-07-exercises.md)**
 
 ---
 
@@ -178,7 +188,8 @@ Build a complete CRUD application putting all concepts together.
 - Testing (Unit & E2E)
 - Best Practices Implementation
 
-**Duration**: ~5 hours
+**Duration**: ~5 hours  
+**[💡 Exercises](exercise/module-08-exercises.md)**
 
 ---
 
