@@ -597,12 +597,75 @@ offsets.forEach((tp, offsetAndTimestamp) -> {
 4. Resume consuming
 ```
 
+```mermaid
+sequenceDiagram
+    participant C1 as Consumer 1
+    participant C2 as Consumer 2
+    participant C3 as Consumer 3 (New)
+    participant GC as Group Coordinator
+    participant Broker as Kafka Broker
+    
+    Note over C1,C2: Consuming normally
+    C1->>Broker: Poll & Process [P0, P1]
+    C2->>Broker: Poll & Process [P2, P3]
+    
+    C3->>GC: Join Group
+    GC->>C1: Stop Consuming!
+    GC->>C2: Stop Consuming!
+    
+    Note over C1-C3: All consumers STOP
+    
+    C1->>GC: Revoke [P0, P1]
+    C2->>GC: Revoke [P2, P3]
+    
+    GC->>GC: Calculate new assignment
+    
+    GC->>C1: Assign [P0, P1]
+    GC->>C2: Assign [P2]
+    GC->>C3: Assign [P3]
+    
+    Note over C1-C3: Resume consuming
+    C1->>Broker: Poll & Process [P0, P1]
+    C2->>Broker: Poll & Process [P2]
+    C3->>Broker: Poll & Process [P3]
+```
+
 **Cooperative Rebalancing (New):**
 ```
 1. Identify partitions to move
 2. Revoke only those partitions
 3. Reassign them incrementally
 4. Other consumers keep running
+```
+
+```mermaid
+sequenceDiagram
+    participant C1 as Consumer 1
+    participant C2 as Consumer 2
+    participant C3 as Consumer 3 (New)
+    participant GC as Group Coordinator
+    participant Broker as Kafka Broker
+    
+    Note over C1,C2: Consuming normally
+    C1->>Broker: Poll & Process [P0, P1]
+    C2->>Broker: Poll & Process [P2, P3]
+    
+    C3->>GC: Join Group
+    GC->>GC: Identify only P3 needs to move
+    
+    Note over C1: C1 continues consuming [P0, P1]
+    C1->>Broker: Poll & Process [P0, P1]
+    
+    GC->>C2: Revoke only [P3]
+    Note over C2: C2 keeps [P2], only revokes [P3]
+    C2->>GC: Revoked [P3]
+    
+    GC->>C3: Assign [P3]
+    
+    Note over C1-C3: All consuming (minimal disruption)
+    C1->>Broker: Poll & Process [P0, P1]
+    C2->>Broker: Poll & Process [P2]
+    C3->>Broker: Poll & Process [P3]
 ```
 
 ### Rebalance Listeners

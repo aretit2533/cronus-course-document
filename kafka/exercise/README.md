@@ -27,7 +27,6 @@ Welcome to the hands-on exercises section! These exercises are designed to reinf
 - [🎓 Learning Tips](#-learning-tips)
 - [🤝 Getting Help](#-getting-help)
 - [📊 Progress Tracking](#-progress-tracking)
-- [🏆 Certification Preparation](#-certification-preparation)
 - [📁 Exercise Files Structure](#-exercise-files-structure)
 - [🚀 Next Steps](#-next-steps)
 
@@ -121,7 +120,7 @@ Each exercise module includes:
 - Transaction support
 
 **Key exercises:**
-- Implement producers in Java/Python/Node.js
+- Implement producers in TypeScript/Node.js
 - Create custom serializer and partitioner
 - Configure for throughput vs reliability
 - Build resilient producer with DLQ
@@ -246,7 +245,9 @@ Each exercise module includes:
 ## 🛠️ Prerequisites
 
 ### Required Software
-- **Java:** JDK 11 or higher
+- **Node.js:** Version 16 or higher
+- **npm/yarn:** Package manager
+- **TypeScript:** ^4.9 or higher
 - **Docker:** Latest version with Docker Compose
 - **Git:** For version control
 - **IDE:** IntelliJ IDEA, VS Code, or Eclipse
@@ -256,7 +257,7 @@ Each exercise module includes:
 - **Python:** 3.8+ (for Python examples)
 - **Node.js:** 16+ (for Node.js examples)
 - **kubectl:** For Kubernetes exercises
-- **Maven/Gradle:** For Java projects
+- **npm/yarn:** For TypeScript projects
 
 ### System Requirements
 - **RAM:** Minimum 8 GB, recommended 16 GB
@@ -339,19 +340,6 @@ Module 9 (Practical Application)     [ ] Started  [ ] Completed
 ```
 
 **Estimated total time:** 50-60 hours of hands-on practice
-
-## 🏆 Certification Preparation
-
-These exercises prepare you for:
-- **Confluent Certified Developer for Apache Kafka (CCDAK)**
-- **Confluent Certified Administrator for Apache Kafka (CCAAK)**
-- **Confluent Certified Operator for Apache Kafka (CCOAK)**
-
-**Exam topics covered:**
-- Application design (Modules 1-2, 9)
-- Development (Modules 4-5, 7)
-- Deployment and testing (Modules 3, 8-9)
-- Troubleshooting and debugging (All modules)
 
 ## 📁 Exercise Files Structure
 

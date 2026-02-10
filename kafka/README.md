@@ -218,7 +218,6 @@ Data Management → Connect & Streams → Advanced Topics → Real Project
 - Explore **Confluent Cloud** and managed Kafka services
 - Contribute to **open-source Kafka projects**
 - Join **Kafka community** and attend meetups
-- Prepare for **Confluent Certified Developer** certification
 - Build **production-grade streaming applications**
 - Study advanced patterns like **CQRS** and **Event Sourcing**
 
@@ -236,7 +235,7 @@ Upon completing all modules and exercises, you will:
 - Have hands-on experience with Apache Kafka
 - Understand production-ready patterns and practices
 - Be able to build event-driven applications
-- Be prepared for Kafka certification exams
+- Have portfolio-ready projects to showcase
 
 ## 📧 Support and Community
 

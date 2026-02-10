@@ -2,36 +2,39 @@
 
 ## Exercise 1: Basic Producer Implementation (30 minutes)
 
-**Objective:** Implement a basic Kafka producer in your preferred language
+**Objective:** Implement a basic Kafka producer using TypeScript
 
-### Java Implementation
+### TypeScript Implementation
 
 **Tasks:**
-1. Create a new Maven/Gradle project
-2. Add Kafka dependencies
+1. Create a new Node.js/TypeScript project
+2. Install KafkaJS dependencies: `npm install kafkajs`
 3. Implement a simple producer
 
-**BasicProducer.java:**
-```java
-import org.apache.kafka.clients.producer.*;
-import org.apache.kafka.common.serialization.StringSerializer;
-import java.util.Properties;
+**basic-producer.ts:**
+```typescript
+import { Kafka, Producer, ProducerRecord } from 'kafkajs';
 
-public class BasicProducer {
-    public static void main(String[] args) {
-        // TODO: Configure producer properties
-        Properties props = new Properties();
-        props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
-        props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
-        props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
-        
-        // TODO: Create producer
-        
-        // TODO: Send 100 messages
-        
-        // TODO: Close producer
-    }
+async function main() {
+  // TODO: Configure Kafka client
+  const kafka = new Kafka({
+    clientId: 'basic-producer',
+    brokers: ['localhost:9092']
+  });
+  
+  // TODO: Create producer
+  const producer: Producer = kafka.producer();
+  
+  // TODO: Connect to Kafka
+  await producer.connect();
+  
+  // TODO: Send 100 messages
+  
+  // TODO: Disconnect producer
+  await producer.disconnect();
 }
+
+main().catch(console.error);
 ```
 
 **Requirements:**
@@ -58,24 +61,34 @@ kafka-console-consumer.sh --topic test-events \
 ### Part A: Implement Three Sending Patterns
 
 **1. Fire-and-Forget:**
-```java
-producer.send(record);
+```typescript
+// Not waiting for result (fire-and-forget)
+producer.send({
+  topic: 'test-topic',
+  messages: [{ key: 'key1', value: 'value1' }]
+}).catch(console.error); // Handle errors but don't wait
 ```
 
-**2. Synchronous:**
-```java
-RecordMetadata metadata = producer.send(record).get();
-System.out.println("Sent to partition " + metadata.partition() + ", offset " + metadata.offset());
+**2. Synchronous (using await):**
+```typescript
+const metadata = await producer.send({
+  topic: 'test-topic',
+  messages: [{ key: 'key1', value: 'value1' }]
+});
+console.log(`Sent to partition ${metadata[0].partition}, offset ${metadata[0].baseOffset}`);
 ```
 
-**3. Asynchronous with Callback:**
-```java
-producer.send(record, (metadata, exception) -> {
-    if (exception != null) {
-        exception.printStackTrace();
-    } else {
-        System.out.println("Sent to partition " + metadata.partition());
-    }
+**3. Asynchronous with Promise handling:**
+```typescript
+producer.send({
+  topic: 'test-topic',
+  messages: [{ key: 'key1', value: 'value1' }]
+})
+.then(metadata => {
+  console.log(`Sent to partition ${metadata[0].partition}`);
+})
+.catch(error => {
+  console.error('Error:', error);
 });
 ```
 
@@ -109,15 +122,13 @@ Asynchronous     | ?         | ?            | ?
 **Scenario:**
 You need to send `Event` objects to Kafka:
 
-```java
-public class Event {
-    private String eventId;
-    private String userId;
-    private String eventType;
-    private long timestamp;
-    private Map<String, String> metadata;
-    
-    // Getters, setters, constructor
+```typescript
+interface Event {
+  eventId: string;
+  userId: string;
+  eventType: string;
+  timestamp: number;
+  metadata: Record<string, string>;
 }
 ```
 
@@ -125,24 +136,41 @@ public class Event {
 
 1. **Implement Custom Serializer:**
 
-```java
-import org.apache.kafka.common.serialization.Serializer;
-import com.fasterxml.jackson.databind.ObjectMapper;
+```typescript
+import { Kafka, Producer } from 'kafkajs';
 
-public class EventSerializer implements Serializer<Event> {
-    private final ObjectMapper objectMapper = new ObjectMapper();
-    
-    @Override
-    public byte[] serialize(String topic, Event event) {
-        // TODO: Implement JSON serialization
-        return null;
+class EventProducer {
+  private producer: Producer;
+
+  constructor(kafka: Kafka) {
+    this.producer = kafka.producer();
+  }
+
+  async sendEvent(topic: string, event: Event): Promise<void> {
+    try {
+      // Serialize Event object to JSON
+      const serialized = JSON.stringify(event);
+      
+      await this.producer.send({
+        topic,
+        messages: [{
+          key: event.eventId,
+          value: serialized
+        }]
+      });
+    } catch (error) {
+      console.error('Serialization error:', error);
+      throw error;
     }
+  }
 }
 ```
 
-2. **Configure Producer to Use Custom Serializer:**
-```java
-props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, EventSerializer.class);
+2. **Use Custom Serializer:**
+```typescript
+const kafka = new Kafka({ brokers: ['localhost:9092'] });
+const eventProducer = new EventProducer(kafka);
+await eventProducer.sendEvent('events-topic', myEvent);
 ```
 
 3. **Test:**
@@ -170,40 +198,44 @@ You have a multi-tenant application where events from VIP customers should go to
 
 1. **Implement Custom Partitioner:**
 
-```java
-import org.apache.kafka.clients.producer.Partitioner;
-import org.apache.kafka.common.Cluster;
+```typescript
+import { Kafka, Partitioners, PartitionerArgs } from 'kafkajs';
 
-public class VIPPartitioner implements Partitioner {
+// Custom partitioner function
+const vipPartitioner = (): ((args: PartitionerArgs) => number) => {
+  return ({ topic, partitionMetadata, message }: PartitionerArgs) => {
+    const partitionCount = partitionMetadata.length;
+    const userId = message.key?.toString() || '';
     
-    @Override
-    public int partition(String topic, Object key, byte[] keyBytes,
-                        Object value, byte[] valueBytes, Cluster cluster) {
-        int partitionCount = cluster.partitionCountForTopic(topic);
-        
-        String userId = (String) key;
-        
-        // TODO: Implement partitioning logic
-        if (userId.endsWith("_vip")) {
-            return 0;  // VIP partition
-        } else {
-            // Regular customers - round robin to partitions 1-5
-            // Hint: Use Math.abs(userId.hashCode()) % 5 + 1
-            return ?;
-        }
+    // TODO: Implement partitioning logic
+    if (userId.endsWith('_vip')) {
+      return 0; // VIP partition
+    } else {
+      // Regular customers - round robin to partitions 1-5
+      // Calculate hash of userId
+      const hash = Math.abs(hashString(userId));
+      return (hash % 5) + 1;
     }
-    
-    @Override
-    public void close() {}
-    
-    @Override
-    public void configure(Map<String, ?> configs) {}
+  };
+};
+
+// Simple hash function
+function hashString(str: string): number {
+  let hash = 0;
+  for (let i = 0; i < str.length; i++) {
+    const char = str.charCodeAt(i);
+    hash = ((hash << 5) - hash) + char;
+    hash |= 0; // Convert to 32bit integer
+  }
+  return hash;
 }
 ```
 
 2. **Configure Producer:**
-```java
-props.put(ProducerConfig.PARTITIONER_CLASS_CONFIG, VIPPartitioner.class);
+```typescript
+const producer = kafka.producer({
+  createPartitioner: vipPartitioner
+});
 ```
 
 3. **Test:**
@@ -228,34 +260,42 @@ kafka-console-consumer.sh --topic vip-events \
 
 ### Part A: Configure for Maximum Throughput
 
-```java
-Properties highThroughput = new Properties();
-highThroughput.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
-highThroughput.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
-highThroughput.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
+```typescript
+import { Kafka, CompressionTypes } from 'kafkajs';
 
-// TODO: Add configurations for maximum throughput
-highThroughput.put(ProducerConfig.ACKS_CONFIG, "?");
-highThroughput.put(ProducerConfig.COMPRESSION_TYPE_CONFIG, "?");
-highThroughput.put(ProducerConfig.LINGER_MS_CONFIG, "?");
-highThroughput.put(ProducerConfig.BATCH_SIZE_CONFIG, "?");
-highThroughput.put(ProducerConfig.BUFFER_MEMORY_CONFIG, "?");
+const kafka = new Kafka({ brokers: ['localhost:9092'] });
+
+const highThroughputProducer = kafka.producer({
+  // TODO: Add configurations for maximum throughput
+  compression: CompressionTypes.LZ4, // or use ? to fill
+  maxInFlightRequests: 5,
+  idempotent: false, // Disable for higher throughput
+  retry: {
+    retries: 3
+  },
+  // Note: batch size and linger handled internally by KafkaJS
+});
 ```
 
 ### Part B: Configure for Maximum Reliability
 
-```java
-Properties highReliability = new Properties();
-highReliability.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
-highReliability.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
-highReliability.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
+```typescript
+import { Kafka, CompressionTypes } from 'kafkajs';
 
-// TODO: Add configurations for maximum reliability
-highReliability.put(ProducerConfig.ACKS_CONFIG, "?");
-highReliability.put(ProducerConfig.ENABLE_IDEMPOTENCE_CONFIG, "?");
-highReliability.put(ProducerConfig.MAX_IN_FLIGHT_REQUESTS_PER_CONNECTION, "?");
-highReliability.put(ProducerConfig.RETRIES_CONFIG, "?");
-highReliability.put(ProducerConfig.RETRY_BACKOFF_MS_CONFIG, "?");
+const kafka = new Kafka({ brokers: ['localhost:9092'] });
+
+const highReliabilityProducer = kafka.producer({
+  // TODO: Add configurations for maximum reliability
+  idempotent: true, // or use ?
+  maxInFlightRequests: 5, // or use ?
+  compression: CompressionTypes.Snappy,
+  retry: {
+    retries: Number.MAX_SAFE_INTEGER, // or use ?
+    initialRetryTime: 100, // or use ?
+    maxRetryTime: 30000
+  },
+  timeout: 30000
+});
 ```
 
 ### Part C: Benchmark Both Configurations
@@ -294,39 +334,49 @@ Your producer needs to handle various failures gracefully.
 
 1. **Implement Retry Logic with Exponential Backoff:**
 
-```java
-public class ResilientProducer {
-    private final KafkaProducer<String, String> producer;
-    private final int maxRetries = 3;
+```typescript
+import { Kafka, Producer, Message } from 'kafkajs';
+
+class ResilientProducer {
+  private producer: Producer;
+  private readonly maxRetries = 3;
+
+  constructor(kafka: Kafka) {
+    this.producer = kafka.producer();
+  }
+
+  async sendWithRetry(topic: string, message: Message): Promise<void> {
+    let attempt = 0;
     
-    public void sendWithRetry(ProducerRecord<String, String> record) {
-        int attempt = 0;
-        while (attempt < maxRetries) {
-            try {
-                RecordMetadata metadata = producer.send(record).get();
-                System.out.println("Sent successfully to " + metadata.partition());
-                return;
-            } catch (Exception e) {
-                attempt++;
-                if (attempt >= maxRetries) {
-                    // TODO: Send to Dead Letter Queue
-                    handleFailure(record, e);
-                } else {
-                    // TODO: Exponential backoff
-                    long backoffMs = (long) Math.pow(2, attempt) * 1000;
-                    try {
-                        Thread.sleep(backoffMs);
-                    } catch (InterruptedException ie) {
-                        Thread.currentThread().interrupt();
-                    }
-                }
-            }
+    while (attempt < this.maxRetries) {
+      try {
+        const metadata = await this.producer.send({
+          topic,
+          messages: [message]
+        });
+        console.log(`Sent successfully to partition ${metadata[0].partition}`);
+        return;
+      } catch (error) {
+        attempt++;
+        if (attempt >= this.maxRetries) {
+          // TODO: Send to Dead Letter Queue
+          await this.handleFailure(topic, message, error as Error);
+        } else {
+          // TODO: Exponential backoff
+          const backoffMs = Math.pow(2, attempt) * 1000;
+          await this.sleep(backoffMs);
         }
+      }
     }
-    
-    private void handleFailure(ProducerRecord<String, String> record, Exception e) {
-        // TODO: Implement Dead Letter Queue logic
-    }
+  }
+
+  private sleep(ms: number): Promise<void> {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
+  private async handleFailure(topic: string, message: Message, error: Error): Promise<void> {
+    // TODO: Implement Dead Letter Queue logic
+  }
 }
 ```
 
@@ -352,39 +402,38 @@ You need to atomically send multiple related messages (all succeed or all fail).
 
 1. **Implement Transactional Producer:**
 
-```java
-public class TransactionalProducer {
-    private final KafkaProducer<String, String> producer;
+```typescript
+import { Kafka, Producer, Message, Transaction } from 'kafkajs';
+
+class TransactionalProducer {
+  private producer: Producer;
+
+  constructor(kafka: Kafka) {
+    this.producer = kafka.producer({
+      transactionalId: 'my-transactional-id',
+      idempotent: true,
+      maxInFlightRequests: 1
+    });
+  }
+
+  async sendInTransaction(topic: string, messages: Message[]): Promise<void> {
+    const transaction: Transaction = await this.producer.transaction();
     
-    public TransactionalProducer() {
-        Properties props = new Properties();
-        props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
-        props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
-        props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
-        
-        // Transaction configuration
-        props.put(ProducerConfig.TRANSACTIONAL_ID_CONFIG, "my-transactional-id");
-        props.put(ProducerConfig.ENABLE_IDEMPOTENCE_CONFIG, true);
-        
-        this.producer = new KafkaProducer<>(props);
-        this.producer.initTransactions();
+    try {
+      for (const message of messages) {
+        await transaction.send({
+          topic,
+          messages: [message]
+        });
+      }
+      
+      await transaction.commit();
+      console.log('Transaction committed successfully');
+    } catch (error) {
+      await transaction.abort();
+      console.error(`Transaction aborted: ${(error as Error).message}`);
     }
-    
-    public void sendInTransaction(List<ProducerRecord<String, String>> records) {
-        try {
-            producer.beginTransaction();
-            
-            for (ProducerRecord<String, String> record : records) {
-                producer.send(record);
-            }
-            
-            producer.commitTransaction();
-            System.out.println("Transaction committed successfully");
-        } catch (Exception e) {
-            producer.abortTransaction();
-            System.err.println("Transaction aborted: " + e.getMessage());
-        }
-    }
+  }
 }
 ```
 
@@ -425,56 +474,82 @@ REST API → In-Memory Queue → Producer Thread Pool → Kafka
 
 **Tasks:**
 
-1. **Create Spring Boot Service:**
+1. **Create NestJS Service:**
 
-```java
-@RestController
-@RequestMapping("/api/events")
-public class EventController {
-    
-    @Autowired
-    private EventProducerService producerService;
-    
-    @PostMapping
-    public ResponseEntity<EventResponse> sendEvent(@RequestBody Event event) {
-        String eventId = producerService.sendAsync(event);
-        return ResponseEntity.accepted()
-            .body(new EventResponse(eventId, "ACCEPTED"));
-    }
-    
-    @GetMapping("/health")
-    public ResponseEntity<HealthStatus> health() {
-        // TODO: Check Kafka connectivity
-        return ResponseEntity.ok(new HealthStatus("UP"));
-    }
+```typescript
+import { Controller, Post, Get, Body } from '@nestjs/common';
+import { EventProducerService } from './event-producer.service';
+
+interface EventResponse {
+  eventId: string;
+  status: string;
+}
+
+interface HealthStatus {
+  status: string;
+}
+
+@Controller('api/events')
+export class EventController {
+  constructor(private readonly producerService: EventProducerService) {}
+  
+  @Post()
+  async sendEvent(@Body() event: Event): Promise<EventResponse> {
+    const eventId = await this.producerService.sendAsync(event);
+    return { eventId, status: 'ACCEPTED' };
+  }
+  
+  @Get('/health')
+  async health(): Promise<HealthStatus> {
+    // TODO: Check Kafka connectivity
+    return { status: 'UP' };
+  }
 }
 ```
 
 2. **Implement Producer Service:**
 
-```java
-@Service
-public class EventProducerService {
-    private final KafkaTemplate<String, Event> kafkaTemplate;
-    private final MeterRegistry meterRegistry;
-    private final ExecutorService executor = Executors.newFixedThreadPool(10);
+```typescript
+import { Injectable } from '@nestjs/common';
+import { Kafka, Producer } from 'kafkajs';
+import { v4 as uuidv4 } from 'uuid';
+
+@Injectable()
+export class EventProducerService {
+  private producer: Producer;
+  private successCount = 0;
+  private failureCount = 0;
+  
+  constructor(private readonly kafka: Kafka) {
+    this.producer = kafka.producer();
+  }
+  
+  async sendAsync(event: Event): Promise<string> {
+    event.eventId = uuidv4();
     
-    public String sendAsync(Event event) {
-        event.setEventId(UUID.randomUUID().toString());
-        
-        CompletableFuture.runAsync(() -> {
-            try {
-                kafkaTemplate.send("events", event.getUserId(), event)
-                    .get(5, TimeUnit.SECONDS);
-                meterRegistry.counter("events.sent.success").increment();
-            } catch (Exception e) {
-                meterRegistry.counter("events.sent.failure").increment();
-                sendToDeadLetterQueue(event, e);
-            }
-        }, executor);
-        
-        return event.getEventId();
-    }
+    // Process asynchronously
+    setImmediate(async () => {
+      try {
+        await this.producer.send({
+          topic: 'events',
+          messages: [{
+            key: event.userId,
+            value: JSON.stringify(event)
+          }]
+        });
+        this.successCount++;
+      } catch (error) {
+        this.failureCount++;
+        await this.sendToDeadLetterQueue(event, error as Error);
+      }
+    });
+    
+    return event.eventId;
+  }
+  
+  private async sendToDeadLetterQueue(event: Event, error: Error): Promise<void> {
+    // TODO: Implement DLQ logic
+  }
 }
 ```
 
@@ -519,42 +594,61 @@ Asynchronous     | 3000      | 3333        | Good balance
 ### Exercise 5 Recommended Configurations
 
 **Maximum Throughput:**
-```java
-acks = "1"
-compression.type = "lz4"
-linger.ms = "10"
-batch.size = "32768"
-buffer.memory = "67108864"  // 64 MB
+```typescript
+const producer = kafka.producer({
+  compression: CompressionTypes.LZ4,
+  maxInFlightRequests: 5,
+  idempotent: false,
+  retry: { retries: 3 }
+});
+// Note: In KafkaJS, batch size and linger are managed internally
 ```
 
 **Maximum Reliability:**
-```java
-acks = "all"
-enable.idempotence = "true"
-max.in.flight.requests.per.connection = "5"
-retries = Integer.MAX_VALUE
-retry.backoff.ms = "100"
-compression.type = "lz4"
+```typescript
+const producer = kafka.producer({
+  idempotent: true,
+  maxInFlightRequests: 5,
+  compression: CompressionTypes.LZ4,
+  retry: {
+    retries: Number.MAX_SAFE_INTEGER,
+    initialRetryTime: 100
+  },
+  timeout: 30000
+});
 ```
 
 ### Exercise 6 DLQ Implementation
 
-```java
-private void handleFailure(ProducerRecord<String, String> record, Exception e) {
-    FailedMessage failed = new FailedMessage();
-    failed.setOriginalTopic(record.topic());
-    failed.setKey(record.key());
-    failed.setValue(record.value());
-    failed.setErrorMessage(e.getMessage());
-    failed.setTimestamp(System.currentTimeMillis());
-    
-    ProducerRecord<String, String> dlqRecord = new ProducerRecord<>(
-        "failed-events",
-        record.key(),
-        new ObjectMapper().writeValueAsString(failed)
-    );
-    
-    producer.send(dlqRecord);
+```typescript
+interface FailedMessage {
+  originalTopic: string;
+  key: string | null;
+  value: string | null;
+  errorMessage: string;
+  timestamp: number;
+}
+
+private async handleFailure(
+  topic: string,
+  message: Message,
+  error: Error
+): Promise<void> {
+  const failed: FailedMessage = {
+    originalTopic: topic,
+    key: message.key?.toString() || null,
+    value: message.value?.toString() || null,
+    errorMessage: error.message,
+    timestamp: Date.now()
+  };
+  
+  await this.producer.send({
+    topic: 'failed-events',
+    messages: [{
+      key: message.key,
+      value: JSON.stringify(failed)
+    }]
+  });
 }
 ```
 
@@ -568,7 +662,8 @@ private void handleFailure(ProducerRecord<String, String> record, Exception e) {
 
 **Practice:**
 - Implement producer in Python using `kafka-python`
-- Implement producer in Node.js using `kafkajs`
+- Try different configuration combinations
+- Experiment with transactions and error handling
 
 ---
 

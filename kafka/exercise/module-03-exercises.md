@@ -8,9 +8,12 @@
 
 1. **Prerequisites Check:**
    ```bash
-   # Verify Java installation
-   java -version
-   # Should be Java 11 or higher
+   # Verify Node.js installation
+   node --version
+   # Should be Node.js 16 or higher
+   
+   # Verify npm installation
+   npm --version
    ```
 
 2. **Download and Extract Kafka:**
@@ -48,7 +51,7 @@ test
 ```
 
 **Troubleshooting Checklist:**
-- [ ] Java 11+ installed
+- [ ] Node.js 16+ installed
 - [ ] Port 9092 not in use
 - [ ] Sufficient disk space (> 10 GB)
 - [ ] No firewall blocking localhost
