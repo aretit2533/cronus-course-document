@@ -10,7 +10,7 @@ Welcome to the comprehensive learning hub for modern backend technologies! This 
 |--------|-------------|---------|----------|--------|
 | **[NestJS](#-nestjs-fundamentals-course)** | Progressive Node.js framework | 8 modules | 20-30 hours | ✅ Complete |
 | **[Apache Kafka](#-apache-kafka-course)** | Distributed event streaming platform | 9 modules | 26 hours | ✅ Complete |
-| **[EQXJS Framework](#-eqxjs-framework-course)** | Enterprise NestJS framework ecosystem | 4 modules | 12-16 hours | ✅ Complete |
+| **[EQXJS Framework](#-eqxjs-framework-course)** | Enterprise NestJS framework ecosystem | 10 modules | 30-40 hours | ✅ Complete |
 
 ---
 
@@ -130,27 +130,43 @@ kafka-console-consumer.sh \
 
 ### 📖 Quick Access
 
-**[📋 Complete EQXJS Course](stub/README.md)** | **[⚡ Quick Start Guide](stub/QUICK_START.md)**
+**[📋 Complete EQXJS Course](stub/README.md)** | **[📚 Course Outline](stub/course-outline.md)** | **[⚡ Quick Start Guide](stub/QUICK_START.md)** | **[💡 All Exercises](stub/exercise/README.md)**
+
+### Additional Resources
+
+**[📖 API Reference](stub/API_REFERENCE.md)** | **[⚙️ Framework Module Documentation](stub/FRAMEWORK_MODULE_DOCUMENTATION.md)** | **[🧩 Framework Components](stub/framework-components.md)**
 
 ### Course Modules
 
-| Module | Topic | Content | Duration |
-|--------|-------|---------|----------|
-| **Module 1** | [EQXJS Ecosystem Foundation](stub/Module-01-EQXJS-Ecosystem-Foundation.md) | [View](stub/Module-01-EQXJS-Ecosystem-Foundation.md) | 3-4 hours |
-| **Module 2** | [Advanced Decorators and Interceptors](stub/Module-02-Advanced-Decorators-and-Interceptors.md) | [View](stub/Module-02-Advanced-Decorators-and-Interceptors.md) | 3-4 hours |
-| **Module 3** | [Health Checks and Service Management](stub/Module-03-Health-Checks-and-Service-Management.md) | [View](stub/Module-03-Health-Checks-and-Service-Management.md) | 3-4 hours |
-| **Module 4** | [Security and Exception Handling](stub/Module-04-Security-and-Exception-Handling.md) | [View](stub/Module-04-Security-and-Exception-Handling.md) | 3-4 hours |
+| Module | Topic | Content | Exercises | Duration |
+|--------|-------|---------|-----------|----------|
+| **Module 1** | [EQXJS Ecosystem Foundation](stub/Module-01-EQXJS-Ecosystem-Foundation.md) | [View](stub/Module-01-EQXJS-Ecosystem-Foundation.md) | [Exercises](stub/exercise/module-01-exercises.md) | 3-4 hours |
+| **Module 2** | [Advanced Decorators and Interceptors](stub/Module-02-Advanced-Decorators-and-Interceptors.md) | [View](stub/Module-02-Advanced-Decorators-and-Interceptors.md) | [Exercises](stub/exercise/module-02-exercises.md) | 3-4 hours |
+| **Module 3** | [Health Checks and Service Management](stub/Module-03-Health-Checks-and-Service-Management.md) | [View](stub/Module-03-Health-Checks-and-Service-Management.md) | [Exercises](stub/exercise/module-03-exercises.md) | 3-4 hours |
+| **Module 4** | [Security and Exception Handling](stub/Module-04-Security-and-Exception-Handling.md) | [View](stub/Module-04-Security-and-Exception-Handling.md) | [Exercises](stub/exercise/module-04-exercises.md) | 3-4 hours |
+| **Module 5** | [Data Processing and Pipes](stub/Module-05-Data-Processing-and-Pipes.md) | [View](stub/Module-05-Data-Processing-and-Pipes.md) | [Exercises](stub/exercise/module-05-exercises.md) | 3-4 hours |
+| **Module 6** | [Logging and Monitoring Systems](stub/Module-06-Logging-and-Monitoring-Systems.md) | [View](stub/Module-06-Logging-and-Monitoring-Systems.md) | [Exercises](stub/exercise/module-06-exercises.md) | 3-4 hours |
+| **Module 7** | [Transport and HTTP Integration](stub/Module-07-Transport-and-HTTP-Integration.md) | [View](stub/Module-07-Transport-and-HTTP-Integration.md) | [Exercises](stub/exercise/module-07-exercises.md) | 3-4 hours |
+| **Module 8** | [Configuration Management and Commander](stub/Module-08-Configuration-Management-and-Commander.md) | [View](stub/Module-08-Configuration-Management-and-Commander.md) | [Exercises](stub/exercise/module-08-exercises.md) | 3-4 hours |
+| **Module 9** | [Utilities and Framework Constants](stub/Module-09-Utilities-and-Framework-Constants.md) | [View](stub/Module-09-Utilities-and-Framework-Constants.md) | [Exercises](stub/exercise/module-09-exercises.md) | 3-4 hours |
+| **Module 10** | [Advanced Enterprise Patterns](stub/Module-10-Advanced-Enterprise-Patterns.md) | [View](stub/Module-10-Advanced-Enterprise-Patterns.md) | [Exercises](stub/exercise/module-10-exercises.md) | 3-4 hours |
 
 ### 📋 What You'll Learn
 
-- ✅ EQXJS framework architecture and 8 core modules
+- ✅ EQXJS framework architecture and 8+ core modules
 - ✅ Enterprise configuration management (YAML-based)
 - ✅ Custom decorators and metadata-driven development
 - ✅ Advanced interceptor patterns and data masking
 - ✅ Production-ready health monitoring systems
 - ✅ JWT authentication and role-based authorization
 - ✅ Graceful shutdown and lifecycle management
-- ✅ Database utilities and connection optimization
+- ✅ Data processing pipes and validation patterns
+- ✅ Structured logging with privacy compliance
+- ✅ HTTP transport and service communication
+- ✅ Command pattern and CLI tool development
+- ✅ Framework utilities and type-safe constants
+- ✅ Domain-driven design and event-driven architecture
+- ✅ Distributed system patterns and performance optimization
 
 ### 🚀 Quick Start
 
@@ -232,9 +248,9 @@ Comprehensive understanding of modern backend architectures.
 ## 📊 Course Statistics
 
 ### Combined Learning
-- **Total Modules**: 21 modules
-- **Total Duration**: 58-72 hours
-- **Exercises**: 130+ hands-on exercises
+- **Total Modules**: 27 modules
+- **Total Duration**: 76-96 hours
+- **Exercises**: 150+ hands-on exercises
 - **Projects**: 3 complete applications
 - **Difficulty**: Beginner to Advanced
 
@@ -428,6 +444,12 @@ Navigate to your course and begin with Module 1!
 - [ ] Module 2: Advanced Decorators and Interceptors
 - [ ] Module 3: Health Checks and Service Management
 - [ ] Module 4: Security and Exception Handling
+- [ ] Module 5: Data Processing and Pipes
+- [ ] Module 6: Logging and Monitoring Systems
+- [ ] Module 7: Transport and HTTP Integration
+- [ ] Module 8: Configuration Management and Commander
+- [ ] Module 9: Utilities and Framework Constants
+- [ ] Module 10: Advanced Enterprise Patterns
 
 ### Kafka Course Progress
 - [ ] Module 1: Introduction to Apache Kafka
@@ -496,11 +518,13 @@ This educational content is provided for learning purposes.
 
 ### Course Outlines
 - **[📋 NestJS Outline →](nestjs/course-outline.md)**
+- **[📋 EQXJS Outline →](stub/course-outline.md)**
 - **[⚡ EQXJS Quick Start →](stub/QUICK_START.md)**
 - **[📋 Kafka Outline →](kafka/course-outline.md)**
 
 ### Exercises
 - **[💡 NestJS Exercises →](nestjs/exercise/README.md)**
+- **[💡 EQXJS Exercises →](stub/exercise/README.md)**
 - **[💡 Kafka Exercises →](kafka/exercise/README.md)**
 
 ---
