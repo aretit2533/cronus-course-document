@@ -34,44 +34,17 @@ By the end of this module, you will be able to:
 
 ### How Producers Work
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                    Application                          │
-│                                                         │
-│  1. Create ProducerRecord(topic, key, value)           │
-└──────────────────────┬──────────────────────────────────┘
-                       │
-                       ▼
-┌─────────────────────────────────────────────────────────┐
-│  2. Serializer (Convert key/value to bytes)            │
-└──────────────────────┬──────────────────────────────────┘
-                       │
-                       ▼
-┌─────────────────────────────────────────────────────────┐
-│  3. Partitioner (Determine target partition)           │
-└──────────────────────┬──────────────────────────────────┘
-                       │
-                       ▼
-┌─────────────────────────────────────────────────────────┐
-│  4. Record Accumulator (Batch records per partition)   │
-└──────────────────────┬──────────────────────────────────┘
-                       │
-                       ▼
-┌─────────────────────────────────────────────────────────┐
-│  5. Sender (Send batches to brokers)                   │
-└──────────────────────┬──────────────────────────────────┘
-                       │
-                       ▼
-┌─────────────────────────────────────────────────────────┐
-│              Kafka Broker (Leader)                      │
-│                                                         │
-│  6. Write to log, replicate, acknowledge                │
-└──────────────────────┬──────────────────────────────────┘
-                       │
-                       ▼
-┌─────────────────────────────────────────────────────────┐
-│  7. Callback (Success or error)                        │
-└─────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    A[Application<br/>1. Create ProducerRecord topic, key, value]
+    B[Serializer<br/>2. Convert key/value to bytes]
+    C[Partitioner<br/>3. Determine target partition]
+    D[Record Accumulator<br/>4. Batch records per partition]
+    E[Sender<br/>5. Send batches to brokers]
+    F[Kafka Broker Leader<br/>6. Write to log, replicate, acknowledge]
+    G[Callback<br/>7. Success or error]
+    
+    A --> B --> C --> D --> E --> F --> G
 ```
 
 ### Producer Components
