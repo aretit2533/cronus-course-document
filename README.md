@@ -10,6 +10,7 @@ Welcome to the comprehensive learning hub for modern backend technologies! This 
 |--------|-------------|---------|----------|--------|
 | **[NestJS](#-nestjs-fundamentals-course)** | Progressive Node.js framework | 8 modules | 20-30 hours | ✅ Complete |
 | **[Apache Kafka](#-apache-kafka-course)** | Distributed event streaming platform | 9 modules | 26 hours | ✅ Complete |
+| **[EQXJS Framework](#-eqxjs-framework-course)** | Enterprise NestJS framework ecosystem | 4 modules | 12-16 hours | ✅ Complete |
 
 ---
 
@@ -123,17 +124,72 @@ kafka-console-consumer.sh \
 
 ---
 
-## 🎓 Learning Paths
+## 🎯 EQXJS Framework Course
+
+> Master enterprise-grade NestJS application development with the EQXJS ecosystem
+
+### 📖 Quick Access
+
+**[📋 Complete EQXJS Course](stub/README.md)** | **[⚡ Quick Start Guide](stub/QUICK_START.md)**
+
+### Course Modules
+
+| Module | Topic | Content | Duration |
+|--------|-------|---------|----------|
+| **Module 1** | [EQXJS Ecosystem Foundation](stub/Module-01-EQXJS-Ecosystem-Foundation.md) | [View](stub/Module-01-EQXJS-Ecosystem-Foundation.md) | 3-4 hours |
+| **Module 2** | [Advanced Decorators and Interceptors](stub/Module-02-Advanced-Decorators-and-Interceptors.md) | [View](stub/Module-02-Advanced-Decorators-and-Interceptors.md) | 3-4 hours |
+| **Module 3** | [Health Checks and Service Management](stub/Module-03-Health-Checks-and-Service-Management.md) | [View](stub/Module-03-Health-Checks-and-Service-Management.md) | 3-4 hours |
+| **Module 4** | [Security and Exception Handling](stub/Module-04-Security-and-Exception-Handling.md) | [View](stub/Module-04-Security-and-Exception-Handling.md) | 3-4 hours |
+
+### 📋 What You'll Learn
+
+- ✅ EQXJS framework architecture and 8 core modules
+- ✅ Enterprise configuration management (YAML-based)
+- ✅ Custom decorators and metadata-driven development
+- ✅ Advanced interceptor patterns and data masking
+- ✅ Production-ready health monitoring systems
+- ✅ JWT authentication and role-based authorization
+- ✅ Graceful shutdown and lifecycle management
+- ✅ Database utilities and connection optimization
+
+### 🚀 Quick Start
+
+```bash
+# Install EQXJS Framework
+npm install @corp-ais/eqxjs-stub
+
+# Create configuration
+mkdir config
+touch config/development.config.yaml
+
+# Add to your NestJS app
+import { FrameworkModule } from '@corp-ais/eqxjs-stub';
+```
+
+**[👉 Start EQXJS Course](stub/README.md)**
+
+---
+
+## �🎓 Learning Paths
 
 ### Path 1: Backend Developer Track
-**Recommended Order**: NestJS → Kafka
+**Recommended Order**: NestJS → EQXJS → Kafka
 
 Perfect for building modern microservices and event-driven applications:
 
 1. **[NestJS Fundamentals](nestjs/README.md)** - Build RESTful APIs
-2. **[Apache Kafka](kafka/README.md)** - Add event streaming capabilities
+2. **[EQXJS Framework](stub/README.md)** - Enterprise patterns and utilities
+3. **[Apache Kafka](kafka/README.md)** - Add event streaming capabilities
 
-### Path 2: Data Engineer Track
+### Path 2: Enterprise Developer Track
+**Recommended Order**: NestJS → EQXJS
+
+Focus on enterprise-grade application development:
+
+1. **[NestJS Fundamentals](nestjs/README.md)** - Core framework concepts
+2. **[EQXJS Framework](stub/README.md)** - Production-ready patterns
+
+### Path 3: Data Engineer Track
 **Recommended Order**: Kafka → NestJS
 
 Focus on data streaming and integration:
@@ -141,10 +197,10 @@ Focus on data streaming and integration:
 1. **[Apache Kafka](kafka/README.md)** - Master event streaming
 2. **[NestJS Fundamentals](nestjs/README.md)** - Build data processing services
 
-### Path 3: Full-Stack Journey
-**Combined Learning**: Both in parallel
+### Path 4: Full-Stack Journey
+**Combined Learning**: All courses
 
-Learn both technologies simultaneously for comprehensive understanding of modern architectures.
+Comprehensive understanding of modern backend architectures.
 
 ---
 
@@ -156,6 +212,13 @@ Learn both technologies simultaneously for comprehensive understanding of modern
 - **Framework**: NestJS 10.x
 - **Testing**: Jest
 - **Tools**: NestJS CLI, ESLint, Prettier
+
+### EQXJS Framework Course
+- **Runtime**: Node.js 20+
+- **Language**: TypeScript
+- **Framework**: NestJS 11+, EQXJS 3.2.6+
+- **Core Modules**: 8 integrated EQXJS modules
+- **Tools**: TypeDoc, Joi Validation, JWT
 
 ### Kafka Course
 - **Platform**: Apache Kafka 3.x
@@ -169,10 +232,10 @@ Learn both technologies simultaneously for comprehensive understanding of modern
 ## 📊 Course Statistics
 
 ### Combined Learning
-- **Total Modules**: 17 modules
-- **Total Duration**: 46-56 hours
-- **Exercises**: 100+ hands-on exercises
-- **Projects**: 2 complete applications
+- **Total Modules**: 21 modules
+- **Total Duration**: 58-72 hours
+- **Exercises**: 130+ hands-on exercises
+- **Projects**: 3 complete applications
 - **Difficulty**: Beginner to Advanced
 
 ### Prerequisites
@@ -186,13 +249,19 @@ Learn both technologies simultaneously for comprehensive understanding of modern
 
 ## 🎯 Learning Outcomes
 
-After completing both courses, you will be able to:
+After completing all courses, you will be able to:
 
 ### Application Development
 - ✅ Build scalable RESTful APIs with NestJS
 - ✅ Implement dependency injection and IoC patterns
 - ✅ Design modular, maintainable applications
 - ✅ Write comprehensive tests (Unit & E2E)
+
+### Enterprise Patterns
+- ✅ Master EQXJS framework ecosystem
+- ✅ Implement custom decorators and interceptors
+- ✅ Build production-ready health monitoring
+- ✅ JWT authentication and authorization
 
 ### Event-Driven Architecture
 - ✅ Design event-driven systems
@@ -211,7 +280,7 @@ After completing both courses, you will be able to:
 ## 📁 Repository Structure
 
 ```
-/opt/workspace/learning/nestjs/
+/opt/workspace/learning/
 ├── README.md                          # This file - Main entry point
 │
 ├── nestjs/                            # NestJS Course
@@ -229,21 +298,29 @@ After completing both courses, you will be able to:
 │       ├── README.md                  # Exercise index
 │       └── module-*-exercises.md      # Module exercises
 │
-└── kafka/                             # Apache Kafka Course
-    ├── README.md                      # Kafka course home
-    ├── course-outline.md              # Detailed curriculum
-    ├── module-01-introduction.md      # Module 1: Introduction
-    ├── module-02-architecture.md      # Module 2: Architecture
-    ├── module-03-setup.md             # Module 3: Setup
-    ├── module-04-producers.md         # Module 4: Producers
-    ├── module-05-consumers.md         # Module 5: Consumers
-    ├── module-06-data-management.md   # Module 6: Data Management
-    ├── module-07-connect-streams.md   # Module 7: Connect & Streams
-    ├── module-08-advanced.md          # Module 8: Advanced Topics
-    ├── module-09-practical.md         # Module 9: Practical App
-    └── exercise/                      # Kafka exercises
-        ├── README.md                  # Exercise index
-        └── module-*-exercises.md      # Module exercises
+├── kafka/                             # Apache Kafka Course
+│   ├── README.md                      # Kafka course home
+│   ├── course-outline.md              # Detailed curriculum
+│   ├── module-01-introduction.md      # Module 1: Introduction
+│   ├── module-02-architecture.md      # Module 2: Architecture
+│   ├── module-03-setup.md             # Module 3: Setup
+│   ├── module-04-producers.md         # Module 4: Producers
+│   ├── module-05-consumers.md         # Module 5: Consumers
+│   ├── module-06-data-management.md   # Module 6: Data Management
+│   ├── module-07-connect-streams.md   # Module 7: Connect & Streams
+│   ├── module-08-advanced.md          # Module 8: Advanced Topics
+│   ├── module-09-practical.md         # Module 9: Practical App
+│   └── exercise/                      # Kafka exercises
+│       ├── README.md                  # Exercise index
+│       └── module-*-exercises.md      # Module exercises
+│
+└── stub/                              # EQXJS Framework Course
+    ├── README.md                      # EQXJS course home
+    ├── QUICK_START.md                 # Quick start guide
+    ├── Module-01-EQXJS-Ecosystem-Foundation.md          # Module 1
+    ├── Module-02-Advanced-Decorators-and-Interceptors.md # Module 2
+    ├── Module-03-Health-Checks-and-Service-Management.md # Module 3
+    └── Module-04-Security-and-Exception-Handling.md      # Module 4
 ```
 
 ---
@@ -252,8 +329,9 @@ After completing both courses, you will be able to:
 
 ### Step 1: Choose Your Course
 - **New to backend?** Start with [NestJS](nestjs/README.md)
+- **Enterprise development?** Try [EQXJS Framework](stub/README.md)
 - **Building data pipelines?** Start with [Kafka](kafka/README.md)
-- **Want both?** Follow a [Learning Path](#-learning-paths)
+- **Want them all?** Follow a [Learning Path](#-learning-paths)
 
 ### Step 2: Set Up Your Environment
 Install required tools for your chosen course:
@@ -262,6 +340,12 @@ Install required tools for your chosen course:
 ```bash
 node --version  # Should be >= 20
 npm i -g @nestjs/cli
+```
+
+**For EQXJS Framework:**
+```bash
+node --version  # Should be >= 20
+npm install @corp-ais/eqxjs-stub
 ```
 
 **For Kafka:**
@@ -339,6 +423,12 @@ Navigate to your course and begin with Module 1!
 - [ ] Module 7: Additional Fundamentals
 - [ ] Module 8: Practical Application
 
+### EQXJS Framework Course Progress
+- [ ] Module 1: EQXJS Ecosystem Foundation
+- [ ] Module 2: Advanced Decorators and Interceptors
+- [ ] Module 3: Health Checks and Service Management
+- [ ] Module 4: Security and Exception Handling
+
 ### Kafka Course Progress
 - [ ] Module 1: Introduction to Apache Kafka
 - [ ] Module 2: Kafka Architecture and Core Concepts
@@ -362,6 +452,7 @@ Navigate to your course and begin with Module 1!
 
 ### Advanced Topics
 - **NestJS**: GraphQL, WebSockets, Microservices
+- **EQXJS**: Advanced interceptors, Custom modules, Integration patterns
 - **Kafka**: ksqlDB, Schema Registry, MQTT
 - **Architecture**: CQRS, Event Sourcing, Saga Pattern
 - **DevOps**: Kubernetes, CI/CD, Monitoring
@@ -391,6 +482,7 @@ Found an issue or have suggestions? Contributions are welcome:
 This educational content is provided for learning purposes.
 
 - **NestJS** is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE)
+- **EQXJS Framework** is proprietary (version 3.2.6)
 - **Apache Kafka** is [Apache 2.0 licensed](https://github.com/apache/kafka/blob/trunk/LICENSE)
 
 ---
@@ -399,10 +491,12 @@ This educational content is provided for learning purposes.
 
 ### Start Learning
 - **[📘 NestJS Course →](nestjs/README.md)**
+- **[📙 EQXJS Framework Course →](stub/README.md)**
 - **[📕 Kafka Course →](kafka/README.md)**
 
 ### Course Outlines
 - **[📋 NestJS Outline →](nestjs/course-outline.md)**
+- **[⚡ EQXJS Quick Start →](stub/QUICK_START.md)**
 - **[📋 Kafka Outline →](kafka/course-outline.md)**
 
 ### Exercises
