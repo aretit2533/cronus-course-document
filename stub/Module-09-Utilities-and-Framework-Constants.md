@@ -33,6 +33,47 @@ EQXJS utilities (and your own shared util layer) typically cover:
 - type guards and safe parsing
 - formatting helpers
 
+```mermaid
+flowchart TD
+  A[Need Shared Behavior
+  repeated in 3+ places] --> B{Utility Qualifies?}
+  B -->|No| C[Keep Local Code
+  avoid over-abstraction]
+  B -->|Yes| D[Define Types
+  clear inputs/outputs]
+
+  D --> E[Implement Pure Helper
+  deterministic]
+  E --> F{Unsafe Input?}
+  F -->|Yes| G[Add Guards
+  type checks + safe parse]
+  F -->|No| H[Proceed]
+
+  G --> H
+  H --> I[Add Formatting
+  truncate for logs]
+  I --> J[Write Tests
+  edge cases]
+  J --> K[Publish + Reuse
+  consistent constants]
+  K --> L[Reduce Drift
+  more reliable runtime]
+
+  %% Styling
+  classDef input fill:#3498db,stroke:#2c3e50,stroke-width:1px,color:#fff;
+  classDef process fill:#2ecc71,stroke:#1e8449,stroke-width:1px,color:#fff;
+  classDef decision fill:#f39c12,stroke:#b9770e,stroke-width:1px,color:#fff;
+  classDef error fill:#e74c3c,stroke:#922b21,stroke-width:1px,color:#fff;
+  classDef async fill:#9b59b6,stroke:#5b2c6f,stroke-width:1px,color:#fff;
+  classDef obs fill:#34495e,stroke:#2c3e50,stroke-width:1px,color:#fff;
+
+  class A input;
+  class D,E,G,H,I,J,K process;
+  class B,F decision;
+  class C error;
+  class L obs;
+```
+
 ---
 
 ## 9.1 Framework Utility Principles

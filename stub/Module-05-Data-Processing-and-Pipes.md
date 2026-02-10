@@ -28,6 +28,47 @@ This module focuses on the **@corp-ais/eqxjs-pipes** module, which provides powe
 - **Async Processing**: Stream processing and batch operations
 - **Pipeline Patterns**: Multi-stage processing and error recovery
 
+```mermaid
+flowchart TD
+  A[Inbound Data
+  HTTP / Kafka / CLI] --> B[Normalize
+  trim, defaults, casing]
+
+  B --> C{Validate}
+  C -->|OK| D[Transform
+  map, format, enrich]
+  C -->|Fail| E[Validation Error
+  standardized response]
+
+  D --> F{Execution Mode}
+  F -->|Sync| G[Return Result]
+  F -->|Async Stream| H[Stream Pipeline
+  batch + concurrency]
+  F -->|Batch Job| I[Batch Processor
+  retries + DLQ]
+
+  H --> G
+  I --> G
+
+  G --> J[Log + Metrics
+  correlationId]
+
+  %% Styling
+  classDef input fill:#3498db,stroke:#2c3e50,stroke-width:1px,color:#fff;
+  classDef process fill:#2ecc71,stroke:#1e8449,stroke-width:1px,color:#fff;
+  classDef decision fill:#f39c12,stroke:#b9770e,stroke-width:1px,color:#fff;
+  classDef error fill:#e74c3c,stroke:#922b21,stroke-width:1px,color:#fff;
+  classDef async fill:#9b59b6,stroke:#5b2c6f,stroke-width:1px,color:#fff;
+  classDef obs fill:#34495e,stroke:#2c3e50,stroke-width:1px,color:#fff;
+
+  class A input;
+  class B,D,G process;
+  class C,F decision;
+  class E error;
+  class H,I async;
+  class J obs;
+```
+
 ## Exercises
 
 - [Module 5 Exercises](exercise/module-05-exercises.md)

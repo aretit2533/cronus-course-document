@@ -27,6 +27,47 @@ This module covers:
 - Zone/environment strategies
 - Command execution patterns (operational commands, scheduled jobs)
 
+```mermaid
+flowchart TD
+  A[Load default.yml] --> B[Overlay env.yml
+  dev / uat / prod]
+  B --> C[Merge env vars / secrets]
+
+  C --> D{Validate Schema}
+  D -->|Fail| E[Fail Fast
+  startup error]
+  D -->|OK| F[Build Typed Config
+  config service]
+
+  F --> G[Inject into Modules
+  http, security, kafka]
+  G --> H[Runtime Use
+  stable access]
+
+  H --> I{Config Change?}
+  I -->|No| J[Normal Operation]
+  I -->|Yes| K[Rollout Strategy
+  canary / blue-green]
+  K --> L[Monitor Signals
+  errorRate + latency]
+  L --> I
+
+  %% Styling
+  classDef input fill:#3498db,stroke:#2c3e50,stroke-width:1px,color:#fff;
+  classDef process fill:#2ecc71,stroke:#1e8449,stroke-width:1px,color:#fff;
+  classDef decision fill:#f39c12,stroke:#b9770e,stroke-width:1px,color:#fff;
+  classDef error fill:#e74c3c,stroke:#922b21,stroke-width:1px,color:#fff;
+  classDef async fill:#9b59b6,stroke:#5b2c6f,stroke-width:1px,color:#fff;
+  classDef obs fill:#34495e,stroke:#2c3e50,stroke-width:1px,color:#fff;
+
+  class A input;
+  class B,C,F,G,H,J process;
+  class D,I decision;
+  class E error;
+  class K async;
+  class L obs;
+```
+
 ---
 
 ## 8.1 YAML Configuration System

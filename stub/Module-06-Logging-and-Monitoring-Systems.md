@@ -27,6 +27,49 @@ This module focuses on patterns you should apply consistently across services:
 - **Masking** (ensure logs are safe by default)
 - **Metrics** (quantify performance and reliability)
 
+```mermaid
+flowchart TD
+  A[Inbound Work
+  HTTP / Kafka / Cron] --> B[Attach Context
+  correlationId, requestId]
+
+  B --> C[Interceptors
+  logging + masking]
+  C --> D{Sensitive Data?}
+  D -->|Yes| E[Mask Fields
+  PII / secrets]
+  D -->|No| F[Keep Safe Fields]
+
+  E --> G[Emit Structured Logs
+  event + duration]
+  F --> G
+
+  G --> H[Central Aggregation
+  search + retention]
+  H --> I[Metrics + Dashboards
+  errorRate + latency]
+  I --> J{Threshold Breach?}
+  J -->|No| K[Continue Monitoring]
+  J -->|Yes| L[Page On-call
+  create incident]
+  L --> M[Runbooks
+  mitigate + follow-up]
+
+  %% Styling
+  classDef input fill:#3498db,stroke:#2c3e50,stroke-width:1px,color:#fff;
+  classDef process fill:#2ecc71,stroke:#1e8449,stroke-width:1px,color:#fff;
+  classDef decision fill:#f39c12,stroke:#b9770e,stroke-width:1px,color:#fff;
+  classDef error fill:#e74c3c,stroke:#922b21,stroke-width:1px,color:#fff;
+  classDef async fill:#9b59b6,stroke:#5b2c6f,stroke-width:1px,color:#fff;
+  classDef obs fill:#34495e,stroke:#2c3e50,stroke-width:1px,color:#fff;
+
+  class A input;
+  class B,C,E,F,G,M process;
+  class D,J decision;
+  class L error;
+  class H,I,K obs;
+```
+
 ---
 
 ## 6.1 EQXJS Logger Architecture

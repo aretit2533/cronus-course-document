@@ -27,6 +27,51 @@ Key themes:
 - **Reliability**: retries, timeouts, fallbacks
 - **Observability**: correlation IDs and structured logs
 
+```mermaid
+flowchart TD
+  A[Build Request DTO] --> B{Validate DTO}
+  B -->|Fail| C[Return Validation Error
+  standardized shape]
+  B -->|OK| D[Add Context Headers
+  x-correlation-id]
+
+  D --> E[Add Auth
+  bearer / mTLS]
+  E --> F[Send Request
+  timeout enforced]
+  F --> G{Response OK?}
+
+  G -->|Yes| H[Parse + Validate Response]
+  H --> I[Return Result]
+
+  G -->|No| J[Normalize Error
+  code + status]
+  J --> K{Retriable?}
+  K -->|Yes| L[Retry
+  backoff + jitter]
+  K -->|No| M[Fallback / Fail-fast]
+
+  L --> F
+  I --> N[Log + Metrics
+  dependency latency]
+  M --> N
+
+  %% Styling
+  classDef input fill:#3498db,stroke:#2c3e50,stroke-width:1px,color:#fff;
+  classDef process fill:#2ecc71,stroke:#1e8449,stroke-width:1px,color:#fff;
+  classDef decision fill:#f39c12,stroke:#b9770e,stroke-width:1px,color:#fff;
+  classDef error fill:#e74c3c,stroke:#922b21,stroke-width:1px,color:#fff;
+  classDef async fill:#9b59b6,stroke:#5b2c6f,stroke-width:1px,color:#fff;
+  classDef obs fill:#34495e,stroke:#2c3e50,stroke-width:1px,color:#fff;
+
+  class A input;
+  class D,E,F,H,I process;
+  class B,G,K decision;
+  class C,J,M error;
+  class L async;
+  class N obs;
+```
+
 ---
 
 ## 7.1 HTTP Transport Architecture

@@ -28,6 +28,49 @@ This module is about building systems that keep working under real-world conditi
 
 You’ll connect what you learned in earlier modules into end-to-end enterprise patterns.
 
+```mermaid
+flowchart TD
+  A[Model Domain
+  entities + value objects] --> B[Define Aggregates
+  invariants + boundaries]
+  B --> C[Implement Use Cases
+  commands]
+  C --> D[Emit Domain Events
+  facts]
+  D --> E[Publish Events
+  async delivery]
+  E --> F[Consume Events
+  idempotent handlers]
+
+  F --> G{Dependency Failure?}
+  G -->|No| H[Continue Work
+  stable operation]
+  G -->|Yes| I[Resilience Patterns
+  timeouts/retries/CB]
+  I --> H
+
+  H --> J[Deploy Strategy
+  canary + rollback]
+  J --> K[Observe + Respond
+  dashboards + runbooks]
+  K --> L[Improve with SLOs
+  error budgets]
+
+  %% Styling
+  classDef input fill:#3498db,stroke:#2c3e50,stroke-width:1px,color:#fff;
+  classDef process fill:#2ecc71,stroke:#1e8449,stroke-width:1px,color:#fff;
+  classDef decision fill:#f39c12,stroke:#b9770e,stroke-width:1px,color:#fff;
+  classDef error fill:#e74c3c,stroke:#922b21,stroke-width:1px,color:#fff;
+  classDef async fill:#9b59b6,stroke:#5b2c6f,stroke-width:1px,color:#fff;
+  classDef obs fill:#34495e,stroke:#2c3e50,stroke-width:1px,color:#fff;
+
+  class A input;
+  class B,C,D,H,I,J process;
+  class G decision;
+  class E,F async;
+  class K,L obs;
+```
+
 ---
 
 ## 10.1 Domain-Driven Design (DDD) in Practice
