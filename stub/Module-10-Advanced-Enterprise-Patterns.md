@@ -4,7 +4,7 @@
 
 ---
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 After completing this module, you will be able to:
 
@@ -16,7 +16,7 @@ After completing this module, you will be able to:
 
 ---
 
-## 📚 Module Overview
+## Overview
 
 This module is about building systems that keep working under real-world conditions:
 
@@ -231,7 +231,7 @@ Use error budgets to manage change.
 
 ---
 
-## 📝 Summary
+## Summary
 
 In this module, you learned how to:
 
@@ -241,7 +241,11 @@ In this module, you learned how to:
 - standardize errors for better operations
 - plan safe deployments and incident response
 
-## 🎯 Next Steps
+## Exercises
+
+- [Module 10 Exercises](exercise/module-10-exercises.md)
+
+## Next Steps
 
 - Complete the [Module 10 Exercises](exercise/module-10-exercises.md)
 - Apply DDD boundaries to one real use case
@@ -249,4 +253,4 @@ In this module, you learned how to:
 
 ---
 
-**[⬅️ Previous: Module 9 - Utilities and Framework Constants](Module-09-Utilities-and-Framework-Constants.md)**
+**Previous: [Module 9 - Utilities and Framework Constants](Module-09-Utilities-and-Framework-Constants.md)**

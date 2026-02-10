@@ -4,7 +4,7 @@
 
 ---
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 After completing this module, you will be able to:
 
@@ -16,7 +16,7 @@ After completing this module, you will be able to:
 
 ---
 
-## 📚 Module Overview
+## Overview
 
 Configuration is a major source of production incidents: wrong endpoints, missing secrets, invalid zones, mismatched feature flags. EQXJS promotes configuration as a first-class capability using a YAML-based system (with environment overlays) and command patterns for operational behavior.
 
@@ -212,7 +212,7 @@ If reload is supported:
 
 ---
 
-## 📝 Summary
+## Summary
 
 In this module, you learned:
 
@@ -222,7 +222,11 @@ In this module, you learned:
 - How command patterns support operations and reliability
 - How to approach safe config reload and rollouts
 
-## 🎯 Next Steps
+## Exercises
+
+- [Module 8 Exercises](exercise/module-08-exercises.md)
+
+## Next Steps
 
 - Complete the [Module 8 Exercises](exercise/module-08-exercises.md)
 - Refactor one service to adopt the standard config shape
@@ -230,4 +234,4 @@ In this module, you learned:
 
 ---
 
-**[⬅️ Previous: Module 7 - Transport and HTTP Integration](Module-07-Transport-and-HTTP-Integration.md)** | **[Next: Module 9 - Utilities and Framework Constants ➡️](Module-09-Utilities-and-Framework-Constants.md)**
+**Previous: [Module 7 - Transport and HTTP Integration](Module-07-Transport-and-HTTP-Integration.md)** | **Next: [Module 9 - Utilities and Framework Constants](Module-09-Utilities-and-Framework-Constants.md)**

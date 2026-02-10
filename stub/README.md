@@ -7,7 +7,7 @@ Welcome to the comprehensive documentation for the EQXJS Framework Module. This 
 ### Getting Started
 
 - **[Quick Start Guide](QUICK_START.md)** - Get up and running in minutes
-- **[Installation & Setup](../README.md#installation)** - Basic installation and configuration
+- **[Learning Hub Overview](../README.md)** - Repository overview and course navigation
 
 ### Core Documentation
 
@@ -15,13 +15,10 @@ Welcome to the comprehensive documentation for the EQXJS Framework Module. This 
 - **[Framework Components Reference](framework-components.md)** - Complete component catalog and usage guide
 - **[API Reference](API_REFERENCE.md)** - Complete API documentation and usage examples
 
-### Training Materials
+### Course Materials
 
-- **[Training Curriculum](../TRAINING_CURRICULUM.md)** - Full training program
-- **[One Day Training Course](../ONE_DAY_TRAINING_COURSE.md)** - Condensed training
-- **[Developer Training Guide](../DEVELOPER_TRAINING_GUIDE.md)** - Developer-focused training
-- **[Training Exercises](../TRAINING_EXERCISES.md)** - Hands-on exercises
-- **[Competency Checklist](../COMPETENCY_CHECKLIST.md)** - Skills assessment
+- **[Course Outline](course-outline.md)** - Full EQXJS course outline (Modules 1-10)
+- **[Exercise Guide](exercise/README.md)** - Hands-on exercises for all modules
 
 ### Framework Components
 
@@ -94,7 +91,7 @@ The framework integrates and re-exports the following EQXJS modules:
 1. Read [Framework Module Documentation](FRAMEWORK_MODULE_DOCUMENTATION.md)
 2. Explore [Framework Components Reference](framework-components.md) for component details
 3. Reference [API Documentation](API_REFERENCE.md) for detailed usage
-4. Complete [Training Exercises](../TRAINING_EXERCISES.md)
+4. Complete [module exercises](exercise/README.md)
 
 ### For Architects
 
@@ -194,26 +191,25 @@ The framework integrates and re-exports the following EQXJS modules:
 
 1. Study [Framework Module Documentation](FRAMEWORK_MODULE_DOCUMENTATION.md)
 2. Learn [decorators and interceptors](API_REFERENCE.md#decorators)
-3. Complete [Training Exercises](../TRAINING_EXERCISES.md)
+3. Complete [module exercises](exercise/README.md)
 
 ### Advanced (1-2 months)
 
 1. Master [advanced usage patterns](FRAMEWORK_MODULE_DOCUMENTATION.md#advanced-usage)
 2. Understand [ecosystem integration](API_REFERENCE.md#re-exported-modules)
-3. Complete [full training curriculum](../TRAINING_CURRICULUM.md)
+3. Review the [course outline](course-outline.md) and complete remaining modules/exercises
 
 ## 🔧 Tools & Resources
 
 ### Development Tools
 
-- **TypeDoc Configuration**: [typedoc.config.js](../typedoc.config.js)
-- **Build Scripts**: See package.json for documentation generation
+- **TypeDoc Configuration**: Not included in this documentation workspace
+- **Build Scripts**: Not included in this documentation workspace
 - **Testing Setup**: [Test configurations](QUICK_START.md#testing-setup)
 
 ### Templates & Examples
 
-- **Basic Template**: [esb-dos-template](../esb-dos-template/)
-- **REST API Template**: [esb-dos-template-message-restapi](../esb-dos-template-message-restapi/)
+- **Templates**: Not included in this documentation workspace
 - **Configuration Examples**: [Environment configs](API_REFERENCE.md#environment-configuration-examples)
 
 ### Support Resources

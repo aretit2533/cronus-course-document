@@ -4,7 +4,7 @@
 
 ---
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 After completing this module, you will be able to:
 
@@ -16,7 +16,7 @@ After completing this module, you will be able to:
 
 ---
 
-## 📚 Module Overview
+## Overview
 
 Utility modules often become dumping grounds. In enterprise systems, utilities should be:
 
@@ -231,7 +231,7 @@ export function truncateArray<T>(arr: T[], maxItems = 50): T[] {
 
 ---
 
-## 📝 Summary
+## Summary
 
 In this module, you learned:
 
@@ -241,7 +241,11 @@ In this module, you learned:
 - Type guards and safe parsing helpers
 - Formatting utilities that keep logs safe and consistent
 
-## 🎯 Next Steps
+## Exercises
+
+- [Module 9 Exercises](exercise/module-09-exercises.md)
+
+## Next Steps
 
 - Complete the [Module 9 Exercises](exercise/module-09-exercises.md)
 - Identify 3 duplicated patterns in your service and extract small utilities
@@ -249,4 +253,4 @@ In this module, you learned:
 
 ---
 
-**[⬅️ Previous: Module 8 - Configuration Management and Commander](Module-08-Configuration-Management-and-Commander.md)** | **[Next: Module 10 - Advanced Enterprise Patterns ➡️](Module-10-Advanced-Enterprise-Patterns.md)**
+**Previous: [Module 8 - Configuration Management and Commander](Module-08-Configuration-Management-and-Commander.md)** | **Next: [Module 10 - Advanced Enterprise Patterns](Module-10-Advanced-Enterprise-Patterns.md)**

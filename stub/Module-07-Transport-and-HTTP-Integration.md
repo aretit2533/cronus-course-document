@@ -4,7 +4,7 @@
 
 ---
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 After completing this module, you will be able to:
 
@@ -16,7 +16,7 @@ After completing this module, you will be able to:
 
 ---
 
-## 📚 Module Overview
+## Overview
 
 Enterprise services rarely run alone. They depend on external APIs, internal microservices, and shared platforms. This module teaches how to design robust HTTP communication using EQXJS transport patterns (HTTP transporter, interceptors, standard errors, and logging).
 
@@ -247,7 +247,7 @@ Define a fallback policy per dependency:
 
 ---
 
-## 📝 Summary
+## Summary
 
 In this module, you learned:
 
@@ -256,7 +256,11 @@ In this module, you learned:
 - Reliability patterns to stabilize microservice communication
 - Integration patterns that support operations and troubleshooting
 
-## 🎯 Next Steps
+## Exercises
+
+- [Module 7 Exercises](exercise/module-07-exercises.md)
+
+## Next Steps
 
 - Complete the [Module 7 Exercises](exercise/module-07-exercises.md)
 - Standardize one real API client with these patterns
@@ -264,4 +268,4 @@ In this module, you learned:
 
 ---
 
-**[⬅️ Previous: Module 6 - Logging and Monitoring Systems](Module-06-Logging-and-Monitoring-Systems.md)** | **[Next: Module 8 - Configuration Management and Commander ➡️](Module-08-Configuration-Management-and-Commander.md)**
+**Previous: [Module 6 - Logging and Monitoring Systems](Module-06-Logging-and-Monitoring-Systems.md)** | **Next: [Module 8 - Configuration Management and Commander](Module-08-Configuration-Management-and-Commander.md)**

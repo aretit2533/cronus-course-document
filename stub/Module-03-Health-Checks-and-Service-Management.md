@@ -1,14 +1,22 @@
 # Module 3: Health Checks and Service Management
 
+## Overview
+
 This comprehensive module focuses on implementing robust health monitoring systems and graceful shutdown mechanisms in EQXJS applications. You'll learn to build production-ready monitoring solutions that ensure system reliability, observability, and graceful handling of service lifecycle events.
 
-By the end of this module, you'll have implemented:
+## Learning Objectives
+
+By the end of this module, you will be able to:
 
 - **Complete Health Check System**: Multi-layered health monitoring architecture
 - **External Service Monitoring**: MongoDB, Kafka, and API health indicators with resilience patterns
 - **Production-Ready Endpoints**: Kubernetes-compatible liveness, readiness, and startup probes
 - **Graceful Shutdown Mechanisms**: Resource cleanup and connection management
 - **Monitoring Integration**: Observability patterns for distributed systems
+
+## Exercises
+
+- [Module 3 Exercises](exercise/module-03-exercises.md)
 
 ---
 
@@ -1968,3 +1976,7 @@ spec:
       targetPort: 3000
   type: LoadBalancer
 ```
+
+---
+
+**Previous: [Module 2 - Advanced Decorators and Interceptors](Module-02-Advanced-Decorators-and-Interceptors.md)** | **Next: [Module 4 - Security and Exception Handling](Module-04-Security-and-Exception-Handling.md)**

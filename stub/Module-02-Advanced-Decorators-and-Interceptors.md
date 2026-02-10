@@ -1,8 +1,12 @@
 # Module 2: Advanced Decorators and Interceptors
 
+## Overview
+
 This comprehensive module focuses on implementing advanced decorator patterns, interceptor systems, and data protection mechanisms in EQXJS applications. You'll master custom decorators for metadata-driven development, sophisticated interceptor patterns for request/response transformation, and enterprise-grade data masking for privacy protection.
 
-By the end of this module, you'll have implemented:
+## Learning Objectives
+
+By the end of this module, you will be able to:
 
 - **Custom Decorator System**: Metadata-driven API configuration with entrypoint decorators
 - **Data Protection Framework**: Consumer masking decorators with role-based access control
@@ -10,6 +14,10 @@ By the end of this module, you'll have implemented:
 - **Advanced Interceptors**: HTTP/REST interceptors with error handling and transformation
 - **Validation Framework**: Joi schema integration with comprehensive input validation
 - **Production Security**: Enterprise-grade data masking and audit systems
+
+## Exercises
+
+- [Module 2 Exercises](exercise/module-02-exercises.md)
 
 ```mermaid
 flowchart TD
@@ -1801,3 +1809,5 @@ flowchart LR
 - ✅ Time-based cache expiration with size limits
 
 ---
+
+**Previous: [Module 1 - EQXJS Ecosystem Foundation](Module-01-EQXJS-Ecosystem-Foundation.md)** | **Next: [Module 3 - Health Checks and Service Management](Module-03-Health-Checks-and-Service-Management.md)**

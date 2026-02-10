@@ -1,8 +1,12 @@
 # Module 1: EQXJS Ecosystem Foundation
 
+## Overview
+
 This foundational module introduces the EQXJS framework ecosystem, covering the complete architecture, 8 core modules, and essential configuration patterns. You'll learn to build production-ready applications with comprehensive logging, monitoring, and environment-specific configurations that form the backbone of enterprise applications.
 
-By the end of this module, you'll have implemented:
+## Learning Objectives
+
+By the end of this module, you will be able to:
 
 - **Complete Framework Setup**: FrameworkModule configuration with all 8 core modules
 - **Multi-Environment Configuration**: Development, staging, and production environment setup
@@ -10,6 +14,10 @@ By the end of this module, you'll have implemented:
 - **Enterprise Logging System**: Structured logging with correlation IDs and observability
 - **Monitoring Foundation**: Telemetry, metrics collection, and observability patterns
 - **Production-Ready Application**: Scalable application structure following EQXJS patterns
+
+## Exercises
+
+- [Module 1 Exercises](exercise/module-01-exercises.md)
 
 ```mermaid
 flowchart TD
@@ -1007,3 +1015,7 @@ export class CachedDomainServiceContext extends DomainServiceContext {
   }
 }
 ```
+
+---
+
+**Next: [Module 2 - Advanced Decorators and Interceptors](Module-02-Advanced-Decorators-and-Interceptors.md)**

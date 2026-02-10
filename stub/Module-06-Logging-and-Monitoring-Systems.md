@@ -4,7 +4,7 @@
 
 ---
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 After completing this module, you will be able to:
 
@@ -16,7 +16,7 @@ After completing this module, you will be able to:
 
 ---
 
-## 📚 Module Overview
+## Overview
 
 Observability is the backbone of operating enterprise services. EQXJS provides building blocks (logger, masking decorators, interceptors, utilities, health tools) to standardize how services emit logs, how sensitive data is protected, and how operational signals are collected.
 
@@ -294,7 +294,7 @@ Design dashboards per service:
 
 ---
 
-## 📝 Summary
+## Summary
 
 In this module, you learned how to build production-grade observability:
 
@@ -304,7 +304,11 @@ In this module, you learned how to build production-grade observability:
 - Centralized logging practices
 - Metrics, alerts, and dashboards
 
-## 🎯 Next Steps
+## Exercises
+
+- [Module 6 Exercises](exercise/module-06-exercises.md)
+
+## Next Steps
 
 - Complete the [Module 6 Exercises](exercise/module-06-exercises.md)
 - Apply the logging conventions to one service end-to-end
@@ -312,4 +316,4 @@ In this module, you learned how to build production-grade observability:
 
 ---
 
-**[⬅️ Previous: Module 5 - Data Processing and Pipes](Module-05-Data-Processing-and-Pipes.md)** | **[Next: Module 7 - Transport and HTTP Integration ➡️](Module-07-Transport-and-HTTP-Integration.md)**
+**Previous: [Module 5 - Data Processing and Pipes](Module-05-Data-Processing-and-Pipes.md)** | **Next: [Module 7 - Transport and HTTP Integration](Module-07-Transport-and-HTTP-Integration.md)**

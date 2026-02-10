@@ -1,8 +1,12 @@
 # Module 4: Security and Exception Handling
 
+## Overview
+
 This advanced module focuses on implementing enterprise-grade security patterns, authentication/authorization systems, and comprehensive exception handling in EQXJS applications. You'll master JWT-based authentication, role-based access control, input validation, custom exception hierarchies, and global error handling patterns that ensure secure and robust applications.
 
-By the end of this module, you'll have implemented:
+## Learning Objectives
+
+By the end of this module, you will be able to:
 
 - **JWT Authentication System**: Secure token-based authentication with refresh token patterns
 - **Role-Based Authorization**: Multi-level access control with guard patterns and policies
@@ -11,6 +15,10 @@ By the end of this module, you'll have implemented:
 - **Global Exception Filters**: Standardized error responses with proper HTTP status codes
 - **Database Security Utilities**: Connection optimization and security best practices
 - **Production Security Monitoring**: Audit logging and security event tracking
+
+## Exercises
+
+- [Module 4 Exercises](exercise/module-04-exercises.md)
 
 ```mermaid
 flowchart TD
@@ -2076,3 +2084,6 @@ interface SecureFindQuery<T> {
 - **Security Middleware**: helmet, express-rate-limit
 - **Monitoring**: Winston, Sentry, DataDog
 
+---
+
+**Previous: [Module 3 - Health Checks and Service Management](Module-03-Health-Checks-and-Service-Management.md)** | **Next: [Module 5 - Data Processing and Pipes](Module-05-Data-Processing-and-Pipes.md)**

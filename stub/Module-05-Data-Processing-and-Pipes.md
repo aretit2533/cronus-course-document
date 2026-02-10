@@ -4,7 +4,7 @@
 
 ---
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 After completing this module, you will be able to:
 
@@ -16,7 +16,7 @@ After completing this module, you will be able to:
 
 ---
 
-## 📚 Module Overview
+## Overview
 
 This module focuses on the **@corp-ais/eqxjs-pipes** module, which provides powerful data transformation and validation capabilities. You'll learn how to create sophisticated data processing pipelines that handle complex business requirements while maintaining performance and reliability.
 
@@ -27,6 +27,10 @@ This module focuses on the **@corp-ais/eqxjs-pipes** module, which provides powe
 - **Transformation Pipes**: Data format conversion and manipulation
 - **Async Processing**: Stream processing and batch operations
 - **Pipeline Patterns**: Multi-stage processing and error recovery
+
+## Exercises
+
+- [Module 5 Exercises](exercise/module-05-exercises.md)
 
 ---
 
@@ -420,38 +424,20 @@ export class MultiFormatTransformationPipe extends DataTransformationPipe {
   }
 
   private async jsonToXml(data: any, options: any): Promise<string> {
-    // Implementation for JSON to XML conversion
-    const builder = new (await import("xml2js")).Builder(options);
-    return builder.buildObject(data);
+    // Intentionally omitted: XML serialization typically requires a dedicated XML library.
+    // Keep the transformation boundary here and plug in your organization's preferred implementation.
+    throw new Error("JSON->XML transformation not implemented");
   }
 
   private async csvToJson(csvData: string, options: any): Promise<any[]> {
-    // Implementation for CSV to JSON conversion
-    const csvParse = (await import("csv-parse")).parse;
-    return new Promise((resolve, reject) => {
-      csvParse(
-        csvData,
-        {
-          columns: true,
-          skip_empty_lines: true,
-          ...options,
-        },
-        (err, records) => {
-          if (err) reject(err);
-          else resolve(records);
-        },
-      );
-    });
+    // Intentionally omitted: CSV parsing typically requires a dedicated CSV parser.
+    // Keep this as a well-defined transformation stage rather than embedding parsing details in controllers.
+    throw new Error("CSV->JSON transformation not implemented");
   }
 
   private async xmlToJson(xmlData: string, options: any): Promise<any> {
-    // Implementation for XML to JSON conversion
-    const parser = new (await import("xml2js")).Parser({
-      explicitArray: false,
-      mergeAttrs: true,
-      ...options,
-    });
-    return parser.parseStringPromise(xmlData);
+    // Intentionally omitted: XML parsing typically requires a dedicated XML parser.
+    throw new Error("XML->JSON transformation not implemented");
   }
 }
 ```
@@ -1545,7 +1531,7 @@ export class BusinessProcessingPipeline {
 
 ---
 
-## 📝 Summary
+## Summary
 
 In this module, you've learned:
 
@@ -1563,7 +1549,7 @@ In this module, you've learned:
 - **Monitoring**: Include metrics and monitoring in all data processing operations
 - **Configurability**: Make pipelines configurable to handle different business requirements
 
-## 🎯 Next Steps
+## Next Steps
 
 - Complete the [Module 5 Exercises](exercise/module-05-exercises.md)
 - Practice implementing custom validation pipes
@@ -1572,4 +1558,4 @@ In this module, you've learned:
 
 ---
 
-**[⬅️ Previous: Module 4 - Security and Exception Handling](Module-04-Security-and-Exception-Handling.md)** | **[Next: Module 6 - Logging and Monitoring Systems ➡️](Module-06-Logging-and-Monitoring-Systems.md)**
+**Previous: [Module 4 - Security and Exception Handling](Module-04-Security-and-Exception-Handling.md)** | **Next: [Module 6 - Logging and Monitoring Systems](Module-06-Logging-and-Monitoring-Systems.md)**
