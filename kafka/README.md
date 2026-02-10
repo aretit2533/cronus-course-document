@@ -8,15 +8,17 @@ Welcome to the comprehensive Apache Kafka course! This course will take you from
 - [👥 Target Audience](#-target-audience)
 - [📋 Prerequisites](#-prerequisites)
 - [📚 Course Modules](#-course-modules)
-  - [Module 1: Introduction to Apache Kafka](#module-1-introduction-to-apache-kafka)
-  - [Module 2: Kafka Architecture and Core Concepts](#module-2-kafka-architecture-and-core-concepts)
-  - [Module 3: Setting Up Kafka](#module-3-setting-up-kafka)
-  - [Module 4: Kafka Producers](#module-4-kafka-producers)
-  - [Module 5: Kafka Consumers](#module-5-kafka-consumers)
-  - [Module 6: Topics, Partitions, and Data Management](#module-6-topics-partitions-and-data-management)
-  - [Module 7: Kafka Connect and Kafka Streams](#module-7-kafka-connect-and-kafka-streams)
-  - [Module 8: Advanced Topics and Best Practices](#module-8-advanced-topics-and-best-practices)
-  - [Module 9: Practical Application - Building a Real-Time System](#module-9-practical-application---building-a-real-time-system)
+  - [Module 1: Introduction to Apache Kafka](#module-1-introduction-to-apache-kafka) | [📖 Content](module-01-introduction.md) | [💡 Exercises](exercise/module-01-exercises.md)
+  - [Module 2: Kafka Architecture and Core Concepts](#module-2-kafka-architecture-and-core-concepts) | [📖 Content](module-02-architecture.md) | [💡 Exercises](exercise/module-02-exercises.md)
+  - [Module 3: Setting Up Kafka](#module-3-setting-up-kafka) | [📖 Content](module-03-setup.md) | [💡 Exercises](exercise/module-03-exercises.md)
+  - [Module 4: Kafka Producers](#module-4-kafka-producers) | [📖 Content](module-04-producers.md) | [💡 Exercises](exercise/module-04-exercises.md)
+  - [Module 5: Kafka Consumers](#module-5-kafka-consumers) | [📖 Content](module-05-consumers.md) | [💡 Exercises](exercise/module-05-exercises.md)
+  - [Module 6: Topics, Partitions, and Data Management](#module-6-topics-partitions-and-data-management) | [📖 Content](module-06-data-management.md) | [💡 Exercises](exercise/module-06-exercises.md)
+  - [Module 7: Kafka Connect and Kafka Streams](#module-7-kafka-connect-and-kafka-streams) | [📖 Content](module-07-connect-streams.md) | [💡 Exercises](exercise/module-07-exercises.md)
+  - [Module 8: Advanced Topics and Best Practices](#module-8-advanced-topics-and-best-practices) | [📖 Content](module-08-advanced.md) | [💡 Exercises](exercise/module-08-exercises.md)
+  - [Module 9: Practical Application - Building a Real-Time System](#module-9-practical-application---building-a-real-time-system) | [📖 Content](module-09-practical.md) | [💡 Exercises](exercise/module-09-exercises.md)
+- [💡 All Exercises](exercise/README.md)
+- [📋 Course Outline](course-outline.md)
 - [🛠️ Tools and Technologies](#️-tools-and-technologies)
 - [⏱️ Course Duration](#️-course-duration)
 - [📊 Learning Path](#-learning-path)
@@ -27,6 +29,24 @@ Welcome to the comprehensive Apache Kafka course! This course will take you from
 - [📝 Assessment](#-assessment)
 - [🎖️ Course Completion](#️-course-completion)
 - [📧 Support and Community](#-support-and-community)
+
+---
+
+## 🚀 Quick Start
+
+| Module | Content | Exercises | Duration |
+|--------|---------|-----------|----------|
+| **Module 1** | [Introduction to Apache Kafka](module-01-introduction.md) | [Exercises](exercise/module-01-exercises.md) | 2 hours |
+| **Module 2** | [Kafka Architecture and Core Concepts](module-02-architecture.md) | [Exercises](exercise/module-02-exercises.md) | 3 hours |
+| **Module 3** | [Setting Up Kafka](module-03-setup.md) | [Exercises](exercise/module-03-exercises.md) | 2 hours |
+| **Module 4** | [Kafka Producers](module-04-producers.md) | [Exercises](exercise/module-04-exercises.md) | 3 hours |
+| **Module 5** | [Kafka Consumers](module-05-consumers.md) | [Exercises](exercise/module-05-exercises.md) | 3 hours |
+| **Module 6** | [Topics, Partitions, and Data Management](module-06-data-management.md) | [Exercises](exercise/module-06-exercises.md) | 2 hours |
+| **Module 7** | [Kafka Connect and Kafka Streams](module-07-connect-streams.md) | [Exercises](exercise/module-07-exercises.md) | 4 hours |
+| **Module 8** | [Advanced Topics and Best Practices](module-08-advanced.md) | [Exercises](exercise/module-08-exercises.md) | 3 hours |
+| **Module 9** | [Practical Application - Building a Real-Time System](module-09-practical.md) | [Exercises](exercise/module-09-exercises.md) | 4 hours |
+
+**📂 [View All Exercises](exercise/README.md)** | **📋 [Detailed Course Outline](course-outline.md)**
 
 ## 🎯 Course Overview
 
