@@ -46,16 +46,16 @@ database:
 **app.module.ts:**
 
 ```typescript
-import { Module } from '@nestjs/common';
-import { FrameworkModule } from '@corp-ais/eqxjs-stub';
+import { Module } from "@nestjs/common";
+import { FrameworkModule } from "@corp-ais/eqxjs-stub";
 
 @Module({
   imports: [
     FrameworkModule.register({
-      configPath: './config',
-      zone: 'development'
-    })
-  ]
+      configPath: "./config",
+      zone: "development",
+    }),
+  ],
 })
 export class AppModule {}
 ```
@@ -65,9 +65,9 @@ export class AppModule {}
 **main.ts:**
 
 ```typescript
-import { NestFactory } from '@nestjs/core';
-import { GracefulShutdownService } from '@corp-ais/eqxjs-stub';
-import { AppModule } from './app.module';
+import { NestFactory } from "@nestjs/core";
+import { GracefulShutdownService } from "@corp-ais/eqxjs-stub";
+import { AppModule } from "./app.module";
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
@@ -83,8 +83,8 @@ async function bootstrap() {
   console.log(`Application running on: ${await app.getUrl()}`);
 }
 
-bootstrap().catch(err => {
-  console.error('Failed to start application:', err);
+bootstrap().catch((err) => {
+  console.error("Failed to start application:", err);
   process.exit(1);
 });
 ```
@@ -94,16 +94,16 @@ bootstrap().catch(err => {
 ### Using Entry Point Decorators
 
 ```typescript
-import { Injectable } from '@nestjs/common';
-import { Payload } from '@nestjs/microservices';
-import { EntryPoint, ConsumerMasking } from '@corp-ais/eqxjs-stub';
+import { Injectable } from "@nestjs/common";
+import { Payload } from "@nestjs/microservices";
+import { EntryPoint, ConsumerMasking } from "@corp-ais/eqxjs-stub";
 
 @Injectable()
 export class UserService {
-  @EntryPoint('USER_CREATED')
-  @ConsumerMasking(['password', 'email'])
+  @EntryPoint("USER_CREATED")
+  @ConsumerMasking(["password", "email"])
   async handleUserCreated(@Payload() data: CreateUserDto) {
-    console.log('Processing user created event:', data);
+    console.log("Processing user created event:", data);
     // Add your business logic here
   }
 }
@@ -112,9 +112,9 @@ export class UserService {
 ### Adding Request Interceptors
 
 ```typescript
-import { Module } from '@nestjs/common';
-import { APP_INTERCEPTOR } from '@nestjs/core';
-import { AppInterceptor, HttpInterceptor } from '@corp-ais/eqxjs-stub';
+import { Module } from "@nestjs/common";
+import { APP_INTERCEPTOR } from "@nestjs/core";
+import { AppInterceptor, HttpInterceptor } from "@corp-ais/eqxjs-stub";
 
 @Module({
   providers: [
@@ -134,11 +134,11 @@ export class AppModule {}
 ### Using Framework Services
 
 ```typescript
-import { Injectable } from '@nestjs/common';
+import { Injectable } from "@nestjs/common";
 import {
   FrameworkUtilService,
   GracefulShutdownService,
-} from '@corp-ais/eqxjs-stub';
+} from "@corp-ais/eqxjs-stub";
 
 @Injectable()
 export class MyService {
@@ -148,7 +148,7 @@ export class MyService {
   ) {
     // Register cleanup task
     this.gracefulShutdown.addCleanupTask(async () => {
-      console.log('Cleaning up resources...');
+      console.log("Cleaning up resources...");
       // Add your cleanup logic here
     });
   }
@@ -159,15 +159,17 @@ export class MyService {
   }
 }
 ```
-  ) {
-    // Register cleanup task
-    this.gracefulShutdown.addCleanupTask(async () => {
-      console.log("Cleaning up resources...");
-      // Add your cleanup logic here
-    });
-  }
+
+) {
+// Register cleanup task
+this.gracefulShutdown.addCleanupTask(async () => {
+console.log("Cleaning up resources...");
+// Add your cleanup logic here
+});
 }
-```
+}
+
+````
 
 ## Environment-Specific Configuration
 
@@ -181,7 +183,7 @@ config/
 ├── staging.config.yaml
 ├── production.config.yaml
 └── test.config.yaml
-```
+````
 
 ## Environment-Specific Configuration
 
@@ -200,19 +202,19 @@ config/
 ### Dynamic Zone Selection
 
 ```typescript
-import { Module } from '@nestjs/common';
-import { FrameworkModule } from '@corp-ais/eqxjs-stub';
+import { Module } from "@nestjs/common";
+import { FrameworkModule } from "@corp-ais/eqxjs-stub";
 
-const environment = process.env.NODE_ENV || 'development';
-const configPath = process.env.CONFIG_PATH || './config';
+const environment = process.env.NODE_ENV || "development";
+const configPath = process.env.CONFIG_PATH || "./config";
 
 @Module({
   imports: [
     FrameworkModule.register({
       configPath,
-      zone: environment
-    })
-  ]
+      zone: environment,
+    }),
+  ],
 })
 export class AppModule {}
 ```
@@ -223,7 +225,7 @@ export class AppModule {}
 
 ```yaml
 app:
-  component-name: "service-name"  # REQUIRED: Sets global.targetDomain
+  component-name: "service-name" # REQUIRED: Sets global.targetDomain
   name: "Application Name"
   version: "1.0.0"
 ```
@@ -232,7 +234,7 @@ app:
 
 ```yaml
 log:
-  level: "info"                    # debug, info, warn, error
+  level: "info" # debug, info, warn, error
   detail:
     level: "debug"
     enable-file-logging: true
@@ -246,7 +248,7 @@ security:
 
 database:
   type: "mongodb"
-  host: "localhost"  
+  host: "localhost"
   port: 27017
   name: "mydb"
 
@@ -267,7 +269,7 @@ Use environment variables for sensitive data:
 database:
   username: "${DB_USERNAME}"
   password: "${DB_PASSWORD}"
-  host: "${DB_HOST:localhost}"  # localhost as default
+  host: "${DB_HOST:localhost}" # localhost as default
 ```
 
 Set in your environment:
@@ -290,8 +292,8 @@ app:
   name: "Test Application"
 
 log:
-  level: "error"  # Minimize test output
-  
+  level: "error" # Minimize test output
+
 database:
   host: "localhost"
   port: 27017
@@ -303,14 +305,14 @@ database:
 **test/app.module.ts:**
 
 ```typescript
-import { Module } from '@nestjs/common';
-import { FrameworkModule } from '@corp-ais/eqxjs-stub';
+import { Module } from "@nestjs/common";
+import { FrameworkModule } from "@corp-ais/eqxjs-stub";
 
 @Module({
   imports: [
     FrameworkModule.register({
-      configPath: './config',
-      zone: 'test',
+      configPath: "./config",
+      zone: "test",
     }),
   ],
 })

@@ -12,6 +12,7 @@ Welcome to the comprehensive documentation for the EQXJS Framework Module. This 
 ### Core Documentation
 
 - **[Framework Module Documentation](FRAMEWORK_MODULE_DOCUMENTATION.md)** - Comprehensive technical documentation
+- **[Framework Components Reference](framework-components.md)** - Complete component catalog and usage guide
 - **[API Reference](API_REFERENCE.md)** - Complete API documentation and usage examples
 
 ### Training Materials
@@ -91,8 +92,9 @@ The framework integrates and re-exports the following EQXJS modules:
 ### For Developers
 
 1. Read [Framework Module Documentation](FRAMEWORK_MODULE_DOCUMENTATION.md)
-2. Reference [API Documentation](API_REFERENCE.md) for detailed usage
-3. Complete [Training Exercises](../TRAINING_EXERCISES.md)
+2. Explore [Framework Components Reference](framework-components.md) for component details
+3. Reference [API Documentation](API_REFERENCE.md) for detailed usage
+4. Complete [Training Exercises](../TRAINING_EXERCISES.md)
 
 ### For Architects
 
@@ -135,6 +137,10 @@ The framework integrates and re-exports the following EQXJS modules:
 - [Troubleshooting](FRAMEWORK_MODULE_DOCUMENTATION.md#troubleshooting)
 
 ### By Component Type
+
+#### Framework Overview
+
+- [Framework Components Reference](framework-components.md) - Complete component catalog and usage patterns
 
 #### Modules
 
