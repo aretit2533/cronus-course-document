@@ -333,10 +333,23 @@ After completing all courses, you will be able to:
 └── stub/                              # EQXJS Framework Course
     ├── README.md                      # EQXJS course home
     ├── QUICK_START.md                 # Quick start guide
+    ├── course-outline.md              # Detailed curriculum
+    ├── API_REFERENCE.md               # Complete API documentation
+    ├── FRAMEWORK_MODULE_DOCUMENTATION.md  # Technical documentation
+    ├── framework-components.md        # Component catalog
     ├── Module-01-EQXJS-Ecosystem-Foundation.md          # Module 1
     ├── Module-02-Advanced-Decorators-and-Interceptors.md # Module 2
     ├── Module-03-Health-Checks-and-Service-Management.md # Module 3
-    └── Module-04-Security-and-Exception-Handling.md      # Module 4
+    ├── Module-04-Security-and-Exception-Handling.md      # Module 4
+    ├── Module-05-Data-Processing-and-Pipes.md            # Module 5
+    ├── Module-06-Logging-and-Monitoring-Systems.md       # Module 6
+    ├── Module-07-Transport-and-HTTP-Integration.md       # Module 7
+    ├── Module-08-Configuration-Management-and-Commander.md # Module 8
+    ├── Module-09-Utilities-and-Framework-Constants.md    # Module 9
+    ├── Module-10-Advanced-Enterprise-Patterns.md         # Module 10
+    └── exercise/                      # EQXJS exercises
+        ├── README.md                  # Exercise index
+        └── module-*-exercises.md      # Module exercises
 ```
 
 ---
