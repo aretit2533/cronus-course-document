@@ -1,16 +1,17 @@
 # Learning Hub - Backend Technologies
 
-Welcome to the comprehensive learning hub for modern backend technologies! This repository contains complete courses on **NestJS** and **Apache Kafka**.
+Welcome to the comprehensive learning hub for modern backend technologies! This repository contains complete courses on **NestJS**, **Apache Kafka**, and the **EQXJS Template Message REST API**.
 
 ---
 
 ## 📚 Available Courses
 
-| Course                                          | Description                           | Modules    | Duration    | Status      |
-| ----------------------------------------------- | ------------------------------------- | ---------- | ----------- | ----------- |
-| **[NestJS](#-nestjs-fundamentals-course)**      | Progressive Node.js framework         | 8 modules  | 20-30 hours | ✅ Complete |
-| **[Apache Kafka](#-apache-kafka-course)**       | Distributed event streaming platform  | 9 modules  | 26 hours    | ✅ Complete |
-| **[EQXJS Framework](#-eqxjs-framework-course)** | Enterprise NestJS framework ecosystem | 10 modules | 30-40 hours | ✅ Complete |
+| Course                                                         | Description                           | Modules    | Duration    | Status      |
+| -------------------------------------------------------------- | ------------------------------------- | ---------- | ----------- | ----------- |
+| **[NestJS](#-nestjs-fundamentals-course)**                     | Progressive Node.js framework         | 8 modules  | 20-30 hours | ✅ Complete |
+| **[Apache Kafka](#-apache-kafka-course)**                      | Distributed event streaming platform  | 9 modules  | 26 hours    | ✅ Complete |
+| **[EQXJS Framework](#-eqxjs-framework-course)**                | Enterprise NestJS framework ecosystem | 10 modules | 30-40 hours | ✅ Complete |
+| **[EQXJS Template](#-eqxjs-template-message-rest-api-course)** | REST + Kafka domain service template  | 4 modules  | 6-8 hours   | ✅ Complete |
 
 ---
 
@@ -225,6 +226,43 @@ import { CustomServerKafka } from '@corp-ais/eqxjs-custom-kafka-server';
 
 ---
 
+## 🎯 EQXJS Template Message REST API Course
+
+> Build a NestJS domain service that handles REST APIs and Kafka events using EQXJS.
+
+### 📖 Quick Access
+
+**[📋 Complete Course](esb-dos-template-message-restapi/README.md)** | **[📚 Course Outline](esb-dos-template-message-restapi/course-outline.md)** | **[💡 All Exercises](esb-dos-template-message-restapi/exercise/README.md)**
+
+### Course Modules
+
+| Module       | Topic                         | Content                                                                   | Exercises                                                                     | Duration  |
+| ------------ | ----------------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | --------- |
+| **Module 1** | Introduction and Architecture | [View](esb-dos-template-message-restapi/module-01-introduction.md)        | [Exercises](esb-dos-template-message-restapi/exercise/module-01-exercises.md) | 1.5 hours |
+| **Module 2** | Setup and Configuration       | [View](esb-dos-template-message-restapi/module-02-setup-configuration.md) | [Exercises](esb-dos-template-message-restapi/exercise/module-02-exercises.md) | 2 hours   |
+| **Module 3** | REST API Flow                 | [View](esb-dos-template-message-restapi/module-03-rest-api-flow.md)       | [Exercises](esb-dos-template-message-restapi/exercise/module-03-exercises.md) | 1.5 hours |
+| **Module 4** | Kafka and Data Flow           | [View](esb-dos-template-message-restapi/module-04-kafka-data-flow.md)     | [Exercises](esb-dos-template-message-restapi/exercise/module-04-exercises.md) | 1.5 hours |
+
+### 📋 What You'll Learn
+
+- ✅ Environment configuration and runtime setup
+- ✅ REST controller and manager patterns
+- ✅ Kafka consumer and producer workflows
+- ✅ MongoDB repository patterns and logging
+
+### 🚀 Quick Start
+
+```bash
+npm install
+export ZONE=local
+export BROKERS=localhost:9092
+npm run start:local
+```
+
+**[👉 Start EQXJS Template Course](esb-dos-template-message-restapi/README.md)**
+
+---
+
 ## 🎓 Learning Paths
 
 ### Path 1: Backend Developer Track
@@ -289,15 +327,23 @@ Comprehensive understanding of modern backend architectures.
 - **Tools**: Kafka CLI, Schema Registry, Kafka UI
 - **Monitoring**: Prometheus, Grafana
 
+### EQXJS Template Course
+
+- **Runtime**: Node.js 18+
+- **Language**: TypeScript
+- **Framework**: NestJS 10.x, EQXJS Stub 2.4.0
+- **Messaging**: Kafka (CustomServerKafka)
+- **Database**: MongoDB
+
 ---
 
 ## 📊 Course Statistics
 
 ### Combined Learning
 
-- **Total Modules**: 33 modules (8 NestJS + 9 Kafka + 16 EQXJS)
-- **Total Duration**: 95-115 hours
-- **Exercises**: 180+ hands-on exercises
+- **Total Modules**: 37 modules (8 NestJS + 9 Kafka + 16 EQXJS + 4 EQXJS Template)
+- **Total Duration**: 101-123 hours
+- **Exercises**: 190+ hands-on exercises
 - **Projects**: 4+ complete applications
 - **Difficulty**: Beginner to Advanced
 
@@ -382,7 +428,7 @@ After completing all courses, you will be able to:
 │       ├── README.md                         # Exercise index
 │       └── module-*-exercises.md             # Module exercises
 │
-└── eqxjs-framework/                          # EQXJS Framework Courses
+├── eqxjs-framework/                          # EQXJS Framework Courses
     ├── README.md                             # EQXJS courses hub
     ├── stub/                                 # EQXJS Stub Framework
     │   ├── README.md                         # Stub course home
@@ -414,6 +460,17 @@ After completing all courses, you will be able to:
         └── exercise/                         # Kafka integration exercises
             ├── README.md                     # Exercise index
             └── module-*-exercises.md         # Module exercises
+
+    └── esb-dos-template-message-restapi/          # EQXJS Template Course
+    │   ├── README.md                              # Course home
+    │   ├── course-outline.md                      # Detailed curriculum
+    │   ├── module-01-introduction.md              # Module 1
+    │   ├── module-02-setup-configuration.md       # Module 2
+    │   ├── module-03-rest-api-flow.md             # Module 3
+    │   ├── module-04-kafka-data-flow.md           # Module 4
+    │   └── exercise/                              # Course exercises
+    │       ├── README.md                          # Exercise index
+    │       └── module-*-exercises.md              # Module exercises
 ```
 
 ---
@@ -559,6 +616,13 @@ Navigate to your course and begin with Module 1:
 - [ ] Module 8: Advanced Topics and Best Practices
 - [ ] Module 9: Practical Application - Building a Real-Time System
 
+### EQXJS Template Course Progress
+
+- [ ] Module 1: Introduction and Architecture
+- [ ] Module 2: Setup and Configuration
+- [ ] Module 3: REST API Flow
+- [ ] Module 4: Kafka and Data Flow
+
 ---
 
 ## 🎖️ Next Steps After Completion
@@ -618,6 +682,7 @@ This educational content is provided for learning purposes.
 - **[📘 NestJS Course →](nestjs/README.md)**
 - **[📙 EQXJS Framework Course →](eqxjs-framework/README.md)**
 - **[📕 Kafka Course →](kafka/README.md)**
+- **[📗 EQXJS Template Course →](esb-dos-template-message-restapi/README.md)**
 
 ### Course Outlines
 
@@ -625,12 +690,14 @@ This educational content is provided for learning purposes.
 - **[📋 EQXJS Outline →](eqxjs-framework/course-outline.md)**
 - **[⚡ EQXJS Quick Start →](eqxjs-framework/QUICK_START.md)**
 - **[📋 Kafka Outline →](kafka/course-outline.md)**
+- **[📋 EQXJS Template Outline →](esb-dos-template-message-restapi/course-outline.md)**
 
 ### Exercises
 
 - **[💡 NestJS Exercises →](nestjs/exercise/README.md)**
 - **[💡 EQXJS Exercises →](eqxjs-framework/exercise/README.md)**
 - **[💡 Kafka Exercises →](kafka/exercise/README.md)**
+- **[💡 EQXJS Template Exercises →](esb-dos-template-message-restapi/exercise/README.md)**
 
 ---
 
