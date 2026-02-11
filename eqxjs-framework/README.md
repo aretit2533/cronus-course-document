@@ -1,275 +1,64 @@
-# EQXJS Framework Developer Training Course
+# EQXJS Framework Course Materials
 
-## 🎓 Course Overview
+Welcome to the EQXJS Framework course documentation. This repository contains comprehensive course materials for learning enterprise-grade NestJS development.
 
-Welcome to the comprehensive EQXJS Framework Developer Training Course! This course is designed to transform developers into proficient users of the EQXJS ecosystem, covering everything from basic setup to advanced enterprise patterns.
+## 📚 Course Modules
 
-### What is EQXJS Framework?
+### 1. **EQXJS Stub Framework**
 
-EQXJS Framework is a comprehensive enterprise-grade NestJS framework stub that integrates multiple ecosystem modules, providing essential infrastructure components for building scalable, maintainable, and production-ready applications.
+A complete course on the EQXJS Framework stub - learn how to build scalable enterprise applications using the EQXJS framework.
 
-### 🎯 Who Should Take This Course?
+- **Location:** [stub/](stub/)
+- **Course Outline:** [stub/course-outline.md](stub/course-outline.md)
+- **Quick Start:** [stub/QUICK_START.md](stub/QUICK_START.md)
+- **Topics:** Introduction, setup, configuration, health monitoring, interceptors, context management, decorators, validation, graceful shutdown, and advanced patterns
+- **Modules:** 10 comprehensive modules with hands-on exercises
 
-- **Backend Developers** working with Node.js and NestJS
-- **Enterprise Developers** building scalable microservices
-- **DevOps Engineers** deploying Node.js applications
-- **Technical Leads** architecting enterprise solutions
-- **Full-Stack Developers** expanding backend expertise
+👉 [Start EQXJS Stub Framework Course](stub/course-outline.md)
 
-## 📚 Course Structure
+---
 
-This course consists of **10 comprehensive modules**, each building upon the previous ones:
+### 2. **Custom Kafka Server Integration**
 
-### 📖 [Course Outline](course-outline.md)
+Learn how to integrate and manage Kafka messaging with the EQXJS framework for enterprise event-driven architectures.
 
-View the complete course roadmap with detailed learning objectives.
+- **Location:** [custom-kafka-server/](custom-kafka-server/)
+- **Course Outline:** [custom-kafka-server/course-outline.md](custom-kafka-server/course-outline.md)
+- **Topics:** Introduction, setup, architecture, resilience, recovery, topic monitoring, memory management, and production best practices
+- **Modules:** 6 focused modules with practical exercises
 
-### 🗂️ Module Overview
+👉 [Start Kafka Integration Course](custom-kafka-server/course-outline.md)
 
-| Module                                            | Focus Area                | Duration | Difficulty   |
-| ------------------------------------------------- | ------------------------- | -------- | ------------ |
-| [Module 1](module-01-introduction.md)             | Framework Introduction    | 2 hours  | Beginner     |
-| [Module 2](module-02-getting-started.md)          | Setup & Configuration     | 2 hours  | Beginner     |
-| [Module 3](module-03-framework-configuration.md)  | Framework Configuration   | 3 hours  | Intermediate |
-| [Module 4](module-04-health-monitoring.md)        | Health & Monitoring       | 3 hours  | Intermediate |
-| [Module 5](module-05-interceptors-http.md)        | Interceptors & HTTP       | 4 hours  | Intermediate |
-| [Module 6](module-06-context-domain.md)           | Context & Domain Services | 4 hours  | Advanced     |
-| [Module 7](module-07-decorators-validation.md)    | Decorators & Validation   | 3 hours  | Intermediate |
-| [Module 8](module-08-shutdown-production.md)      | Production Best Practices | 4 hours  | Advanced     |
-| [Module 9](module-09-practical-implementation.md) | Practical Implementation  | 6 hours  | Advanced     |
-| [Module 10](module-10-advanced-patterns.md)       | Advanced Patterns         | 5 hours  | Expert       |
-
-**Total Duration: 36 hours**
-
-## 🗺️ Content Flow (Example Delivery Plan)
-
-Use this as a practical instructor + learner flow. It assumes a mix of lecture (concepts + walkthrough) and lab time (hands-on exercises).
-
-### Option A: 5-Day Bootcamp (Recommended)
-
-| Day   | Focus                  | Modules | Output                                                                   |
-| ----- | ---------------------- | ------- | ------------------------------------------------------------------------ |
-| Day 1 | Foundations            | 1–2     | Working starter app + config folder + baseline runbook                   |
-| Day 2 | Configuration + Health | 3–4     | Multi-zone YAML config + health endpoints + custom indicators            |
-| Day 3 | HTTP + Interceptors    | 5       | Standard response/error envelopes + legacy compatibility strategy        |
-| Day 4 | Context + Decorators   | 6–7     | Domain contexts + lifecycle hooks + validation/masking decorators        |
-| Day 5 | Production + Capstone  | 8–10    | Graceful shutdown + deployment checklist + advanced integration patterns |
-
-### Option B: 2-Day Intensive (Compressed)
-
-| Day   | Focus                         | Modules |
-| ----- | ----------------------------- | ------- |
-| Day 1 | Setup → Interceptors          | 1–5     |
-| Day 2 | Context → Production/Advanced | 6–10    |
-
-Tip: In the intensive version, treat Modules 9–10 as guided reading + a single capstone exercise.
-
-## 🚀 Quick Start
-
-See QUICK_START.md for a minimal working app setup.
-
-## 🎯 Learning Objectives
-
-By the end of this course, you will be able to:
-
-### 🔧 Technical Skills
-
-- ✅ Set up and configure EQXJS framework applications
-- ✅ Implement comprehensive health monitoring systems
-- ✅ Create custom interceptors for HTTP/REST APIs
-- ✅ Build domain-specific service contexts
-- ✅ Develop custom decorators and validation schemas
-- ✅ Implement graceful shutdown mechanisms
-- ✅ Deploy production-ready applications
-
-### 🏢 Enterprise Skills
-
-- ✅ Design scalable microservices architectures
-- ✅ Apply enterprise integration patterns
-- ✅ Implement security and validation best practices
-- ✅ Optimize applications for production environments
-- ✅ Troubleshoot and monitor enterprise applications
-
-## 🛠️ Prerequisites
-
-### Required Knowledge
-
-- **TypeScript/JavaScript**: Advanced proficiency
-- **NestJS Framework**: Solid understanding
-- **Node.js**: Experience with Node.js ecosystem
-- **RESTful APIs**: API design and implementation
-- **Database Concepts**: SQL/NoSQL database experience
-
-### Development Environment
-
-- Node.js 18+ installed
-- npm or yarn package manager
-- TypeScript 4.5+ global installation
-- Code editor (VS Code recommended)
-- Git version control
-- Docker (for exercises)
-
-### Recommended Experience
-
-- Enterprise application development
-- Microservices architecture
-- CI/CD pipeline experience
-- Cloud platform familiarity (AWS, Azure, GCP)
-
-## 📋 Course Materials
-
-### 📖 Documentation
-
-- Comprehensive module content
-- Code examples and snippets
-- Best practice guidelines
-- Troubleshooting guides
-
-### 💻 Hands-on Exercises
-
-Each module includes practical exercises:
-
-- Step-by-step implementations
-- Real-world scenarios
-- Code challenges
-- Project-based learning
-
-### 🎯 Exercise Categories
-
-- **Basic Exercises**: Fundamental concepts
-- **Intermediate Exercises**: Feature implementation
-- **Advanced Exercises**: Complex integrations
-- **Challenge Exercises**: Problem-solving scenarios
+---
 
 ## 🚀 Getting Started
 
-### Quick Start
+1. Choose a course:
+   - **New to EQXJS?** Start with the [Stub Framework Course](stub/course-outline.md)
+   - **Need Kafka integration?** Explore the [Kafka Server Course](custom-kafka-server/course-outline.md)
 
-1. **Clone the course repository**
+2. Read the course outline to understand the module structure
 
-   ```bash
-   git clone [course-repo-url]
-   cd eqxjs-framework-course
-   ```
+3. Work through each module's content and exercises
 
-2. **Install dependencies**
-
-   ```bash
-   npm install
-   ```
-
-3. **Verify setup**
-
-   ```bash
-   npm run verify-setup
-   ```
-
-4. **Start with Module 1**
-   - Read [Module 1: Introduction](module-01-introduction.md)
-   - Complete the exercises in [Exercise 1](exercise/module-01-exercises.md)
-
-### Recommended Learning Path
-
-1. **Linear Approach**: Complete modules 1-10 in order
-2. **Focused Learning**: Jump to specific modules based on needs
-3. **Project-Based**: Build a complete application while learning
-
-## 🎓 Assessment & Certification
-
-### Module Assessments
-
-- Practical exercises completion
-- Code review and best practices
-- Understanding of concepts demonstration
-
-### Final Project
-
-- Build a complete EQXJS-based application
-- Implement all major framework features
-- Deploy to production environment
-
-### Certification Requirements
-
-- ✅ Complete all 10 modules
-- ✅ Finish all practical exercises
-- ✅ Pass the final project assessment
-- ✅ Demonstrate practical knowledge
-
-## 🔧 Technical Stack Covered
-
-### Core Technologies
-
-- **Node.js** - Runtime environment
-- **TypeScript** - Programming language
-- **NestJS** - Base framework
-- **EQXJS Ecosystem** - Enterprise modules
-
-### EQXJS Modules
-
-- `@corp-ais/eqxjs-commander` - Configuration management
-- `@corp-ais/eqxjs-decorator` - Custom decorators
-- `@corp-ais/eqxjs-transporter-http` - HTTP transport
-- `@corp-ais/eqxjs-logger` - Logging framework
-- `@corp-ais/eqxjs-pipes` - Data transformation
-- `@corp-ais/eqxjs-utils` - Utility services
-- `@corp-ais/eqxjs-exception` - Exception handling
-- `@corp-ais/eqxjs-security` - Security utilities
-
-### Supporting Technologies
-
-- **Docker** - Containerization
-- **YAML** - Configuration files
-- **Jest** - Testing framework
-- **MongoDB** - Database integration
-- **Kafka** - Message queuing
-- **Joi** - Validation schemas
-
-## 📞 Support & Resources
-
-### Getting Help
-
-- **Course Discussion Forum**: Ask questions and share knowledge
-- **Office Hours**: Weekly live Q&A sessions
-- **Slack Community**: Real-time support and networking
-- **GitHub Issues**: Report problems and request features
-
-### Additional Resources
-
-- [Official EQXJS Documentation](../cronus-eqxjs-common-library-stub/docs/README.md)
-- [API Reference Guide](../cronus-eqxjs-common-library-stub/docs/API_REFERENCE.md)
-- [Framework Module Documentation](../cronus-eqxjs-common-library-stub/docs/FRAMEWORK_MODULE_DOCUMENTATION.md)
-- [Quick Start Guide](../cronus-eqxjs-common-library-stub/docs/QUICK_START.md)
-
-### Community
-
-- Join our developer community
-- Contribute to the framework
-- Share your projects and experiences
-- Network with other EQXJS developers
-
-## 📈 Course Updates
-
-This course is continuously updated to reflect:
-
-- Latest framework versions
-- New features and capabilities
-- Industry best practices
-- Community feedback
-
-### Version History
-
-- **v1.0.0**: Initial course release
-- **v1.1.0**: Added advanced patterns module
-- **v1.2.0**: Enhanced practical exercises
+4. Refer to each course's README for specific prerequisites and setup instructions
 
 ---
 
-## 🎉 Ready to Start?
+## 📋 Course Resources
 
-Begin your EQXJS Framework journey:
-
-👉 **[Start with Module 1: Introduction to EQXJS Framework](module-01-introduction.md)**
+- **EQXJS Stub Framework:** [stub/README.md](stub/README.md)
+- **Kafka Integration:** [custom-kafka-server/README.md](custom-kafka-server/README.md)
 
 ---
 
-_Happy learning! 🚀_
+## 💡 Tips
+
+- Each module contains theoretical content and practical exercises
+- Exercises are located in the `exercise/` subfolder of each course
+- Check the QUICK_START guides for rapid setup
+- Modules build upon each other, so follow them in order for best learning
+
+---
+
+Happy learning! 🎓

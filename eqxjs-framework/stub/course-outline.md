@@ -15,9 +15,9 @@
 | Module 5  | Interceptors & HTTP Handling                  | [View Content](module-05-interceptors-http.md)        | [Exercises](exercise/module-05-exercises.md) |
 | Module 6  | Context Management & Domain Services          | [View Content](module-06-context-domain.md)           | [Exercises](exercise/module-06-exercises.md) |
 | Module 7  | Decorators & Validation                       | [View Content](module-07-decorators-validation.md)    | [Exercises](exercise/module-07-exercises.md) |
-| Module 8  | Graceful Shutdown & Production Best Practices | [View Content](module-08-shutdown-production.md)      | [Exercises](exercise/module-08-exercises.md) |
-| Module 9  | Practical Implementation                      | [View Content](module-09-practical-implementation.md) | [Exercises](exercise/module-09-exercises.md) |
-| Module 10 | Advanced Patterns & Integration               | [View Content](module-10-advanced-patterns.md)        | [Exercises](exercise/module-10-exercises.md) |
+| Module 8  | Graceful Shutdown & Production Best Practices | [View Content](module-08-shutdown-production.md)      | Coming Soon                                  |
+| Module 9  | Practical Implementation                      | [View Content](module-09-practical-implementation.md) | Coming Soon                                  |
+| Module 10 | Advanced Patterns & Integration               | [View Content](module-10-advanced-patterns.md)        | Coming Soon                                  |
 
 ### 💡 [Complete Exercise Guide](exercise/README.md)
 
