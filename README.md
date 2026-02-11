@@ -138,18 +138,18 @@ kafka-console-consumer.sh \
 
 ### Course Modules
 
-| Module        | Topic                                                                                              | Content                                                          | Exercises                                         | Duration  |
-| ------------- | -------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------------------- | --------- |
-| **Module 1**  | [Introduction to EQXJS Framework](eqxjs-framework/module-01-introduction.md)                | [View](eqxjs-framework/module-01-introduction.md)                | [Exercises](eqxjs-framework/exercise/module-01-exercises.md) | 3-4 hours |
-| **Module 2**  | [Getting Started & Setup](eqxjs-framework/module-02-getting-started.md)                     | [View](eqxjs-framework/module-02-getting-started.md)             | [Exercises](eqxjs-framework/exercise/module-02-exercises.md) | 3-4 hours |
-| **Module 3**  | [Framework Module Configuration](eqxjs-framework/module-03-framework-configuration.md)     | [View](eqxjs-framework/module-03-framework-configuration.md)     | [Exercises](eqxjs-framework/exercise/module-03-exercises.md) | 3-4 hours |
-| **Module 4**  | [Health Checks & Monitoring](eqxjs-framework/module-04-health-monitoring.md)               | [View](eqxjs-framework/module-04-health-monitoring.md)           | [Exercises](eqxjs-framework/exercise/module-04-exercises.md) | 3-4 hours |
-| **Module 5**  | [Interceptors & HTTP Handling](eqxjs-framework/module-05-interceptors-http.md)             | [View](eqxjs-framework/module-05-interceptors-http.md)           | [Exercises](eqxjs-framework/exercise/module-05-exercises.md) | 3-4 hours |
-| **Module 6**  | [Context Management & Domain Services](eqxjs-framework/module-06-context-domain.md)        | [View](eqxjs-framework/module-06-context-domain.md)              | [Exercises](eqxjs-framework/exercise/module-06-exercises.md) | 3-4 hours |
-| **Module 7**  | [Decorators & Validation](eqxjs-framework/module-07-decorators-validation.md)              | [View](eqxjs-framework/module-07-decorators-validation.md)        | [Exercises](eqxjs-framework/exercise/module-07-exercises.md) | 3-4 hours |
-| **Module 8**  | [Graceful Shutdown & Production](eqxjs-framework/module-08-shutdown-production.md)         | [View](eqxjs-framework/module-08-shutdown-production.md)         | TBD | 3-4 hours |
-| **Module 9**  | [Practical Implementation](eqxjs-framework/module-09-practical-implementation.md)          | [View](eqxjs-framework/module-09-practical-implementation.md)    | TBD | 3-4 hours |
-| **Module 10** | [Advanced Patterns & Integration](eqxjs-framework/module-10-advanced-patterns.md)          | [View](eqxjs-framework/module-10-advanced-patterns.md)           | TBD | 3-4 hours |
+| Module        | Topic                                                                                  | Content                                                       | Exercises                                                    | Duration  |
+| ------------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------ | --------- |
+| **Module 1**  | [Introduction to EQXJS Framework](eqxjs-framework/module-01-introduction.md)           | [View](eqxjs-framework/module-01-introduction.md)             | [Exercises](eqxjs-framework/exercise/module-01-exercises.md) | 3-4 hours |
+| **Module 2**  | [Getting Started & Setup](eqxjs-framework/module-02-getting-started.md)                | [View](eqxjs-framework/module-02-getting-started.md)          | [Exercises](eqxjs-framework/exercise/module-02-exercises.md) | 3-4 hours |
+| **Module 3**  | [Framework Module Configuration](eqxjs-framework/module-03-framework-configuration.md) | [View](eqxjs-framework/module-03-framework-configuration.md)  | [Exercises](eqxjs-framework/exercise/module-03-exercises.md) | 3-4 hours |
+| **Module 4**  | [Health Checks & Monitoring](eqxjs-framework/module-04-health-monitoring.md)           | [View](eqxjs-framework/module-04-health-monitoring.md)        | [Exercises](eqxjs-framework/exercise/module-04-exercises.md) | 3-4 hours |
+| **Module 5**  | [Interceptors & HTTP Handling](eqxjs-framework/module-05-interceptors-http.md)         | [View](eqxjs-framework/module-05-interceptors-http.md)        | [Exercises](eqxjs-framework/exercise/module-05-exercises.md) | 3-4 hours |
+| **Module 6**  | [Context Management & Domain Services](eqxjs-framework/module-06-context-domain.md)    | [View](eqxjs-framework/module-06-context-domain.md)           | [Exercises](eqxjs-framework/exercise/module-06-exercises.md) | 3-4 hours |
+| **Module 7**  | [Decorators & Validation](eqxjs-framework/module-07-decorators-validation.md)          | [View](eqxjs-framework/module-07-decorators-validation.md)    | [Exercises](eqxjs-framework/exercise/module-07-exercises.md) | 3-4 hours |
+| **Module 8**  | [Graceful Shutdown & Production](eqxjs-framework/module-08-shutdown-production.md)     | [View](eqxjs-framework/module-08-shutdown-production.md)      | TBD                                                          | 3-4 hours |
+| **Module 9**  | [Practical Implementation](eqxjs-framework/module-09-practical-implementation.md)      | [View](eqxjs-framework/module-09-practical-implementation.md) | TBD                                                          | 3-4 hours |
+| **Module 10** | [Advanced Patterns & Integration](eqxjs-framework/module-10-advanced-patterns.md)      | [View](eqxjs-framework/module-10-advanced-patterns.md)        | TBD                                                          | 3-4 hours |
 
 ### 📋 What You'll Learn
 
