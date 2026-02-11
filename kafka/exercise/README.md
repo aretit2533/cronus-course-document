@@ -2,7 +2,7 @@
 
 Welcome to the hands-on exercises section! These exercises are designed to reinforce the concepts covered in each module and provide practical experience with Apache Kafka.
 
-## � Table of Contents
+## 📑 Table of Contents
 
 - [📚 Exercise Structure](#-exercise-structure)
 - [🎯 Learning Approach](#-learning-approach)
@@ -30,9 +30,10 @@ Welcome to the hands-on exercises section! These exercises are designed to reinf
 - [📁 Exercise Files Structure](#-exercise-files-structure)
 - [🚀 Next Steps](#-next-steps)
 
-## �📚 Exercise Structure
+## 📚 Exercise Structure
 
 Each exercise module includes:
+
 - **Guided exercises** with step-by-step instructions
 - **Challenge exercises** to test your understanding
 - **Solutions and discussion** for self-assessment
@@ -41,6 +42,7 @@ Each exercise module includes:
 ## 🎯 Learning Approach
 
 **Recommended workflow:**
+
 1. Complete the corresponding theory module first
 2. Work through exercises sequentially
 3. Attempt challenges before viewing solutions
@@ -50,9 +52,11 @@ Each exercise module includes:
 ## 📋 Exercise Modules
 
 ### [Module 1: Introduction to Apache Kafka](module-01-exercises.md)
+
 **Time:** 2-3 hours | **Difficulty:** Beginner
 
 **Topics covered:**
+
 - Understanding event streaming concepts
 - Kafka use cases analysis
 - Comparing Kafka with message brokers
@@ -60,6 +64,7 @@ Each exercise module includes:
 - Exploring Kafka ecosystem
 
 **Key exercises:**
+
 - Event streaming vs traditional messaging comparison
 - Real-world use case analysis
 - Event-driven architecture design
@@ -68,9 +73,11 @@ Each exercise module includes:
 ---
 
 ### [Module 2: Kafka Architecture and Core Concepts](module-02-exercises.md)
+
 **Time:** 3-4 hours | **Difficulty:** Beginner-Intermediate
 
 **Topics covered:**
+
 - Kafka cluster architecture
 - Partition assignment strategies
 - Offset management
@@ -79,6 +86,7 @@ Each exercise module includes:
 - Controller operations
 
 **Key exercises:**
+
 - Cluster architecture diagrams
 - Partition assignment simulation
 - Offset management strategies
@@ -88,9 +96,11 @@ Each exercise module includes:
 ---
 
 ### [Module 3: Setting Up Kafka](module-03-exercises.md)
+
 **Time:** 4-5 hours | **Difficulty:** Intermediate
 
 **Topics covered:**
+
 - Local installation
 - Docker Compose setup
 - CLI tools mastery
@@ -99,6 +109,7 @@ Each exercise module includes:
 - Performance benchmarking
 
 **Key exercises:**
+
 - 3-broker cluster setup
 - Topic management via CLI
 - Producer and consumer CLI practice
@@ -108,9 +119,11 @@ Each exercise module includes:
 ---
 
 ### [Module 4: Kafka Producers](module-04-exercises.md)
+
 **Time:** 6-7 hours | **Difficulty:** Intermediate
 
 **Topics covered:**
+
 - Basic producer implementation
 - Synchronous vs asynchronous sending
 - Custom serializers
@@ -120,6 +133,7 @@ Each exercise module includes:
 - Transaction support
 
 **Key exercises:**
+
 - Implement producers in TypeScript/Node.js
 - Create custom serializer and partitioner
 - Configure for throughput vs reliability
@@ -129,9 +143,11 @@ Each exercise module includes:
 ---
 
 ### [Module 5: Kafka Consumers](module-05-exercises.md)
+
 **Time:** 6-7 hours | **Difficulty:** Intermediate-Advanced
 
 **Topics covered:**
+
 - Basic consumer implementation
 - Consumer groups and load balancing
 - Offset management strategies
@@ -141,6 +157,7 @@ Each exercise module includes:
 - Exactly-once semantics
 
 **Key exercises:**
+
 - Consumer group behavior simulation
 - Implement 5 offset commit strategies
 - Rebalance listener implementation
@@ -150,9 +167,11 @@ Each exercise module includes:
 ---
 
 ### [Module 6: Topics, Partitions, and Data Management](module-06-exercises.md)
+
 **Time:** 5-6 hours | **Difficulty:** Intermediate
 
 **Topics covered:**
+
 - Topic design and planning
 - Partition count optimization
 - Retention configuration
@@ -162,6 +181,7 @@ Each exercise module includes:
 - Topic administration
 
 **Key exercises:**
+
 - Design topics for use cases
 - Calculate optimal partition count
 - Configure retention policies
@@ -172,9 +192,11 @@ Each exercise module includes:
 ---
 
 ### [Module 7: Kafka Connect and Kafka Streams](module-07-exercises.md)
+
 **Time:** 6-7 hours | **Difficulty:** Advanced
 
 **Topics covered:**
+
 - JDBC source connector
 - Elasticsearch sink connector
 - S3 sink with partitioning
@@ -184,6 +206,7 @@ Each exercise module includes:
 - State stores and interactive queries
 
 **Key exercises:**
+
 - Set up multiple connectors
 - Create custom transformation
 - Build word count application
@@ -194,9 +217,11 @@ Each exercise module includes:
 ---
 
 ### [Module 8: Advanced Topics and Best Practices](module-08-exercises.md)
+
 **Time:** 7-8 hours | **Difficulty:** Advanced
 
 **Topics covered:**
+
 - SSL/TLS security setup
 - SASL authentication
 - ACL management
@@ -207,6 +232,7 @@ Each exercise module includes:
 - Production readiness
 
 **Key exercises:**
+
 - Implement complete security setup
 - Tune for maximum performance
 - Set up comprehensive monitoring
@@ -217,11 +243,13 @@ Each exercise module includes:
 ---
 
 ### [Module 9: Practical Application Project](module-09-exercises.md)
+
 **Time:** 12-16 hours | **Difficulty:** Advanced
 
 **Capstone project: Real-Time E-Commerce Analytics Platform**
 
 **Build a complete system including:**
+
 - Event producer services (REST API, Order Service, Inventory)
 - Stream processing (Enrichment, Analytics, Fraud Detection)
 - Consumer services (Notifications, Recommendations)
@@ -230,6 +258,7 @@ Each exercise module includes:
 - Testing and deployment
 
 **Project phases:**
+
 1. Architecture design
 2. Infrastructure setup
 3. Producer services implementation
@@ -245,6 +274,7 @@ Each exercise module includes:
 ## 🛠️ Prerequisites
 
 ### Required Software
+
 - **Node.js:** Version 16 or higher
 - **npm/yarn:** Package manager
 - **TypeScript:** ^4.9 or higher
@@ -254,12 +284,14 @@ Each exercise module includes:
 - **Terminal:** Bash, Zsh, or PowerShell
 
 ### Optional Software
+
 - **Python:** 3.8+ (for Python examples)
 - **Node.js:** 16+ (for Node.js examples)
 - **kubectl:** For Kubernetes exercises
 - **npm/yarn:** For TypeScript projects
 
 ### System Requirements
+
 - **RAM:** Minimum 8 GB, recommended 16 GB
 - **Disk:** Minimum 20 GB free space
 - **CPU:** Multi-core processor (4+ cores recommended)
@@ -268,6 +300,7 @@ Each exercise module includes:
 ## 📖 How to Use These Exercises
 
 ### For Beginners
+
 1. Start with Module 1 and progress sequentially
 2. Don't skip exercises - hands-on practice is essential
 3. Use provided solutions as learning aids
@@ -275,6 +308,7 @@ Each exercise module includes:
 5. Build confidence with each module
 
 ### For Intermediate Users
+
 1. Review modules where you need reinforcement
 2. Focus on challenge exercises
 3. Experiment with variations
@@ -282,6 +316,7 @@ Each exercise module includes:
 5. Build portfolio projects
 
 ### For Advanced Users
+
 1. Jump to advanced modules (6-9)
 2. Complete challenge exercises first
 3. Extend exercises with additional features
@@ -291,6 +326,7 @@ Each exercise module includes:
 ## 🎓 Learning Tips
 
 **Maximize your learning:**
+
 - ✅ **Hands-on practice:** Type code yourself, don't copy-paste
 - ✅ **Break things:** Learn by causing and fixing errors
 - ✅ **Read logs:** Understanding errors makes you better
@@ -300,6 +336,7 @@ Each exercise module includes:
 - ✅ **Teach others:** Best way to solidify understanding
 
 **Common pitfalls to avoid:**
+
 - ❌ Skipping theory modules
 - ❌ Rushing through exercises
 - ❌ Not testing failure scenarios
@@ -310,6 +347,7 @@ Each exercise module includes:
 ## 🤝 Getting Help
 
 **Resources:**
+
 - **Kafka Documentation:** https://kafka.apache.org/documentation/
 - **Confluent Docs:** https://docs.confluent.io/
 - **Stack Overflow:** Tag `apache-kafka`
@@ -317,6 +355,7 @@ Each exercise module includes:
 - **Community Slack:** https://kafka-users.slack.com
 
 **Troubleshooting:**
+
 1. Check broker logs: `docker logs kafka-1`
 2. Verify topic configuration: `kafka-topics.sh --describe`
 3. Check consumer group status: `kafka-consumer-groups.sh --describe`
@@ -372,6 +411,7 @@ exercise/
 **[Begin with Module 1 Exercises →](module-01-exercises.md)**
 
 **Or jump to a specific module:**
+
 - [Module 2: Architecture](module-02-exercises.md)
 - [Module 3: Setup](module-03-exercises.md)
 - [Module 4: Producers](module-04-exercises.md)
