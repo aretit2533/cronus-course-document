@@ -49,16 +49,19 @@ Configuration:
 ```mermaid
 %%{init: {'theme': 'forest'}}%%
 flowchart TD
-  A["registeredPatterns<br/>(messageHandlers keys)"] --> B{"MONITOR_TOPICS=false?"}
+  A["registeredPatterns<br>(messageHandlers keys)"] --> B{"MONITOR_TOPICS=false?"}
   B -->|Yes| C["Use registeredPatterns"]
   B -->|No| D["admin.listTopics()"]
   D --> E["Filter missing topics"]
   E --> F["currTopics"]
-  F --> G["Subscribe + Run"]
-  G --> H["Monitor loop"]
-  H --> I{"Added/removed topics?"}
-  I -->|Yes| J["Emit consumer.recreate"]
-  I -->|No| H
+  C --> G["Subscribe + Run"]
+  F --> G
+  G --> H{"Monitoring enabled?"}
+  H -->|No| End[Ready]
+  H -->|Yes| I["Monitor loop"]
+  I --> J{"Added/removed topics?"}
+  J -->|Yes| K["Emit consumer.recreate"]
+  J -->|No| I
 ```
 
 ---

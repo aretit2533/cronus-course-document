@@ -96,14 +96,14 @@ bootstrap();
 ```mermaid
 %%{init: {'theme': 'forest'}}%%
 flowchart TD
-  A[Nest microservice\n(strategy)] --> B[CustomServerKafka]
+  A[Nest microservice<br>strategy] --> B[CustomServerKafka]
   B --> C[KafkaJS Client]
-  B --> D[Admin (list topics)]
-  B --> E[Consumer\n(auto-recreate)]
-  B --> F[Producer\n(optional separate client)]
-  E --> G[Message handlers\n(@MessagePattern)]
-  E --> H[Monitor topics\n(optional)]
-  E --> I[Heap guard\n(pause/resume)]
+  B --> D[Admin list topics]
+  B --> E[Consumer<br>auto-recreate]
+  B --> F[Producer<br>optional separate client]
+  E --> G[Message handlers<br>@MessagePattern]
+  E --> H[Monitor topics<br>optional]
+  E --> I[Heap guard<br>pause/resume]
 ```
 
 ---
