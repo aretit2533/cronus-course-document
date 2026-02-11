@@ -15,7 +15,7 @@ By the end of this module, you will understand:
 ```mermaid
 %%{init: {'theme': 'forest'}}%%
 flowchart TB
-  App[Your Service (NestJS App)] --> Stub["@corp-ais/eqxjs-stub<br/>(FrameworkModule)"]
+  App["Your Service (NestJS App)"] --> Stub["@corp-ais/eqxjs-stub<br/>(FrameworkModule)"]
   Stub --> Commander["@corp-ais/eqxjs-commander<br/>(config + commands)"]
   Stub --> Decorator["@corp-ais/eqxjs-decorator<br/>(metadata + decorators)"]
   Stub --> Http["@corp-ais/eqxjs-transporter-http<br/>HTTP client/transport"]

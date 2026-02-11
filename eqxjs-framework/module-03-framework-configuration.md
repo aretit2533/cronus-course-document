@@ -16,9 +16,9 @@ By the end of this module, you will understand:
 ```mermaid
 %%{init: {'theme': 'forest'}}%%
 flowchart TD
-  A[AppModule] --> B[FrameworkModule.register({ configPath, zone })]
+  A[AppModule] --> B["FrameworkModule.register({ configPath, zone })"]
   B --> C["Load YAML<br/>{configPath}/{zone}.config.yaml"]
-  C --> D[Validate configuration\n(optional schema)]
+  C --> D["Validate configuration<br/>(optional schema)"]
   D --> E["Set global.targetDomain<br/>(derived from config)"]
   E --> F["Register ecosystem modules<br/>(DomainConfig/HttpClient/Logger/Util/Security)"]
   F --> G["Export shared services<br/>+ GracefulShutdownService"]

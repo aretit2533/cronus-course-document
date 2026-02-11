@@ -16,15 +16,15 @@ By the end of this module, you will understand:
 ```mermaid
 %%{init: {'theme': 'forest'}}%%
 flowchart TD
-  A[App Bootstrap] --> B[Create DomainServiceContext(domain)]
-  B --> C["Register services<br/>(ServiceRegistry)"]
+  A[App Bootstrap] --> B[Create DomainServiceContext domain]
+  B --> C["Register services<br/>ServiceRegistry"]
   C --> D[Run onBootstrap hooks]
   D --> E[Publish DomainReadyEvent]
   E --> F["Run domain operations<br/>+ cross-domain messages"]
   F --> G[Shutdown signal]
   G --> H[Publish DomainShutdownEvent]
   H --> I[Run onShutdown hooks]
-  I --> J["Dispose resources<br/>(DB/clients/timers)"]
+  I --> J["Dispose resources<br/>DB/clients/timers"]
 ```
 
 ---

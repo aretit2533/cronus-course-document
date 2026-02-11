@@ -17,7 +17,7 @@ By the end of this module, you will be able to:
 %%{init: {'theme': 'forest'}}%%
 flowchart TD
   A[nest new my-eqxjs-app] --> B["Install @corp-ais/eqxjs-stub<br/>+ NestJS peer deps"]
-  B --> C[Create config/{zone}.config.yaml]
+  B --> C["Create config/{zone}.config.yaml"]
   C --> D["AppModule imports<br/>FrameworkModule.register({ configPath, zone })"]
   D --> E["main.ts: create app<br/>+ enableShutdownHooks + listen"]
   E --> F["Verify endpoints<br/>/health, /ready, /live"]
