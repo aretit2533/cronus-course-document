@@ -1,6 +1,6 @@
 # Learning Hub - Backend Technologies
 
-Welcome to the comprehensive learning hub for modern backend technologies! This repository contains complete courses on **NestJS**, **Apache Kafka**, and the **EQXJS Template Message REST API**.
+Welcome to the comprehensive learning hub for modern backend technologies! This repository contains complete courses on **NestJS**, **Apache Kafka**, **EQXJS Framework**, and the **EQXJS Template**.
 
 ---
 
@@ -10,8 +10,8 @@ Welcome to the comprehensive learning hub for modern backend technologies! This 
 | ----------------------------------------------- | ------------------------------------- | ---------- | ----------- | ----------- |
 | **[NestJS](#-nestjs-fundamentals-course)**      | Progressive Node.js framework         | 8 modules  | 20-30 hours | ✅ Complete |
 | **[Apache Kafka](#-apache-kafka-course)**       | Distributed event streaming platform  | 9 modules  | 26 hours    | ✅ Complete |
-| **[EQXJS Framework](#-eqxjs-framework-course)** | Enterprise NestJS framework ecosystem | 16 modules | 30-40 hours | ✅ Complete |
-| **[EQXJS Template](#-eqxjs-template-course)**   | REST + Kafka domain service template  | 8 modules  | 12-16 hours | ✅ Complete |
+| **[EQXJS Framework](#-eqxjs-framework-course)** | Enterprise NestJS framework ecosystem | 16 modules | 36-48 hours | ✅ Complete |
+| **[EQXJS Template](#-eqxjs-template-course)**   | REST + Kafka domain service template  | 8 modules  | 23 hours    | ✅ Complete |
 
 ---
 
@@ -236,23 +236,28 @@ import { CustomServerKafka } from '@corp-ais/eqxjs-custom-kafka-server';
 
 ### Course Modules
 
-| Module       | Topic                         | Content                                                    | Exercises                                                   | Duration  |
-| ------------ | ----------------------------- | ---------------------------------------------------------- | ----------------------------------------------------------- | --------- |
-| **Module 1** | Introduction and Architecture | [View](eqxjs-template/module-01-introduction.md)           | [Exercises](eqxjs-template/exercise/module-01-exercises.md) | 1.5 hours |
-| **Module 2** | Getting Started               | [View](eqxjs-template/module-02-getting-started.md)        | [Exercises](eqxjs-template/exercise/module-02-exercises.md) | 2 hours   |
-| **Module 3** | Architecture Overview         | [View](eqxjs-template/module-03-architecture.md)           | [Exercises](eqxjs-template/exercise/module-03-exercises.md) | 1.5 hours |
-| **Module 4** | Controllers and Managers      | [View](eqxjs-template/module-04-controllers-managers.md)   | [Exercises](eqxjs-template/exercise/module-04-exercises.md) | 1.5 hours |
-| **Module 5** | Services and Repositories     | [View](eqxjs-template/module-05-services-repositories.md)  | [Exercises](eqxjs-template/exercise/module-05-exercises.md) | 2 hours   |
-| **Module 6** | Kafka Events and Integration  | [View](eqxjs-template/module-06-kafka-events.md)           | [Exercises](eqxjs-template/exercise/module-06-exercises.md) | 2 hours   |
-| **Module 7** | External Integrations         | [View](eqxjs-template/module-07-integrations.md)           | [Exercises](eqxjs-template/exercise/module-07-exercises.md) | 1.5 hours |
-| **Module 8** | Testing and Best Practices    | [View](eqxjs-template/module-08-testing-best-practices.md) | [Exercises](eqxjs-template/exercise/module-08-exercises.md) | 2 hours   |
+| Module       | Topic                         | Content                                                    | Exercises                                                   | Duration |
+| ------------ | ----------------------------- | ---------------------------------------------------------- | ----------------------------------------------------------- | -------- |
+| **Module 1** | Introduction and Architecture | [View](eqxjs-template/module-01-introduction.md)           | [Exercises](eqxjs-template/exercise/README.md) | 2 hours  |
+| **Module 2** | Getting Started               | [View](eqxjs-template/module-02-getting-started.md)        | [Exercises](eqxjs-template/exercise/README.md) | 2 hours  |
+| **Module 3** | Architecture Overview         | [View](eqxjs-template/module-03-architecture.md)           | [Exercises](eqxjs-template/exercise/README.md) | 3 hours  |
+| **Module 4** | Controllers and Managers      | [View](eqxjs-template/module-04-controllers-managers.md)   | [Exercises](eqxjs-template/exercise/README.md) | 3 hours  |
+| **Module 5** | Services and Repositories     | [View](eqxjs-template/module-05-services-repositories.md)  | [Exercises](eqxjs-template/exercise/README.md) | 3 hours  |
+| **Module 6** | Kafka Events and Integration  | [View](eqxjs-template/module-06-kafka-events.md)           | [Exercises](eqxjs-template/exercise/README.md) | 4 hours  |
+| **Module 7** | External Integrations         | [View](eqxjs-template/module-07-integrations.md)           | [Exercises](eqxjs-template/exercise/README.md) | 3 hours  |
+| **Module 8** | Testing and Best Practices    | [View](eqxjs-template/module-08-testing-best-practices.md) | [Exercises](eqxjs-template/exercise/README.md) | 3 hours  |
 
 ### 📋 What You'll Learn
 
-- ✅ Environment configuration and runtime setup
-- ✅ REST controller and manager patterns
-- ✅ Kafka consumer and producer workflows
-- ✅ MongoDB repository patterns and logging
+- ✅ Enterprise microservices architecture patterns
+- ✅ Event-driven development with Apache Kafka
+- ✅ EQXJS framework library usage and best practices
+- ✅ MongoDB integration and database patterns
+- ✅ REST API and event consumer/producer implementation
+- ✅ Layered architecture (Controllers, Managers, Services, Repositories)
+- ✅ Testing strategies for microservices (Unit & Integration)
+- ✅ Production deployment and monitoring
+- ✅ Code quality and best practices
 
 ### 🚀 Quick Start
 
@@ -346,8 +351,8 @@ Comprehensive understanding of modern backend architectures.
 ### Combined Learning
 
 - **Total Modules**: 41 modules (8 NestJS + 9 Kafka + 16 EQXJS + 8 EQXJS Template)
-- **Total Duration**: 112-131 hours
-- **Exercises**: 190+ hands-on exercises
+- **Total Duration**: 105-127 hours
+- **Exercises**: 200+ hands-on exercises
 - **Projects**: 4+ complete applications
 - **Difficulty**: Beginner to Advanced
 
@@ -601,18 +606,27 @@ Navigate to your course and begin with Module 1:
 - [ ] Module 7: Additional Fundamentals
 - [ ] Module 8: Practical Application
 
-### EQXJS Framework Course Progress
+### EQXJS Framework Stub Course Progress
 
-- [ ] Module 1: EQXJS Ecosystem Foundation
-- [ ] Module 2: Advanced Decorators and Interceptors
-- [ ] Module 3: Health Checks and Service Management
-- [ ] Module 4: Security and Exception Handling
-- [ ] Module 5: Data Processing and Pipes
-- [ ] Module 6: Logging and Monitoring Systems
-- [ ] Module 7: Transport and HTTP Integration
-- [ ] Module 8: Configuration Management and Commander
-- [ ] Module 9: Utilities and Framework Constants
-- [ ] Module 10: Advanced Enterprise Patterns
+- [ ] Module 1: Introduction to EQXJS Framework
+- [ ] Module 2: Getting Started & Setup
+- [ ] Module 3: Framework Module Configuration
+- [ ] Module 4: Health Checks & Monitoring
+- [ ] Module 5: Interceptors & HTTP Handling
+- [ ] Module 6: Context Management & Domain Services
+- [ ] Module 7: Decorators & Validation
+- [ ] Module 8: Graceful Shutdown & Production Best Practices
+- [ ] Module 9: Practical Implementation
+- [ ] Module 10: Advanced Patterns & Integration
+
+### Custom Kafka Server Course Progress
+
+- [ ] Module 1: Introduction & Features
+- [ ] Module 2: Setup & NestJS Integration
+- [ ] Module 3: CustomServerKafka Architecture
+- [ ] Module 4: Resilience & Recovery
+- [ ] Module 5: Topic Monitoring & Subscription
+- [ ] Module 6: Memory Management & Production Best Practices
 
 ### Kafka Course Progress
 
@@ -628,10 +642,14 @@ Navigate to your course and begin with Module 1:
 
 ### EQXJS Template Course Progress
 
-- [ ] Module 1: Introduction and Architecture
-- [ ] Module 2: Setup and Configuration
-- [ ] Module 3: REST API Flow
-- [ ] Module 4: Kafka and Data Flow
+- [ ] Module 1: Introduction to EQXJS Framework
+- [ ] Module 2: Getting Started with EQXJS Template
+- [ ] Module 3: Template Architecture Deep Dive
+- [ ] Module 4: Controllers and Managers
+- [ ] Module 5: Services and Repositories
+- [ ] Module 6: Event-Driven Architecture with Kafka
+- [ ] Module 7: External Services & Database Integration
+- [ ] Module 8: Testing and Best Practices
 
 ---
 
