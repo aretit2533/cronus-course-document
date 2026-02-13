@@ -8,13 +8,13 @@ Welcome to the EQXJS Framework course documentation. This repository contains co
 
 A complete course on the EQXJS Framework stub - learn how to build scalable enterprise applications using the EQXJS framework.
 
-- **Location:** [stub/](stub/)
-- **Course Outline:** [stub/course-outline.md](stub/course-outline.md)
-- **Quick Start:** [stub/QUICK_START.md](stub/QUICK_START.md)
+- **Location:** [01-stub/](01-stub/)
+- **Course Outline:** [01-stub/course-outline.md](01-stub/course-outline.md)
+- **Quick Start:** [01-stub/QUICK_START.md](01-stub/QUICK_START.md)
 - **Topics:** Introduction, setup, configuration, health monitoring, interceptors, context management, decorators, validation, graceful shutdown, and advanced patterns
 - **Modules:** 10 comprehensive modules with hands-on exercises
 
-👉 [Start EQXJS Stub Framework Course](stub/course-outline.md)
+👉 [Start EQXJS Stub Framework Course](01-stub/course-outline.md)
 
 ---
 
@@ -22,20 +22,20 @@ A complete course on the EQXJS Framework stub - learn how to build scalable ente
 
 Learn how to integrate and manage Kafka messaging with the EQXJS framework for enterprise event-driven architectures.
 
-- **Location:** [custom-kafka-server/](custom-kafka-server/)
-- **Course Outline:** [custom-kafka-server/course-outline.md](custom-kafka-server/course-outline.md)
+- **Location:** [02-custom-kafka-server/](02-custom-kafka-server/)
+- **Course Outline:** [02-custom-kafka-server/course-outline.md](02-custom-kafka-server/course-outline.md)
 - **Topics:** Introduction, setup, architecture, resilience, recovery, topic monitoring, memory management, and production best practices
 - **Modules:** 6 focused modules with practical exercises
 
-👉 [Start Kafka Integration Course](custom-kafka-server/course-outline.md)
+👉 [Start Kafka Integration Course](02-custom-kafka-server/course-outline.md)
 
 ---
 
 ## 🚀 Getting Started
 
 1. Choose a course:
-   - **New to EQXJS?** Start with the [Stub Framework Course](stub/course-outline.md)
-   - **Need Kafka integration?** Explore the [Kafka Server Course](custom-kafka-server/course-outline.md)
+   - **New to EQXJS?** Start with the [Stub Framework Course](01-stub/course-outline.md)
+   - **Need Kafka integration?** Explore the [Kafka Server Course](02-custom-kafka-server/course-outline.md)
 
 2. Read the course outline to understand the module structure
 
@@ -47,8 +47,8 @@ Learn how to integrate and manage Kafka messaging with the EQXJS framework for e
 
 ## 📋 Course Resources
 
-- **EQXJS Stub Framework:** [stub/README.md](stub/README.md)
-- **Kafka Integration:** [custom-kafka-server/README.md](custom-kafka-server/README.md)
+- **EQXJS Stub Framework:** [01-stub/README.md](01-stub/README.md)
+- **Kafka Integration:** [02-custom-kafka-server/README.md](02-custom-kafka-server/README.md)
 
 ---
 

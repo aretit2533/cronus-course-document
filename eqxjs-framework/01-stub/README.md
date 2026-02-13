@@ -20,24 +20,26 @@ EQXJS Framework is a comprehensive enterprise-grade NestJS framework stub that i
 
 This course consists of **10 comprehensive modules**, each building upon the previous ones:
 
-### 📖 [Course Outline](course-outline.md)
+### 📖 Quick Access
 
-View the complete course roadmap with detailed learning objectives.
+- **Location:** [01-stub/](./)
+- **Course Outline:** [course-outline.md](course-outline.md)
+- **Hands-On Exercises:** [exercise/README.md](exercise/README.md)
 
-### 🗂️ Module Overview
+### 🗂️ Course Modules
 
-| Module                                            | Focus Area                | Duration | Difficulty   |
-| ------------------------------------------------- | ------------------------- | -------- | ------------ |
-| [Module 1](module-01-introduction.md)             | Framework Introduction    | 2 hours  | Beginner     |
-| [Module 2](module-02-getting-started.md)          | Setup & Configuration     | 2 hours  | Beginner     |
-| [Module 3](module-03-framework-configuration.md)  | Framework Configuration   | 3 hours  | Intermediate |
-| [Module 4](module-04-health-monitoring.md)        | Health & Monitoring       | 3 hours  | Intermediate |
-| [Module 5](module-05-interceptors-http.md)        | Interceptors & HTTP       | 4 hours  | Intermediate |
-| [Module 6](module-06-context-domain.md)           | Context & Domain Services | 4 hours  | Advanced     |
-| [Module 7](module-07-decorators-validation.md)    | Decorators & Validation   | 3 hours  | Intermediate |
-| [Module 8](module-08-shutdown-production.md)      | Production Best Practices | 4 hours  | Advanced     |
-| [Module 9](module-09-practical-implementation.md) | Practical Implementation  | 6 hours  | Advanced     |
-| [Module 10](module-10-advanced-patterns.md)       | Advanced Patterns         | 5 hours  | Expert       |
+| Module       | Topic                                                            | Exercises                                    | Duration |
+| ------------ | ---------------------------------------------------------------- | -------------------------------------------- | -------- |
+| **Module 1** | [Framework Introduction](module-01-introduction.md)             | [Exercises](exercise/module-01-exercises.md) | 2 hours  |
+| **Module 2** | [Setup & Configuration](module-02-getting-started.md)           | [Exercises](exercise/module-02-exercises.md) | 2 hours  |
+| **Module 3** | [Framework Configuration](module-03-framework-configuration.md) | [Exercises](exercise/module-03-exercises.md) | 3 hours  |
+| **Module 4** | [Health & Monitoring](module-04-health-monitoring.md)           | [Exercises](exercise/module-04-exercises.md) | 3 hours  |
+| **Module 5** | [Interceptors & HTTP](module-05-interceptors-http.md)           | [Exercises](exercise/module-05-exercises.md) | 4 hours  |
+| **Module 6** | [Context & Domain Services](module-06-context-domain.md)        | [Exercises](exercise/module-06-exercises.md) | 4 hours  |
+| **Module 7** | [Decorators & Validation](module-07-decorators-validation.md)   | [Exercises](exercise/module-07-exercises.md) | 3 hours  |
+| **Module 8** | [Production Best Practices](module-08-shutdown-production.md)   | [Exercises](exercise/module-08-exercises.md) | 4 hours  |
+| **Module 9** | [Practical Implementation](module-09-practical-implementation.md) | [Exercises](exercise/module-09-exercises.md) | 6 hours  |
+| **Module 10** | [Advanced Patterns](module-10-advanced-patterns.md)            | [Exercises](exercise/module-10-exercises.md) | 5 hours  |
 
 **Total Duration: 36 hours**
 
