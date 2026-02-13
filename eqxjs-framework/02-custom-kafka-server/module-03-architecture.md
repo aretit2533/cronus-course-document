@@ -56,17 +56,19 @@ This is later used by the heap guardrail to pause/resume partitions.
 
 ```mermaid
 flowchart TD
-  L[listen()] --> C1[createClient()<br/>(consumer client)]
-  L --> C2[createProducerClient()]
-  L --> S[start()]
-  S --> A[admin.connect()]
-  S --> P[producer.connect()]
-  S --> C[consumer.connect()]
-  S --> B[bindEvents()]
-  B --> T[retrieveTopics()]
-  T --> Sub[subscribe(topics)]
-  Sub --> Run[consumer.run(eachMessage)]
-  Run --> Done[Ready]
+    L["listen()"] --> C1["createClient() - consumer client"]
+    L --> C2["createProducerClient()"]
+    L --> S["start()"]
+
+    S --> A["admin.connect()"]
+    S --> P["producer.connect()"]
+    S --> C["consumer.connect()"]
+    S --> B["bindEvents()"]
+
+    B --> T["retrieveTopics()"]
+    T --> Sub["subscribe topics"]
+    Sub --> Run["consumer.run(eachMessage)"]
+    Run --> Done["Ready"]
 ```
 
 ---
