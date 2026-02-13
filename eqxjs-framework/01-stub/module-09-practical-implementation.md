@@ -14,7 +14,6 @@ By the end of this module, you will understand:
 ## 🧭 Visual Flow (Mermaid)
 
 ```mermaid
-%%{init: {'theme': 'forest'}}%%
 flowchart LR
   Code["Implement features<br/>(modules/controllers/services)"] --> Unit[Unit tests]
   Unit --> IT[Integration/E2E tests]

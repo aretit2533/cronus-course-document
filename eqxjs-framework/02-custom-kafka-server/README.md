@@ -94,7 +94,6 @@ bootstrap();
 ## 🧭 Visual Flow (Mermaid)
 
 ```mermaid
-%%{init: {'theme': 'forest'}}%%
 flowchart TD
   A[Nest microservice<br>strategy] --> B[CustomServerKafka]
   B --> C[KafkaJS Client]

@@ -14,7 +14,21 @@ By the end of this module, you will understand:
 ## 🧭 Visual Flow (Mermaid)
 
 ```mermaid
-%%{init: {'theme': 'forest'}}%%
+---
+config:
+  theme: dark
+  themeVariables:
+    lineColor: '#7c7a9c'
+    arrowheadColor: '#7c7a9c'
+    primaryTextColor: '#2f2d3a'
+    primaryColor: '#f7e9f3'
+    secondaryColor: '#e8f2fb'
+    tertiaryColor: '#f7f4e8'
+    background: '#ffffff'
+    clusterBkg: '#f0f7ff'
+    clusterBorder: '#c9d7f2'
+  look: classic
+---
 sequenceDiagram
   autonumber
   participant C as Client

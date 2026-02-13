@@ -14,7 +14,6 @@ By the end of this module, you will be able to:
 ## 🧭 Visual Flow (Mermaid)
 
 ```mermaid
-%%{init: {'theme': 'forest'}}%%
 flowchart TD
   A[nest new my-eqxjs-app] --> B["Install @corp-ais/eqxjs-stub<br/>+ NestJS peer deps"]
   B --> C["Create config/{zone}.config.yaml"]

@@ -47,7 +47,6 @@ Configuration:
 ## 🧭 Visual Flow (Mermaid)
 
 ```mermaid
-%%{init: {'theme': 'forest'}}%%
 flowchart TD
   A["registeredPatterns<br>(messageHandlers keys)"] --> B{"MONITOR_TOPICS=false?"}
   B -->|Yes| C["Use registeredPatterns"]

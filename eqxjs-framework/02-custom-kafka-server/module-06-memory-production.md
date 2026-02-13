@@ -47,7 +47,6 @@ This helps prevent pausing unrelated partitions.
 ## 🧭 Visual Flow (Mermaid)
 
 ```mermaid
-%%{init: {'theme': 'forest'}}%%
 flowchart TD
   M[handleMessage payload] --> E{Heap check enabled?}
   E -- No --> H[super.handleMessage]

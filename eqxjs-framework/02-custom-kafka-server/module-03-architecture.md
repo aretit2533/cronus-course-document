@@ -55,9 +55,8 @@ This is later used by the heap guardrail to pause/resume partitions.
 ## 🧭 Visual Flow (Mermaid)
 
 ```mermaid
-%%{init: {'theme': 'forest'}}%%
 flowchart TD
-  L[listen()] --> C1[createClient()\n(consumer client)]
+  L[listen()] --> C1[createClient()<br/>(consumer client)]
   L --> C2[createProducerClient()]
   L --> S[start()]
   S --> A[admin.connect()]

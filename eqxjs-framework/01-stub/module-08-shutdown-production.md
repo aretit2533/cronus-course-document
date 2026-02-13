@@ -14,7 +14,6 @@ By the end of this module, you will understand:
 ## 🧭 Visual Flow (Mermaid)
 
 ```mermaid
-%%{init: {'theme': 'forest'}}%%
 flowchart TD
   S[Receive SIGTERM/SIGINT] --> A["OnApplicationShutdown<br/>(Shutdown Manager)"]
   A --> B[Mark state: shutting_down]

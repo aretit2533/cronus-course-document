@@ -14,7 +14,6 @@ By the end of this module, you will understand:
 ## 🧭 Visual Flow (Mermaid)
 
 ```mermaid
-%%{init: {'theme': 'forest'}}%%
 flowchart TD
   Client[Caller / Probe] --> HC[GET /health]
   HC --> HCS[HealthCheckService]

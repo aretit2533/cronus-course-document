@@ -13,7 +13,6 @@ By the end of this module, you will understand:
 ## 🧭 Visual Flow (Mermaid)
 
 ```mermaid
-%%{init: {'theme': 'forest'}}%%
 flowchart TB
   App["Your Service (NestJS App)"] --> Stub["@corp-ais/eqxjs-stub<br/>(FrameworkModule)"]
   Stub --> Commander["@corp-ais/eqxjs-commander<br/>(config + commands)"]

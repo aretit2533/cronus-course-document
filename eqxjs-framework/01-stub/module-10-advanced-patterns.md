@@ -14,7 +14,6 @@ By the end of this module, you will understand:
 ## 🧭 Visual Flow (Mermaid)
 
 ```mermaid
-%%{init: {'theme': 'forest'}}%%
 flowchart TB
   UI["Adapters<br/>(HTTP controllers / consumers)"] --> App["Application layer<br/>(use cases)"]
   App --> Domain["Domain model<br/>(entities/VOs)"]

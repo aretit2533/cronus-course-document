@@ -14,7 +14,6 @@ By the end of this module, you will understand:
 ## 🧭 Visual Flow (Mermaid)
 
 ```mermaid
-%%{init: {'theme': 'forest'}}%%
 sequenceDiagram
   participant Req as Request
   participant Int as Interceptor Pipeline

@@ -6,18 +6,18 @@
 
 ## 📖 Course Modules
 
-| Module    | Topic                                              | Exercises                                    |
-| --------- | --------------------------------------------------------------------- | -------------------------------------------- |
-| Module 1  | [Introduction to EQXJS Framework](module-01-introduction.md)          | [Exercises](exercise/module-01-exercises.md) |
-| Module 2  | [Getting Started & Setup](module-02-getting-started.md)               | [Exercises](exercise/module-02-exercises.md) |
-| Module 3  | [Framework Module Configuration](module-03-framework-configuration.md) | [Exercises](exercise/module-03-exercises.md) |
-| Module 4  | [Health Checks & Monitoring](module-04-health-monitoring.md)          | [Exercises](exercise/module-04-exercises.md) |
-| Module 5  | [Interceptors & HTTP Handling](module-05-interceptors-http.md)        | [Exercises](exercise/module-05-exercises.md) |
-| Module 6  | [Context Management & Domain Services](module-06-context-domain.md)    | [Exercises](exercise/module-06-exercises.md) |
-| Module 7  | [Decorators & Validation](module-07-decorators-validation.md)          | [Exercises](exercise/module-07-exercises.md) |
+| Module    | Topic                                                                             | Exercises                                    |
+| --------- | --------------------------------------------------------------------------------- | -------------------------------------------- |
+| Module 1  | [Introduction to EQXJS Framework](module-01-introduction.md)                      | [Exercises](exercise/module-01-exercises.md) |
+| Module 2  | [Getting Started & Setup](module-02-getting-started.md)                           | [Exercises](exercise/module-02-exercises.md) |
+| Module 3  | [Framework Module Configuration](module-03-framework-configuration.md)            | [Exercises](exercise/module-03-exercises.md) |
+| Module 4  | [Health Checks & Monitoring](module-04-health-monitoring.md)                      | [Exercises](exercise/module-04-exercises.md) |
+| Module 5  | [Interceptors & HTTP Handling](module-05-interceptors-http.md)                    | [Exercises](exercise/module-05-exercises.md) |
+| Module 6  | [Context Management & Domain Services](module-06-context-domain.md)               | [Exercises](exercise/module-06-exercises.md) |
+| Module 7  | [Decorators & Validation](module-07-decorators-validation.md)                     | [Exercises](exercise/module-07-exercises.md) |
 | Module 8  | [Graceful Shutdown & Production Best Practices](module-08-shutdown-production.md) | [Exercises](exercise/module-08-exercises.md) |
-| Module 9  | [Practical Implementation](module-09-practical-implementation.md)     | [Exercises](exercise/module-09-exercises.md) |
-| Module 10 | [Advanced Patterns & Integration](module-10-advanced-patterns.md)      | [Exercises](exercise/module-10-exercises.md) |
+| Module 9  | [Practical Implementation](module-09-practical-implementation.md)                 | [Exercises](exercise/module-09-exercises.md) |
+| Module 10 | [Advanced Patterns & Integration](module-10-advanced-patterns.md)                 | [Exercises](exercise/module-10-exercises.md) |
 
 ### 💡 [Complete Exercise Guide](exercise/README.md)
 

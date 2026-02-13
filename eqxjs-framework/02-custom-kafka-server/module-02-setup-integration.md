@@ -95,7 +95,6 @@ Note: This is a convenience. In larger systems, you may still prefer a dedicated
 ## 🧭 Visual Flow (Mermaid)
 
 ```mermaid
-%%{init: {'theme': 'forest'}}%%
 sequenceDiagram
   autonumber
   participant App as Nest Microservice

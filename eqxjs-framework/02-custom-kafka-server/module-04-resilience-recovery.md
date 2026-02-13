@@ -44,7 +44,6 @@ A separate event path allows recreating the producer.
 ## 🧭 Visual Flow (Mermaid)
 
 ```mermaid
-%%{init: {'theme': 'forest'}}%%
 sequenceDiagram
   autonumber
   participant Cons as Consumer

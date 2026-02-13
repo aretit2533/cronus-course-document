@@ -48,7 +48,6 @@ When enabled, checks V8 heap usage and temporarily pauses/resumes partitions.
 ## 🧭 Visual Flow (Mermaid)
 
 ```mermaid
-%%{init: {'theme': 'forest'}}%%
 flowchart TD
   A[Start microservice] --> B[CustomServerKafka.listen]
   B --> C[Create KafkaJS client]

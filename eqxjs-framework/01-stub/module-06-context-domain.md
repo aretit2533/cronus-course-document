@@ -14,7 +14,6 @@ By the end of this module, you will understand:
 ## 🧭 Visual Flow (Mermaid)
 
 ```mermaid
-%%{init: {'theme': 'forest'}}%%
 flowchart TD
   A[App Bootstrap] --> B[Create DomainServiceContext domain]
   B --> C["Register services<br/>ServiceRegistry"]

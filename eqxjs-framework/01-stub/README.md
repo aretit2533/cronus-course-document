@@ -28,18 +28,18 @@ This course consists of **10 comprehensive modules**, each building upon the pre
 
 ### 🗂️ Course Modules
 
-| Module       | Topic                                                            | Exercises                                    | Duration |
-| ------------ | ---------------------------------------------------------------- | -------------------------------------------- | -------- |
-| **Module 1** | [Framework Introduction](module-01-introduction.md)             | [Exercises](exercise/module-01-exercises.md) | 2 hours  |
-| **Module 2** | [Setup & Configuration](module-02-getting-started.md)           | [Exercises](exercise/module-02-exercises.md) | 2 hours  |
-| **Module 3** | [Framework Configuration](module-03-framework-configuration.md) | [Exercises](exercise/module-03-exercises.md) | 3 hours  |
-| **Module 4** | [Health & Monitoring](module-04-health-monitoring.md)           | [Exercises](exercise/module-04-exercises.md) | 3 hours  |
-| **Module 5** | [Interceptors & HTTP](module-05-interceptors-http.md)           | [Exercises](exercise/module-05-exercises.md) | 4 hours  |
-| **Module 6** | [Context & Domain Services](module-06-context-domain.md)        | [Exercises](exercise/module-06-exercises.md) | 4 hours  |
-| **Module 7** | [Decorators & Validation](module-07-decorators-validation.md)   | [Exercises](exercise/module-07-exercises.md) | 3 hours  |
-| **Module 8** | [Production Best Practices](module-08-shutdown-production.md)   | [Exercises](exercise/module-08-exercises.md) | 4 hours  |
-| **Module 9** | [Practical Implementation](module-09-practical-implementation.md) | [Exercises](exercise/module-09-exercises.md) | 6 hours  |
-| **Module 10** | [Advanced Patterns](module-10-advanced-patterns.md)            | [Exercises](exercise/module-10-exercises.md) | 5 hours  |
+| Module        | Topic                                                             | Exercises                                    | Duration |
+| ------------- | ----------------------------------------------------------------- | -------------------------------------------- | -------- |
+| **Module 1**  | [Framework Introduction](module-01-introduction.md)               | [Exercises](exercise/module-01-exercises.md) | 2 hours  |
+| **Module 2**  | [Setup & Configuration](module-02-getting-started.md)             | [Exercises](exercise/module-02-exercises.md) | 2 hours  |
+| **Module 3**  | [Framework Configuration](module-03-framework-configuration.md)   | [Exercises](exercise/module-03-exercises.md) | 3 hours  |
+| **Module 4**  | [Health & Monitoring](module-04-health-monitoring.md)             | [Exercises](exercise/module-04-exercises.md) | 3 hours  |
+| **Module 5**  | [Interceptors & HTTP](module-05-interceptors-http.md)             | [Exercises](exercise/module-05-exercises.md) | 4 hours  |
+| **Module 6**  | [Context & Domain Services](module-06-context-domain.md)          | [Exercises](exercise/module-06-exercises.md) | 4 hours  |
+| **Module 7**  | [Decorators & Validation](module-07-decorators-validation.md)     | [Exercises](exercise/module-07-exercises.md) | 3 hours  |
+| **Module 8**  | [Production Best Practices](module-08-shutdown-production.md)     | [Exercises](exercise/module-08-exercises.md) | 4 hours  |
+| **Module 9**  | [Practical Implementation](module-09-practical-implementation.md) | [Exercises](exercise/module-09-exercises.md) | 6 hours  |
+| **Module 10** | [Advanced Patterns](module-10-advanced-patterns.md)               | [Exercises](exercise/module-10-exercises.md) | 5 hours  |
 
 **Total Duration: 36 hours**
 

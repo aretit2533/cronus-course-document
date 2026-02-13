@@ -14,7 +14,6 @@ By the end of this module, you will understand:
 ## 🧭 Visual Flow (Mermaid)
 
 ```mermaid
-%%{init: {'theme': 'forest'}}%%
 flowchart TD
   A[AppModule] --> B["FrameworkModule.register({ configPath, zone })"]
   B --> C["Load YAML<br/>{configPath}/{zone}.config.yaml"]
