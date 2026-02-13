@@ -6,12 +6,12 @@ Welcome to the comprehensive learning hub for modern backend technologies! This 
 
 ## 📚 Available Courses
 
-| Course                                                         | Description                           | Modules    | Duration    | Status      |
-| -------------------------------------------------------------- | ------------------------------------- | ---------- | ----------- | ----------- |
-| **[NestJS](#-nestjs-fundamentals-course)**                     | Progressive Node.js framework         | 8 modules  | 20-30 hours | ✅ Complete |
-| **[Apache Kafka](#-apache-kafka-course)**                      | Distributed event streaming platform  | 9 modules  | 26 hours    | ✅ Complete |
-| **[EQXJS Framework](#-eqxjs-framework-course)**                | Enterprise NestJS framework ecosystem | 10 modules | 30-40 hours | ✅ Complete |
-| **[EQXJS Template](#-eqxjs-template-message-rest-api-course)** | REST + Kafka domain service template  | 4 modules  | 6-8 hours   | ✅ Complete |
+| Course                                          | Description                           | Modules    | Duration    | Status      |
+| ----------------------------------------------- | ------------------------------------- | ---------- | ----------- | ----------- |
+| **[NestJS](#-nestjs-fundamentals-course)**      | Progressive Node.js framework         | 8 modules  | 20-30 hours | ✅ Complete |
+| **[Apache Kafka](#-apache-kafka-course)**       | Distributed event streaming platform  | 9 modules  | 26 hours    | ✅ Complete |
+| **[EQXJS Framework](#-eqxjs-framework-course)** | Enterprise NestJS framework ecosystem | 16 modules | 30-40 hours | ✅ Complete |
+| **[EQXJS Template](#-eqxjs-template-course)**   | REST + Kafka domain service template  | 8 modules  | 12-16 hours | ✅ Complete |
 
 ---
 
@@ -131,40 +131,40 @@ kafka-console-consumer.sh \
 
 ### 📖 Available Courses
 
-| Course                                                                                 | Description                                                                                     | Modules | Quick Links                                                                                                                                                              |
-| -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **[EQXJS Stub Framework](eqxjs-framework/README.md)**                                  | Complete enterprise NestJS framework with decorators, interceptors, health monitoring, and more | 10      | [📚 Outline](eqxjs-framework/stub/course-outline.md) \| [⚡ Quick Start](eqxjs-framework/stub/QUICK_START.md) \| [💡 Exercises](eqxjs-framework/stub/exercise/README.md) |
-| **[EQXJS Custom Kafka Server](eqxjs-framework/custom-kafka-server/course-outline.md)** | Kafka integration, consumer/producer management, resilience patterns                            | 6       | [📚 Outline](eqxjs-framework/custom-kafka-server/course-outline.md) \| [💡 Exercises](eqxjs-framework/custom-kafka-server/exercise/README.md)                            |
+| Course                                                                                    | Description                                                                                     | Modules | Quick Links                                                                                                                                                                       |
+| ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[EQXJS Stub Framework](eqxjs-framework/README.md)**                                     | Complete enterprise NestJS framework with decorators, interceptors, health monitoring, and more | 10      | [📚 Outline](eqxjs-framework/01-stub/course-outline.md) \| [⚡ Quick Start](eqxjs-framework/01-stub/QUICK_START.md) \| [💡 Exercises](eqxjs-framework/01-stub/exercise/README.md) |
+| **[EQXJS Custom Kafka Server](eqxjs-framework/02-custom-kafka-server/course-outline.md)** | Kafka integration, consumer/producer management, resilience patterns                            | 6       | [📚 Outline](eqxjs-framework/02-custom-kafka-server/course-outline.md) \| [💡 Exercises](eqxjs-framework/02-custom-kafka-server/exercise/README.md)                               |
 
 ---
 
 ### 📚 Sub-Course 1: EQXJS Stub Framework (10 Modules)
 
-| Module        | Topic                                                                                       | Content                                                            | Exercises                                                         | Duration  |
-| ------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | ----------------------------------------------------------------- | --------- |
-| **Module 1**  | [Introduction to EQXJS Framework](eqxjs-framework/stub/module-01-introduction.md)           | [View](eqxjs-framework/stub/module-01-introduction.md)             | [Exercises](eqxjs-framework/stub/exercise/module-01-exercises.md) | 3-4 hours |
-| **Module 2**  | [Getting Started & Setup](eqxjs-framework/stub/module-02-getting-started.md)                | [View](eqxjs-framework/stub/module-02-getting-started.md)          | [Exercises](eqxjs-framework/stub/exercise/module-02-exercises.md) | 3-4 hours |
-| **Module 3**  | [Framework Module Configuration](eqxjs-framework/stub/module-03-framework-configuration.md) | [View](eqxjs-framework/stub/module-03-framework-configuration.md)  | [Exercises](eqxjs-framework/stub/exercise/module-03-exercises.md) | 3-4 hours |
-| **Module 4**  | [Health Checks & Monitoring](eqxjs-framework/stub/module-04-health-monitoring.md)           | [View](eqxjs-framework/stub/module-04-health-monitoring.md)        | [Exercises](eqxjs-framework/stub/exercise/module-04-exercises.md) | 3-4 hours |
-| **Module 5**  | [Interceptors & HTTP Handling](eqxjs-framework/stub/module-05-interceptors-http.md)         | [View](eqxjs-framework/stub/module-05-interceptors-http.md)        | [Exercises](eqxjs-framework/stub/exercise/module-05-exercises.md) | 3-4 hours |
-| **Module 6**  | [Context Management & Domain Services](eqxjs-framework/stub/module-06-context-domain.md)    | [View](eqxjs-framework/stub/module-06-context-domain.md)           | [Exercises](eqxjs-framework/stub/exercise/module-06-exercises.md) | 3-4 hours |
-| **Module 7**  | [Decorators & Validation](eqxjs-framework/stub/module-07-decorators-validation.md)          | [View](eqxjs-framework/stub/module-07-decorators-validation.md)    | [Exercises](eqxjs-framework/stub/exercise/module-07-exercises.md) | 3-4 hours |
-| **Module 8**  | [Graceful Shutdown & Production](eqxjs-framework/stub/module-08-shutdown-production.md)     | [View](eqxjs-framework/stub/module-08-shutdown-production.md)      | Coming Soon                                                       | 3-4 hours |
-| **Module 9**  | [Practical Implementation](eqxjs-framework/stub/module-09-practical-implementation.md)      | [View](eqxjs-framework/stub/module-09-practical-implementation.md) | Coming Soon                                                       | 3-4 hours |
-| **Module 10** | [Advanced Patterns & Integration](eqxjs-framework/stub/module-10-advanced-patterns.md)      | [View](eqxjs-framework/stub/module-10-advanced-patterns.md)        | Coming Soon                                                       | 3-4 hours |
+| Module        | Topic                                                                                          | Content                                                               | Exercises                                                            | Duration  |
+| ------------- | ---------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- | -------------------------------------------------------------------- | --------- |
+| **Module 1**  | [Introduction to EQXJS Framework](eqxjs-framework/01-stub/module-01-introduction.md)           | [View](eqxjs-framework/01-stub/module-01-introduction.md)             | [Exercises](eqxjs-framework/01-stub/exercise/module-01-exercises.md) | 3-4 hours |
+| **Module 2**  | [Getting Started & Setup](eqxjs-framework/01-stub/module-02-getting-started.md)                | [View](eqxjs-framework/01-stub/module-02-getting-started.md)          | [Exercises](eqxjs-framework/01-stub/exercise/module-02-exercises.md) | 3-4 hours |
+| **Module 3**  | [Framework Module Configuration](eqxjs-framework/01-stub/module-03-framework-configuration.md) | [View](eqxjs-framework/01-stub/module-03-framework-configuration.md)  | [Exercises](eqxjs-framework/01-stub/exercise/module-03-exercises.md) | 3-4 hours |
+| **Module 4**  | [Health Checks & Monitoring](eqxjs-framework/01-stub/module-04-health-monitoring.md)           | [View](eqxjs-framework/01-stub/module-04-health-monitoring.md)        | [Exercises](eqxjs-framework/01-stub/exercise/module-04-exercises.md) | 3-4 hours |
+| **Module 5**  | [Interceptors & HTTP Handling](eqxjs-framework/01-stub/module-05-interceptors-http.md)         | [View](eqxjs-framework/01-stub/module-05-interceptors-http.md)        | [Exercises](eqxjs-framework/01-stub/exercise/module-05-exercises.md) | 3-4 hours |
+| **Module 6**  | [Context Management & Domain Services](eqxjs-framework/01-stub/module-06-context-domain.md)    | [View](eqxjs-framework/01-stub/module-06-context-domain.md)           | [Exercises](eqxjs-framework/01-stub/exercise/module-06-exercises.md) | 3-4 hours |
+| **Module 7**  | [Decorators & Validation](eqxjs-framework/01-stub/module-07-decorators-validation.md)          | [View](eqxjs-framework/01-stub/module-07-decorators-validation.md)    | [Exercises](eqxjs-framework/01-stub/exercise/module-07-exercises.md) | 3-4 hours |
+| **Module 8**  | [Graceful Shutdown & Production](eqxjs-framework/01-stub/module-08-shutdown-production.md)     | [View](eqxjs-framework/01-stub/module-08-shutdown-production.md)      | Coming Soon                                                          | 3-4 hours |
+| **Module 9**  | [Practical Implementation](eqxjs-framework/01-stub/module-09-practical-implementation.md)      | [View](eqxjs-framework/01-stub/module-09-practical-implementation.md) | Coming Soon                                                          | 3-4 hours |
+| **Module 10** | [Advanced Patterns & Integration](eqxjs-framework/01-stub/module-10-advanced-patterns.md)      | [View](eqxjs-framework/01-stub/module-10-advanced-patterns.md)        | Coming Soon                                                          | 3-4 hours |
 
 ---
 
 ### 📚 Sub-Course 2: EQXJS Custom Kafka Server (6 Modules)
 
-| Module       | Topic                                                                                                    | Content                                                                      | Exercises                                                                        | Duration  |
-| ------------ | -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | --------- |
-| **Module 1** | [Introduction & Features](eqxjs-framework/custom-kafka-server/module-01-introduction.md)                 | [View](eqxjs-framework/custom-kafka-server/module-01-introduction.md)        | [Exercises](eqxjs-framework/custom-kafka-server/exercise/module-01-exercises.md) | 1 hour    |
-| **Module 2** | [Setup & Integration](eqxjs-framework/custom-kafka-server/module-02-setup-integration.md)                | [View](eqxjs-framework/custom-kafka-server/module-02-setup-integration.md)   | [Exercises](eqxjs-framework/custom-kafka-server/exercise/module-02-exercises.md) | 1.5 hours |
-| **Module 3** | [Architecture & Design](eqxjs-framework/custom-kafka-server/module-03-architecture.md)                   | [View](eqxjs-framework/custom-kafka-server/module-03-architecture.md)        | [Exercises](eqxjs-framework/custom-kafka-server/exercise/module-03-exercises.md) | 1.5 hours |
-| **Module 4** | [Resilience & Recovery](eqxjs-framework/custom-kafka-server/module-04-resilience-recovery.md)            | [View](eqxjs-framework/custom-kafka-server/module-04-resilience-recovery.md) | [Exercises](eqxjs-framework/custom-kafka-server/exercise/module-04-exercises.md) | 1.5 hours |
-| **Module 5** | [Topic Monitoring](eqxjs-framework/custom-kafka-server/module-05-topic-monitoring.md)                    | [View](eqxjs-framework/custom-kafka-server/module-05-topic-monitoring.md)    | [Exercises](eqxjs-framework/custom-kafka-server/exercise/module-05-exercises.md) | 1 hour    |
-| **Module 6** | [Memory & Production Best Practices](eqxjs-framework/custom-kafka-server/module-06-memory-production.md) | [View](eqxjs-framework/custom-kafka-server/module-06-memory-production.md)   | [Exercises](eqxjs-framework/custom-kafka-server/exercise/module-06-exercises.md) | 1 hour    |
+| Module       | Topic                                                                                                       | Content                                                                         | Exercises                                                                           | Duration  |
+| ------------ | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | --------- |
+| **Module 1** | [Introduction & Features](eqxjs-framework/02-custom-kafka-server/module-01-introduction.md)                 | [View](eqxjs-framework/02-custom-kafka-server/module-01-introduction.md)        | [Exercises](eqxjs-framework/02-custom-kafka-server/exercise/module-01-exercises.md) | 1 hour    |
+| **Module 2** | [Setup & Integration](eqxjs-framework/02-custom-kafka-server/module-02-setup-integration.md)                | [View](eqxjs-framework/02-custom-kafka-server/module-02-setup-integration.md)   | [Exercises](eqxjs-framework/02-custom-kafka-server/exercise/module-02-exercises.md) | 1.5 hours |
+| **Module 3** | [Architecture & Design](eqxjs-framework/02-custom-kafka-server/module-03-architecture.md)                   | [View](eqxjs-framework/02-custom-kafka-server/module-03-architecture.md)        | [Exercises](eqxjs-framework/02-custom-kafka-server/exercise/module-03-exercises.md) | 1.5 hours |
+| **Module 4** | [Resilience & Recovery](eqxjs-framework/02-custom-kafka-server/module-04-resilience-recovery.md)            | [View](eqxjs-framework/02-custom-kafka-server/module-04-resilience-recovery.md) | [Exercises](eqxjs-framework/02-custom-kafka-server/exercise/module-04-exercises.md) | 1.5 hours |
+| **Module 5** | [Topic Monitoring](eqxjs-framework/02-custom-kafka-server/module-05-topic-monitoring.md)                    | [View](eqxjs-framework/02-custom-kafka-server/module-05-topic-monitoring.md)    | [Exercises](eqxjs-framework/02-custom-kafka-server/exercise/module-05-exercises.md) | 1 hour    |
+| **Module 6** | [Memory & Production Best Practices](eqxjs-framework/02-custom-kafka-server/module-06-memory-production.md) | [View](eqxjs-framework/02-custom-kafka-server/module-06-memory-production.md)   | [Exercises](eqxjs-framework/02-custom-kafka-server/exercise/module-06-exercises.md) | 1 hour    |
 
 ---
 
@@ -226,22 +226,26 @@ import { CustomServerKafka } from '@corp-ais/eqxjs-custom-kafka-server';
 
 ---
 
-## 🎯 EQXJS Template Message REST API Course
+## 🎯 EQXJS Template Course
 
 > Build a NestJS domain service that handles REST APIs and Kafka events using EQXJS.
 
 ### 📖 Quick Access
 
-**[📋 Complete Course](esb-dos-template-message-restapi/README.md)** | **[📚 Course Outline](esb-dos-template-message-restapi/course-outline.md)** | **[💡 All Exercises](esb-dos-template-message-restapi/exercise/README.md)**
+**[📋 Complete Course](eqxjs-template/README.md)** | **[📚 Course Outline](eqxjs-template/course-outline.md)** | **[💡 All Exercises](eqxjs-template/exercise/README.md)**
 
 ### Course Modules
 
-| Module       | Topic                         | Content                                                                   | Exercises                                                                     | Duration  |
-| ------------ | ----------------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | --------- |
-| **Module 1** | Introduction and Architecture | [View](esb-dos-template-message-restapi/module-01-introduction.md)        | [Exercises](esb-dos-template-message-restapi/exercise/module-01-exercises.md) | 1.5 hours |
-| **Module 2** | Setup and Configuration       | [View](esb-dos-template-message-restapi/module-02-setup-configuration.md) | [Exercises](esb-dos-template-message-restapi/exercise/module-02-exercises.md) | 2 hours   |
-| **Module 3** | REST API Flow                 | [View](esb-dos-template-message-restapi/module-03-rest-api-flow.md)       | [Exercises](esb-dos-template-message-restapi/exercise/module-03-exercises.md) | 1.5 hours |
-| **Module 4** | Kafka and Data Flow           | [View](esb-dos-template-message-restapi/module-04-kafka-data-flow.md)     | [Exercises](esb-dos-template-message-restapi/exercise/module-04-exercises.md) | 1.5 hours |
+| Module       | Topic                         | Content                                                    | Exercises                                                   | Duration  |
+| ------------ | ----------------------------- | ---------------------------------------------------------- | ----------------------------------------------------------- | --------- |
+| **Module 1** | Introduction and Architecture | [View](eqxjs-template/module-01-introduction.md)           | [Exercises](eqxjs-template/exercise/module-01-exercises.md) | 1.5 hours |
+| **Module 2** | Getting Started               | [View](eqxjs-template/module-02-getting-started.md)        | [Exercises](eqxjs-template/exercise/module-02-exercises.md) | 2 hours   |
+| **Module 3** | Architecture Overview         | [View](eqxjs-template/module-03-architecture.md)           | [Exercises](eqxjs-template/exercise/module-03-exercises.md) | 1.5 hours |
+| **Module 4** | Controllers and Managers      | [View](eqxjs-template/module-04-controllers-managers.md)   | [Exercises](eqxjs-template/exercise/module-04-exercises.md) | 1.5 hours |
+| **Module 5** | Services and Repositories     | [View](eqxjs-template/module-05-services-repositories.md)  | [Exercises](eqxjs-template/exercise/module-05-exercises.md) | 2 hours   |
+| **Module 6** | Kafka Events and Integration  | [View](eqxjs-template/module-06-kafka-events.md)           | [Exercises](eqxjs-template/exercise/module-06-exercises.md) | 2 hours   |
+| **Module 7** | External Integrations         | [View](eqxjs-template/module-07-integrations.md)           | [Exercises](eqxjs-template/exercise/module-07-exercises.md) | 1.5 hours |
+| **Module 8** | Testing and Best Practices    | [View](eqxjs-template/module-08-testing-best-practices.md) | [Exercises](eqxjs-template/exercise/module-08-exercises.md) | 2 hours   |
 
 ### 📋 What You'll Learn
 
@@ -259,7 +263,7 @@ export BROKERS=localhost:9092
 npm run start:local
 ```
 
-**[👉 Start EQXJS Template Course](esb-dos-template-message-restapi/README.md)**
+**[👉 Start EQXJS Template Course](eqxjs-template/README.md)**
 
 ---
 
@@ -341,8 +345,8 @@ Comprehensive understanding of modern backend architectures.
 
 ### Combined Learning
 
-- **Total Modules**: 37 modules (8 NestJS + 9 Kafka + 16 EQXJS + 4 EQXJS Template)
-- **Total Duration**: 101-123 hours
+- **Total Modules**: 41 modules (8 NestJS + 9 Kafka + 16 EQXJS + 8 EQXJS Template)
+- **Total Duration**: 112-131 hours
 - **Exercises**: 190+ hands-on exercises
 - **Projects**: 4+ complete applications
 - **Difficulty**: Beginner to Advanced
@@ -429,48 +433,52 @@ After completing all courses, you will be able to:
 │       └── module-*-exercises.md             # Module exercises
 │
 ├── eqxjs-framework/                          # EQXJS Framework Courses
-    ├── README.md                             # EQXJS courses hub
-    ├── stub/                                 # EQXJS Stub Framework
-    │   ├── README.md                         # Stub course home
-    │   ├── QUICK_START.md                    # Quick start guide
-    │   ├── course-outline.md                 # Detailed curriculum
-    │   ├── module-01-introduction.md         # Module 1
-    │   ├── module-02-getting-started.md      # Module 2
-    │   ├── module-03-framework-configuration.md # Module 3
-    │   ├── module-04-health-monitoring.md    # Module 4
-    │   ├── module-05-interceptors-http.md    # Module 5
-    │   ├── module-06-context-domain.md       # Module 6
-    │   ├── module-07-decorators-validation.md # Module 7
-    │   ├── module-08-shutdown-production.md  # Module 8
-    │   ├── module-09-practical-implementation.md # Module 9
-    │   ├── module-10-advanced-patterns.md    # Module 10
-    │   └── exercise/                         # EQXJS exercises
-    │       ├── README.md                     # Exercise index
-    │       └── module-*-exercises.md         # Module exercises
-    │
-    └── custom-kafka-server/                  # EQXJS Kafka Integration
-        ├── README.md                         # Kafka integration home
-        ├── course-outline.md                 # Detailed curriculum
-        ├── module-01-introduction.md         # Module 1
-        ├── module-02-setup-integration.md    # Module 2
-        ├── module-03-architecture.md         # Module 3
-        ├── module-04-resilience-recovery.md  # Module 4
-        ├── module-05-topic-monitoring.md     # Module 5
-        ├── module-06-memory-production.md    # Module 6
-        └── exercise/                         # Kafka integration exercises
-            ├── README.md                     # Exercise index
-            └── module-*-exercises.md         # Module exercises
-
-    └── esb-dos-template-message-restapi/          # EQXJS Template Course
-    │   ├── README.md                              # Course home
-    │   ├── course-outline.md                      # Detailed curriculum
-    │   ├── module-01-introduction.md              # Module 1
-    │   ├── module-02-setup-configuration.md       # Module 2
-    │   ├── module-03-rest-api-flow.md             # Module 3
-    │   ├── module-04-kafka-data-flow.md           # Module 4
-    │   └── exercise/                              # Course exercises
-    │       ├── README.md                          # Exercise index
-    │       └── module-*-exercises.md              # Module exercises
+│   ├── README.md                             # EQXJS courses hub
+│   ├── 01-stub/                              # EQXJS Stub Framework
+│   │   ├── README.md                         # Stub course home
+│   │   ├── QUICK_START.md                    # Quick start guide
+│   │   ├── course-outline.md                 # Detailed curriculum
+│   │   ├── module-01-introduction.md         # Module 1
+│   │   ├── module-02-getting-started.md      # Module 2
+│   │   ├── module-03-framework-configuration.md # Module 3
+│   │   ├── module-04-health-monitoring.md    # Module 4
+│   │   ├── module-05-interceptors-http.md    # Module 5
+│   │   ├── module-06-context-domain.md       # Module 6
+│   │   ├── module-07-decorators-validation.md # Module 7
+│   │   ├── module-08-shutdown-production.md  # Module 8
+│   │   ├── module-09-practical-implementation.md # Module 9
+│   │   ├── module-10-advanced-patterns.md    # Module 10
+│   │   └── exercise/                         # EQXJS exercises
+│   │       ├── README.md                     # Exercise index
+│   │       └── module-*-exercises.md         # Module exercises
+│   │
+│   └── 02-custom-kafka-server/               # EQXJS Kafka Integration
+│       ├── README.md                         # Kafka integration home
+│       ├── course-outline.md                 # Detailed curriculum
+│       ├── module-01-introduction.md         # Module 1
+│       ├── module-02-setup-integration.md    # Module 2
+│       ├── module-03-architecture.md         # Module 3
+│       ├── module-04-resilience-recovery.md  # Module 4
+│       ├── module-05-topic-monitoring.md     # Module 5
+│       ├── module-06-memory-production.md    # Module 6
+│       └── exercise/                         # Kafka integration exercises
+│           ├── README.md                     # Exercise index
+│           └── module-*-exercises.md         # Module exercises
+│
+├── eqxjs-template/                           # EQXJS Template Course
+│   ├── README.md                             # Course home
+│   ├── course-outline.md                     # Detailed curriculum
+│   ├── module-01-introduction.md             # Module 1
+│   ├── module-02-getting-started.md          # Module 2
+│   ├── module-03-architecture.md             # Module 3
+│   ├── module-04-controllers-managers.md     # Module 4
+│   ├── module-05-services-repositories.md    # Module 5
+│   ├── module-06-kafka-events.md             # Module 6
+│   ├── module-07-integrations.md             # Module 7
+│   ├── module-08-testing-best-practices.md   # Module 8
+│   └── exercise/                             # Course exercises
+│       ├── README.md                         # Exercise index
+│       └── module-*-exercises.md             # Module exercises
 ```
 
 ---
@@ -482,6 +490,7 @@ After completing all courses, you will be able to:
 - **New to backend?** Start with [NestJS](nestjs/README.md)
 - **Enterprise development?** Try [EQXJS Framework](eqxjs-framework/README.md)
 - **Building data pipelines?** Start with [Kafka](kafka/README.md)
+- **Template-based development?** Try [EQXJS Template](eqxjs-template/README.md)
 - **Want them all?** Follow a [Learning Path](#-learning-paths)
 
 ### Step 2: Set Up Your Environment
@@ -514,8 +523,9 @@ docker-compose --version
 Navigate to your course and begin with Module 1:
 
 - **NestJS** → Start at [nestjs/](nestjs/)
-- **EQXJS Framework** → Start at [eqxjs-framework/stub/](eqxjs-framework/stub/)
+- **EQXJS Framework** → Start at [eqxjs-framework/01-stub/](eqxjs-framework/01-stub/)
 - **Kafka** → Start at [kafka/](kafka/)
+- **EQXJS Template** → Start at [eqxjs-template/](eqxjs-template/)
 
 ---
 
@@ -682,22 +692,24 @@ This educational content is provided for learning purposes.
 - **[📘 NestJS Course →](nestjs/README.md)**
 - **[📙 EQXJS Framework Course →](eqxjs-framework/README.md)**
 - **[📕 Kafka Course →](kafka/README.md)**
-- **[📗 EQXJS Template Course →](esb-dos-template-message-restapi/README.md)**
+- **[📗 EQXJS Template Course →](eqxjs-template/README.md)**
 
 ### Course Outlines
 
 - **[📋 NestJS Outline →](nestjs/course-outline.md)**
-- **[📋 EQXJS Outline →](eqxjs-framework/course-outline.md)**
-- **[⚡ EQXJS Quick Start →](eqxjs-framework/QUICK_START.md)**
+- **[📋 EQXJS Stub Outline →](eqxjs-framework/01-stub/course-outline.md)**
+- **[⚡ EQXJS Quick Start →](eqxjs-framework/01-stub/QUICK_START.md)**
+- **[📋 EQXJS Kafka Outline →](eqxjs-framework/02-custom-kafka-server/course-outline.md)**
 - **[📋 Kafka Outline →](kafka/course-outline.md)**
-- **[📋 EQXJS Template Outline →](esb-dos-template-message-restapi/course-outline.md)**
+- **[📋 EQXJS Template Outline →](eqxjs-template/course-outline.md)**
 
 ### Exercises
 
 - **[💡 NestJS Exercises →](nestjs/exercise/README.md)**
-- **[💡 EQXJS Exercises →](eqxjs-framework/exercise/README.md)**
+- **[💡 EQXJS Stub Exercises →](eqxjs-framework/01-stub/exercise/README.md)**
+- **[💡 EQXJS Kafka Exercises →](eqxjs-framework/02-custom-kafka-server/exercise/README.md)**
 - **[💡 Kafka Exercises →](kafka/exercise/README.md)**
-- **[💡 EQXJS Template Exercises →](esb-dos-template-message-restapi/exercise/README.md)**
+- **[💡 EQXJS Template Exercises →](eqxjs-template/exercise/README.md)**
 
 ---
 
@@ -707,6 +719,6 @@ This educational content is provided for learning purposes.
 
 _Master modern backend technologies and build amazing applications_
 
-**Last Updated**: February 10, 2026
+**Last Updated**: February 13, 2026
 
 </div>
