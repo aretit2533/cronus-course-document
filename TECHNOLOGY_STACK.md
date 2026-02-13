@@ -138,7 +138,7 @@ graph TD
     linkStyle 0 stroke:#2e7d32,stroke-width:3px
     linkStyle 1 stroke:#1565c0,stroke-width:3px
     linkStyle 2,3,4,5,6,7,8,9 stroke:#f57f17,stroke-width:2px
-    linkStyle 10,11,12,13,14,15,16,17 stroke:#ff9800,stroke-width:2px
+    linkStyle 10,11,12,13,14,15,16,17 stroke:#1565c0,stroke-width:2px
 ```
 
 ## Key Benefits
