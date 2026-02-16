@@ -82,7 +82,7 @@ git clone <repository-url> my-service
 cd my-service
 
 # Or copy from template repository
-cp -r esb-dos-template-message-restapi my-service
+cp -r cronus-eqxjs-template my-service
 cd my-service
 ```
 
@@ -165,13 +165,14 @@ mongodb:
 ## 2.3 Project Structure Deep Dive
 
 ### Directory Layout
+
 ```mermaid
 ---
 config:
   layout: elk
 ---
 flowchart TB
-    ROOT["esb-dos-template-message-restapi/"] --> ASSETS["assets/"] & SCRIPTS["scripts/"] & SRC["src/"] & CONFIG["Configuration Files"]
+    ROOT["cronus-eqxjs-template/"] --> ASSETS["assets/"] & SCRIPTS["scripts/"] & SRC["src/"] & CONFIG["Configuration Files"]
     ASSETS --> ASCONFIG["config/"]
     ASCONFIG --> LOCAL["local.config.yaml"] & DEV["dev.config.yaml"] & PROD["prod.config.yaml"]
     SCRIPTS --> WIN["win/"] & MAC["mac/"] & LINUX["linux/"]
@@ -183,6 +184,7 @@ flowchart TB
     style SRC fill:#4CAF50
     style EXAMPLE fill:#2196F3
 ```
+
 ### Key Files and Directories
 
 #### Root Level Configuration
