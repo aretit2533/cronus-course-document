@@ -1,8 +1,17 @@
 # Module 11: Logging System & Best Practices
 
+## 🔗 Ecosystem Component: `@eqxjs-logger`
+
+**Part of EQXJS Ecosystem**
+
+- Comprehensive structured logging service
+- Configuration-driven log management
+- Production-ready logging infrastructure
+
 **Quick navigation:**
 
-- Outline: `course-outline.md`
+- Course outline: `course-outline.md`
+- EQXJS Ecosystem: See `course-outline.md` section 1.2
 - Exercises: `exercise/module-11-exercises.md`
 - Previous module: `module-10-advanced-patterns.md`
 
@@ -11,6 +20,7 @@
 - Complete Module 2 (Getting Started) to have a working EQXJS application
 - Understand basic NestJS providers and dependency injection
 - Familiarity with configuration from Module 3 is helpful
+- Review the EQXJS Ecosystem Components in course outline
 
 ## 📚 Learning Objectives
 
@@ -41,11 +51,11 @@ flowchart TD
 
 ---
 
-## 🔍 11.1 Logger Architecture
+## 🔍 11.1 Logger Architecture (@eqxjs-logger)
 
 ### Overview
 
-The EQXJS Framework includes `@eqxjs-logger`, a comprehensive logging service that provides:
+The `@eqxjs-logger` ecosystem component provides:
 
 - **Structured Logging**: JSON-formatted logs with metadata
 - **Log Levels**: debug, info, warn, error, and custom levels
@@ -165,8 +175,8 @@ log-service:
 ### Injecting LoggerService
 
 ```typescript
-import { Injectable, Logger } from "@nestjs/common";
-import { LoggerService } from "@eqxjs-stub";
+import { Injectable } from "@nestjs/common";
+import { LoggerService } from "@eqxjs-logger";
 
 @Injectable()
 export class UserService {
@@ -470,10 +480,25 @@ if (shouldLog("debug")) {
 
 ---
 
+## � Related Ecosystem Components
+
+This module works with and relates to these EQXJS ecosystem components:
+
+| Component               | Relationship  | Purpose                                  |
+| ----------------------- | ------------- | ---------------------------------------- |
+| **@eqxjs-logger**       | Primary       | Comprehensive structured logging service |
+| @eqxjs-exception        | Integration   | Log exception details and errors         |
+| @eqxjs-utils            | Supporting    | Utility functions for logging operations |
+| @eqxjs-transporter-http | Integration   | HTTP request/response logging            |
+| @eqxjs-commander        | Configuration | Configuration-driven log setup           |
+
+---
+
 ## 📋 Summary
 
 | Item                     | Description                            |
 | ------------------------ | -------------------------------------- |
+| **Component**            | `@eqxjs-logger`                        |
 | **Service**              | `LoggerService` (injectable)           |
 | **Config Section**       | `log` in YAML config                   |
 | **Log Levels**           | debug, info, warn, error               |
