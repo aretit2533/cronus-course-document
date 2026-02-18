@@ -1,7 +1,7 @@
 # Module 1: Introduction to Apache Kafka
 
 ## Overview
-This module introduces Apache Kafka and event streaming concepts. You'll learn what Kafka is, why it's important, and when to use it in your architecture. We'll explore real-world use cases and compare Kafka with traditional messaging systems.
+This module introduces Apache Kafka and event streaming concepts. You'll learn what Kafka is, why it's important, and when to use it in your architecture. We'll explore real-world use cases and the Kafka ecosystem.
 
 **Duration:** 2 hours
 
@@ -10,17 +10,15 @@ By the end of this module, you will be able to:
 - Understand the fundamentals of event streaming
 - Explain what Apache Kafka is and its core purpose
 - Identify scenarios where Kafka is the right solution
-- Compare Kafka with traditional messaging systems
 - Recognize the components of the Kafka ecosystem
 
 ## Table of Contents
 1. [What is Apache Kafka?](#what-is-apache-kafka)
 2. [Event Streaming and Event-Driven Architecture](#event-streaming-and-event-driven-architecture)
 3. [Kafka Use Cases](#kafka-use-cases)
-4. [Kafka vs Traditional Messaging Systems](#kafka-vs-traditional-messaging-systems)
-5. [The Kafka Ecosystem](#the-kafka-ecosystem)
-6. [Summary](#summary)
-7. [Key Takeaways](#key-takeaways)
+4. [The Kafka Ecosystem](#the-kafka-ecosystem)
+5. [Summary](#summary)
+6. [Key Takeaways](#key-takeaways)
 
 ---
 
@@ -268,93 +266,6 @@ Use Kafka as a distributed commit log for databases or applications.
 
 ---
 
-## Kafka vs Traditional Messaging Systems
-
-### Traditional Message Brokers
-
-**Examples:** RabbitMQ, ActiveMQ, IBM MQ, Amazon SQS
-
-**Characteristics:**
-- Message deletion after consumption
-- Lower throughput (thousands of messages/sec)
-- Complex routing logic
-- No built-in replay capability
-- Limited scalability
-
-### Apache Kafka
-
-**Characteristics:**
-- Persistent storage (configurable retention)
-- Very high throughput (millions of messages/sec)
-- Simple topic-based routing
-- Built-in replay capability
-- Horizontal scalability
-
-### Detailed Comparison
-
-| Feature | RabbitMQ | ActiveMQ | Apache Kafka |
-|---------|----------|----------|--------------|
-| **Architecture** | Message broker | Message broker | Distributed log |
-| **Message Model** | Push-based | Push/Pull | Pull-based |
-| **Persistence** | Optional | Optional | Always |
-| **Message Order** | Per queue | Per queue | Per partition |
-| **Message Retention** | Until consumed | Until consumed | Time/size-based |
-| **Replay** | No | No | Yes |
-| **Throughput** | Moderate | Moderate | Very High |
-| **Latency** | Low | Low | Low |
-| **Scalability** | Vertical | Vertical | Horizontal |
-| **Use Cases** | Task queues | Enterprise messaging | Event streaming |
-
-### When to Use Kafka
-
-✅ **Choose Kafka when:**
-- High throughput is required (millions of events/sec)
-- Need to replay historical data
-- Multiple consumers need the same data
-- Building event-driven architectures
-- Need durable storage of events
-- Horizontal scalability is important
-- Stream processing is required
-
-❌ **Consider alternatives when:**
-- Complex routing logic is needed (use RabbitMQ)
-- Message order across topics doesn't matter
-- Very low latency is critical (< 1ms)
-- Simple task queue is sufficient
-- Small-scale operations (< 1000 messages/sec)
-
-### Example Scenario: E-commerce Order Processing
-
-**With RabbitMQ:**
-```mermaid
-graph TD
-    OrderService[Order Service] --> Queue1[Queue]
-    OrderService --> Queue2[Queue]
-    OrderService --> Queue3[Queue]
-    Queue1 --> InventoryService[Inventory Service - deletes message]
-    Queue2 --> ShippingService[Shipping Service - deletes message]
-    Queue3 --> EmailService[Email Service - deletes message]
-```
-- Messages deleted after processing
-- Can't replay if service was down
-- Need separate queue for each consumer
-
-**With Kafka:**
-```mermaid
-graph LR
-    OrderService[Order Service] --> Topic[Topic: OrderPlaced]
-    Topic --> InventoryService[Inventory Service]
-    Topic --> ShippingService[Shipping Service]
-    Topic --> EmailService[Email Service]
-    Topic --> AnalyticsService[Analytics Service - added later]
-```
-- Events retained for configured period
-- Can replay if service was down
-- Easy to add new consumers
-- Can process historical data
-
----
-
 ## The Kafka Ecosystem
 
 ### Core Components
@@ -487,9 +398,7 @@ In this module, you learned:
 
 4. **Kafka Use Cases** include messaging, activity tracking, log aggregation, stream processing, event sourcing, data integration, CQRS, and real-time analytics.
 
-5. **Kafka vs Message Brokers**: Kafka differs from traditional message brokers with its persistent storage, high throughput, replay capability, and horizontal scalability.
-
-6. **Kafka Ecosystem** includes core Kafka, Kafka Connect, Kafka Streams, Schema Registry, ksqlDB, and various management tools.
+5. **Kafka Ecosystem** includes core Kafka, Kafka Connect, Kafka Streams, Schema Registry, ksqlDB, and various management tools.
 
 ---
 
@@ -499,7 +408,7 @@ In this module, you learned:
 
 ✅ **Events are immutable facts** - they represent things that happened
 
-✅ **Kafka stores events persistently** - unlike traditional message brokers that delete after consumption
+✅ **Kafka stores events persistently** - events are retained based on configured policies
 
 ✅ **High throughput and scalability** - Kafka can handle millions of events per second
 

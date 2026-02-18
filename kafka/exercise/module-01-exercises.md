@@ -38,31 +38,7 @@
 
 ---
 
-## Exercise 3: Kafka vs Traditional Message Brokers (15 minutes)
-
-**Objective:** Compare Kafka with RabbitMQ or ActiveMQ
-
-**Tasks:**
-1. Create a comparison table with these dimensions:
-   - Message persistence
-   - Consumer model
-   - Throughput
-   - Latency
-   - Ordering guarantees
-   - Best use cases
-
-2. Answer: When would you choose Kafka over RabbitMQ?
-
-**Expected Outcome:**
-| Feature | Kafka | RabbitMQ |
-|---------|-------|----------|
-| Persistence | Disk, durable | Memory/Disk |
-| Consumer Model | Pull | Push |
-| ... | ... | ... |
-
----
-
-## Exercise 4: Event-Driven Architecture Design (30 minutes)
+## Exercise 3: Event-Driven Architecture Design (30 minutes)
 
 **Objective:** Design an event-driven system
 
@@ -101,7 +77,7 @@ You're building an online food delivery system with these components:
 
 ---
 
-## Exercise 5: Kafka Ecosystem Exploration (20 minutes)
+## Exercise 4: Kafka Ecosystem Exploration (20 minutes)
 
 **Objective:** Understand Kafka ecosystem components
 
@@ -160,24 +136,11 @@ Proposed state with Kafka:
 ## Solutions & Discussion
 
 ### Exercise 1: Key Differences
-1. **Persistence**: Event streaming stores events durably (days/weeks), traditional messaging often deletes after consumption
+1. **Persistence**: Event streaming stores events durably (days/weeks)
 2. **Multiple Consumers**: Multiple independent consumers can read the same events
 3. **Replay**: Event streaming allows replaying historical events
 
-### Exercise 3: Kafka vs RabbitMQ Decision Factors
-- Choose Kafka when:
-  - High throughput needed (100k+ msg/sec)
-  - Events need to be replayed
-  - Building event-driven microservices
-  - Stream processing required
-  
-- Choose RabbitMQ when:
-  - Complex routing needed
-  - Lower throughput (< 20k msg/sec)
-  - Task queue pattern
-  - Push-based consumption preferred
-
-### Exercise 4: Food Delivery Events
+### Exercise 3: Food Delivery Events
 Key events:
 1. `OrderPlaced` → Payment, Restaurant, Notification
 2. `PaymentProcessed` → Restaurant, Customer

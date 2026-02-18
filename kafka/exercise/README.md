@@ -59,13 +59,11 @@ Each exercise module includes:
 
 - Understanding event streaming concepts
 - Kafka use cases analysis
-- Comparing Kafka with message brokers
 - Designing event-driven architectures
 - Exploring Kafka ecosystem
 
 **Key exercises:**
 
-- Event streaming vs traditional messaging comparison
 - Real-world use case analysis
 - Event-driven architecture design
 - ROI calculator challenge

@@ -19,7 +19,6 @@
 - [Tools and Technologies](#tools-and-technologies)
 - [Assessment and Certification](#assessment-and-certification)
 - [Additional Resources](#additional-resources)
-- [Course Duration](#course-duration)
 - [Next Steps After Course Completion](#next-steps-after-course-completion)
 
 ## Course Overview
@@ -41,13 +40,11 @@ This comprehensive course covers Apache Kafka from fundamentals to advanced conc
 ## Course Modules
 
 ### Module 1: Introduction to Apache Kafka
-**Duration:** 2 hours
 
 **Topics:**
 - What is Apache Kafka?
 - Event Streaming and Event-Driven Architecture
 - Kafka Use Cases and Real-World Applications
-- Kafka vs Traditional Messaging Systems (RabbitMQ, ActiveMQ)
 - The Kafka Ecosystem Overview
 
 **Learning Objectives:**
@@ -58,7 +55,6 @@ This comprehensive course covers Apache Kafka from fundamentals to advanced conc
 ---
 
 ### Module 2: Kafka Architecture and Core Concepts
-**Duration:** 3 hours
 
 **Topics:**
 - Kafka Architecture Overview
@@ -79,7 +75,6 @@ This comprehensive course covers Apache Kafka from fundamentals to advanced conc
 ---
 
 ### Module 3: Setting Up Kafka
-**Duration:** 2 hours
 
 **Topics:**
 - Installation Options (Local, Docker, Cloud)
@@ -99,7 +94,6 @@ This comprehensive course covers Apache Kafka from fundamentals to advanced conc
 ---
 
 ### Module 4: Kafka Producers
-**Duration:** 3 hours
 
 **Topics:**
 - Producer Architecture
@@ -124,7 +118,6 @@ This comprehensive course covers Apache Kafka from fundamentals to advanced conc
 ---
 
 ### Module 5: Kafka Consumers
-**Duration:** 3 hours
 
 **Topics:**
 - Consumer Architecture
@@ -150,7 +143,6 @@ This comprehensive course covers Apache Kafka from fundamentals to advanced conc
 ---
 
 ### Module 6: Topics, Partitions, and Data Management
-**Duration:** 2 hours
 
 **Topics:**
 - Creating and Managing Topics
@@ -172,7 +164,6 @@ This comprehensive course covers Apache Kafka from fundamentals to advanced conc
 ---
 
 ### Module 7: Kafka Connect and Kafka Streams
-**Duration:** 4 hours
 
 **Topics:**
 - Introduction to Kafka Connect
@@ -198,7 +189,6 @@ This comprehensive course covers Apache Kafka from fundamentals to advanced conc
 ---
 
 ### Module 8: Advanced Topics and Best Practices
-**Duration:** 3 hours
 
 **Topics:**
 - Kafka Security (Authentication, Authorization, Encryption)
@@ -224,7 +214,6 @@ This comprehensive course covers Apache Kafka from fundamentals to advanced conc
 ---
 
 ### Module 9: Practical Application - Building a Real-Time System
-**Duration:** 4 hours
 
 **Topics:**
 - Project Overview: Real-Time Event Processing System
@@ -276,11 +265,6 @@ Each module includes practical exercises to reinforce learning:
 - Community Forums and Kafka User Groups
 - Kafka Improvement Proposals (KIPs)
 - Books and Articles
-
-## Course Duration
-**Total:** 26 hours
-- Theory: 14 hours
-- Hands-on Labs: 12 hours
 
 ## Next Steps After Course Completion
 - Explore Confluent Cloud and managed Kafka services
