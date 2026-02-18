@@ -36,8 +36,9 @@ Core outcomes include:
 
 - What `@eqxjs/swagger-codegen` is and where it fits in the EQXJS ecosystem
 - Supported formats: Swagger/OpenAPI, JSON/YAML
-- Generation modes: `server`, `client`, `both`
-- Generated artifacts overview (DTOs, services, controllers, modules, client services)
+- Generation modes: `server`, `client`, `both`, `dtos`
+- Generated artifacts overview (DTOs, services, controllers, modules, client services, tests)
+- Default behavior: tests and validation enabled by default
 
 **Learning Objectives:**
 
@@ -55,10 +56,10 @@ Core outcomes include:
 - Install options: global install, `npx`, and local source usage
 - Command structure: `generate -i <input> -o <output>`
 - Core options:
-  - `--mode`
-  - `--with-test`
-  - `--with-validate`
-  - `--only-dtos`
+  - `--mode` (server, client, both, dtos)
+  - `--no-test` (skip test generation, tests enabled by default)
+  - `--no-validate` (skip validation decorators, enabled by default)
+- Default behavior: tests and validation are generated automatically
 - Project setup best practices for generated output directories
 
 **Learning Objectives:**
@@ -93,10 +94,11 @@ Core outcomes include:
 **Topics:**
 
 - Generated server structure by tags/resources
-- DTO generation with `@ApiProperty`
+- DTO generation with `@ApiProperty` and validation decorators
 - Controller and service scaffolding patterns
 - Module generation and dependency wiring
-- `app.module.ts` auto-creation and auto-update behavior
+- `app.module.ts` auto-creation and auto-update behavior (preserves custom imports)
+- `index.ts` Swagger setup helper with DocumentBuilder configuration
 
 **Learning Objectives:**
 
@@ -129,15 +131,17 @@ Core outcomes include:
 
 **Topics:**
 
-- `--with-validate`: class-validator decorator generation
-- Generated validators for primitive, enum, array, and nested object fields
-- `--with-test`: generated test scaffolds for controllers/services/DTOs
-- Combining flags for stronger quality gates
+- Default behavior: validation and tests enabled automatically
+- Using `--no-validate` to skip class-validator decorators
+- Using `--no-test` to skip test file generation
+- Generated validators: `@IsString()`, `@IsEmail()`, `@IsUUID()`, `@Min()`, `@Max()`, `@ValidateNested()`, etc.
+- Generated test scaffolds for controllers, services, and DTOs
 
 **Learning Objectives:**
 
-- Enable runtime DTO validation from contract metadata
-- Accelerate test setup using generated test templates
+- Understand default validation and testing behavior
+- Control generation output with `--no-validate` and `--no-test` flags
+- Leverage generated tests as scaffolds for comprehensive test coverage
 
 ---
 
@@ -147,8 +151,9 @@ Core outcomes include:
 
 **Topics:**
 
-- `--only-dtos` mode for shared model packages
+- `--mode dtos` for generating only Data Transfer Objects
 - Using generated DTOs in monorepos and multi-service systems
+- Combining `--mode dtos` with `--no-validate` and `--no-test` for plain DTOs
 - Versioning strategies for API contracts
 - Change management when specs evolve
 
@@ -181,9 +186,10 @@ Core outcomes include:
 
 1. Generate server code from Swagger 2.0 JSON and run NestJS bootstrap.
 2. Generate client SDK from OpenAPI 3.0 YAML and call mock endpoints.
-3. Enable `--with-validate` and verify DTO validation behavior.
-4. Enable `--with-test` and run generated test suites.
-5. Generate `--only-dtos` output and consume it from a second project.
+3. Verify default DTO validation behavior with class-validator decorators.
+4. Run generated test suites and extend them with custom scenarios.
+5. Generate `--mode dtos` output and consume it from a second project.
+6. Use `--no-test --no-validate` to generate plain DTOs without extras.
 
 ---
 

@@ -250,11 +250,14 @@ import { CustomServerKafka } from '@corp-ais/eqxjs-custom-kafka-server';
 **Swagger Codegen:**
 
 ```bash
-# Generate NestJS server scaffolding from OpenAPI spec
+# Generate NestJS server scaffolding from OpenAPI spec (tests & validation included by default)
 npx @eqxjs/swagger-codegen generate -i ./openapi.yaml -o ./generated
 
-# Generate both server + client with validation decorators
-npx @eqxjs/swagger-codegen generate -i ./openapi.yaml -o ./generated --mode both --with-validate
+# Generate both server + client
+npx @eqxjs/swagger-codegen generate -i ./openapi.yaml -o ./generated --mode both
+
+# Generate only DTOs for shared contracts
+npx @eqxjs/swagger-codegen generate -i ./openapi.yaml -o ./types --mode dtos
 ```
 
 **[👉 Start EQXJS Framework Course](eqxjs-framework/README.md)**

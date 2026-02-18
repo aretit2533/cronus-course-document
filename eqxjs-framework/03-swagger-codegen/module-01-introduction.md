@@ -6,7 +6,8 @@ By the end of this module, you will be able to:
 
 - Explain what `@eqxjs/swagger-codegen` does
 - Describe contract-first development using Swagger/OpenAPI
-- Choose between `server`, `client`, and `both` generation modes
+- Choose between `server`, `client`, `both`, and `dtos` generation modes
+- Understand default behavior: tests and validation enabled automatically
 
 ---
 
@@ -17,6 +18,8 @@ By the end of this module, you will be able to:
 - NestJS server-side artifacts (DTOs, services, controllers, modules)
 - TypeScript client services using Axios
 - Shared data contracts for strongly typed integration
+- Test files (.spec.ts) for all generated artifacts (by default)
+- Validation decorators (class-validator) on DTOs (by default)
 
 This reduces repetitive scaffolding and keeps implementation aligned with API contracts.
 
@@ -37,13 +40,21 @@ Benefits:
 
 ## 1.3 Generation modes overview
 
-The tool supports three modes:
+The tool supports four modes:
 
 - `server` (default): NestJS controllers/services/modules + DTOs
 - `client`: Axios-based client services + DTOs
 - `both`: server and client outputs together
+- `dtos`: Only Data Transfer Objects (for shared contracts)
 
-Use mode selection to fit your architecture (backend-only, frontend-only, or full-stack).
+Use mode selection to fit your architecture (backend-only, frontend-only, full-stack, or contract-sharing).
+
+**Default behavior (v1.0.0+):**
+
+✅ Test files are generated automatically  
+✅ Validation decorators are added to DTOs automatically
+
+Use `--no-test` or `--no-validate` flags to skip when needed.
 
 ---
 
@@ -63,16 +74,20 @@ flowchart LR
   B --> C[Server Mode]
   B --> D[Client Mode]
   B --> E[Both Mode]
-  C --> F[DTOs + Controllers + Services + Modules]
-  D --> G[DTOs + Axios Client Services]
-  E --> H[Full Generated Stack]
+  B --> F[DTOs Mode]
+  C --> G[DTOs + Controllers + Services + Modules + Tests]
+  D --> H[DTOs + Axios Client Services + Tests]
+  E --> I[Full Generated Stack + Tests]
+  F --> J[DTOs Only + Tests]
 ```
 
 ---
 
 ## ✅ Summary
 
-- `@eqxjs/swagger-codegen` accelerates API development from contract files.
-- Generation modes let you target server, client, or both.
+- `@eqxjs/swagger-codegen` accelerates API development from contract files
+- Four generation modes: server, client, both, and dtos
+- Tests and validation are enabled by default in v1.0.0+
+- Use negative flags (`--no-test`, `--no-validate`) to skip when needed
 
 Next: [Module 2: Installation and CLI Setup](module-02-installation-cli-setup.md)

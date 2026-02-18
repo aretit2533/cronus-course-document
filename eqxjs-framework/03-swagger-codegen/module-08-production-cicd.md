@@ -18,10 +18,35 @@ Use one source of truth for input specs and regenerate predictably:
 - fail CI if generated output is outdated
 - keep generation command centralized in scripts
 
-Example script:
+**Example generation script (package.json):**
+
+```json
+{
+  "scripts": {
+    "generate": "eqxjs-swagger-codegen generate -i ./api/openapi.yaml -o ./src/generated --mode both",
+    "generate:dtos": "eqxjs-swagger-codegen generate -i ./api/openapi.yaml -o ./src/contracts --mode dtos",
+    "generate:no-tests": "eqxjs-swagger-codegen generate -i ./api/openapi.yaml -o ./src/generated --mode server --no-test"
+  }
+}
+```
+
+**Example CI check script:**
 
 ```bash
-npx @eqxjs/swagger-codegen generate -i ./api/openapi.yaml -o ./src/generated --mode both --with-validate
+#!/bin/bash
+# scripts/check-generated.sh
+
+echo "Regenerating code from spec..."
+npm run generate
+
+echo "Checking for uncommitted changes..."
+git diff --exit-code ./src/generated || {
+  echo "Error: Generated code is out of sync with spec!"
+  echo "Run: npm run generate"
+  exit 1
+}
+
+echo "✅ Generated code is up to date"
 ```
 
 ---

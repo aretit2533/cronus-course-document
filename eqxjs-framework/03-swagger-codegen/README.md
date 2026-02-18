@@ -43,11 +43,14 @@ Key outcomes:
 ## 🚀 Quick Start
 
 ```bash
-# One-off usage
+# One-off usage with default settings (includes tests & validation)
 npx @eqxjs/swagger-codegen generate -i ./swagger.json -o ./generated
 
-# Generate both server + client with validation decorators
-npx @eqxjs/swagger-codegen generate -i ./openapi.yaml -o ./generated --mode both --with-validate
+# Generate both server + client
+npx @eqxjs/swagger-codegen generate -i ./openapi.yaml -o ./generated --mode both
+
+# Generate only DTOs without tests or validation
+npx @eqxjs/swagger-codegen generate -i ./swagger.json -o ./types --mode dtos --no-test --no-validate
 ```
 
 ---
