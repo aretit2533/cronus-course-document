@@ -20,15 +20,9 @@ This course focuses on how to use `@eqxjs/custom-kafka-server` to run Kafka cons
 - Kafka basics (topics/partitions/groups)
 - Familiarity with environment variables
 
-## Course Duration
-
-~6–8 hours (1 day workshop) + optional capstone.
-
 ---
 
 ## Module 1: Introduction & Features
-
-**Duration:** 45–60 minutes
 
 **Topics:**
 
@@ -44,8 +38,6 @@ This course focuses on how to use `@eqxjs/custom-kafka-server` to run Kafka cons
 ---
 
 ## Module 2: Setup & NestJS Integration
-
-**Duration:** 60–90 minutes
 
 **Topics:**
 
@@ -63,8 +55,6 @@ This course focuses on how to use `@eqxjs/custom-kafka-server` to run Kafka cons
 
 ## Module 3: CustomServerKafka Architecture
 
-**Duration:** 60–90 minutes
-
 **Topics:**
 
 - Lifecycle: `listen()` → `start()` → `bindEvents()`
@@ -81,8 +71,6 @@ This course focuses on how to use `@eqxjs/custom-kafka-server` to run Kafka cons
 
 ## Module 4: Resilience & Recovery
 
-**Duration:** 60–90 minutes
-
 **Topics:**
 
 - `consumer.crash` event handling
@@ -98,8 +86,6 @@ This course focuses on how to use `@eqxjs/custom-kafka-server` to run Kafka cons
 ---
 
 ## Module 5: Topic Monitoring & Subscription
-
-**Duration:** 45–75 minutes
 
 **Topics:**
 
@@ -119,9 +105,7 @@ This course focuses on how to use `@eqxjs/custom-kafka-server` to run Kafka cons
 
 ## Module 6: Memory Guardrails & Production Tuning
 
-**Duration:** 60–90 minutes
-
-**Topics:**
+**Topics:****
 
 - Heap usage check: pause/resume
 - Env toggles:

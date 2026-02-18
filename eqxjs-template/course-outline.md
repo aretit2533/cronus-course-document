@@ -30,22 +30,20 @@ This comprehensive training course teaches developers how to build enterprise-gr
 
 ## 📖 Course Modules
 
-| Module   | Topic                                    | Duration | Content                                             | Exercises                                    |
-| -------- | ---------------------------------------- | -------- | --------------------------------------------------- | -------------------------------------------- |
-| Module 1 | Introduction to EQXJS Framework          | 2 hours  | [View Content](module-01-introduction.md)           | [Exercises](exercise/module-01-exercises.md) |
-| Module 2 | Getting Started with EQXJS Template      | 2 hours  | [View Content](module-02-getting-started.md)        | [Exercises](exercise/module-02-exercises.md) |
-| Module 3 | Template Architecture Deep Dive          | 3 hours  | [View Content](module-03-architecture.md)           | [Exercises](exercise/module-03-exercises.md) |
-| Module 4 | Controllers and Managers                 | 3 hours  | [View Content](module-04-controllers-managers.md)   | [Exercises](exercise/module-04-exercises.md) |
-| Module 5 | Services and Repositories                | 3 hours  | [View Content](module-05-services-repositories.md)  | [Exercises](exercise/module-05-exercises.md) |
-| Module 6 | Event-Driven Architecture with Kafka     | 4 hours  | [View Content](module-06-kafka-events.md)           | [Exercises](exercise/module-06-exercises.md) |
-| Module 7 | External Services & Database Integration | 3 hours  | [View Content](module-07-integrations.md)           | [Exercises](exercise/module-07-exercises.md) |
-| Module 8 | Testing and Best Practices               | 3 hours  | [View Content](module-08-testing-best-practices.md) | [Exercises](exercise/module-08-exercises.md) |
+| Module   | Topic                                    | Content                                             | Exercises                        |
+| -------- | ---------------------------------------- | --------------------------------------------------- | -------------------------------- |
+| Module 1 | Introduction to EQXJS Framework          | [View Content](module-01-introduction.md)           | [Exercises](exercise/README.md) |
+| Module 2 | Getting Started with EQXJS Template      | [View Content](module-02-getting-started.md)        | [Exercises](exercise/README.md) |
+| Module 3 | Template Architecture Deep Dive          | [View Content](module-03-architecture.md)           | [Exercises](exercise/README.md) |
+| Module 4 | Controllers and Managers                 | [View Content](module-04-controllers-managers.md)   | [Exercises](exercise/README.md) |
+| Module 5 | Services and Repositories                | [View Content](module-05-services-repositories.md)  | [Exercises](exercise/README.md) |
+| Module 6 | Event-Driven Architecture with Kafka     | [View Content](module-06-kafka-events.md)           | [Exercises](exercise/README.md) |
+| Module 7 | External Services & Database Integration | [View Content](module-07-integrations.md)           | [Exercises](exercise/README.md) |
+| Module 8 | Testing and Best Practices               | [View Content](module-08-testing-best-practices.md) | [Exercises](exercise/README.md) |
 
 ### 💡 [Complete Exercise Guide](exercise/README.md)
 
 Access comprehensive hands-on exercises for all modules with solutions.
-
-**Total Duration:** ~23 hours
 
 ---
 
