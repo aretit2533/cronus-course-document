@@ -107,7 +107,7 @@ Access comprehensive hands-on exercises for all modules with solutions.
 ### 2.3 Project Structure
 
 ```
-esb-dos-template-message-restapi/
+cronus-eqxjs-template/
 ├── assets/config/          # Environment configurations
 ├── scripts/                # Helper scripts (Docker, etc.)
 ├── src/

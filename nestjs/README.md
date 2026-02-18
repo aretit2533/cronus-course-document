@@ -2,7 +2,7 @@
 
 > A comprehensive guide to learning NestJS from Introduction to Building Production-Ready Applications
 
-![NestJS](https://nestjs.com/img/logo-small.svg)
+<img src="https://nestjs.com/logo-small-gradient.0ed287ce.svg" alt="NestJS" width="200"/>
 
 ---
 

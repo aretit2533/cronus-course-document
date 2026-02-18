@@ -31,11 +31,26 @@ Learn how to integrate and manage Kafka messaging with the EQXJS framework for e
 
 ---
 
+### 3. **Swagger Codegen for NestJS APIs**
+
+Learn how to generate NestJS server modules and TypeScript client SDKs from Swagger/OpenAPI contracts using `@eqxjs/swagger-codegen`.
+
+- **Location:** [03-swagger-codegen/](03-swagger-codegen/)
+- **Course Outline:** [03-swagger-codegen/course-outline.md](03-swagger-codegen/course-outline.md)
+- **Course Guide:** [03-swagger-codegen/README.md](03-swagger-codegen/README.md)
+- **Topics:** Contract-first development, CLI setup, Swagger/OpenAPI formats, server generation, client generation, validation/testing, DTO-only sharing, CI/CD workflows
+- **Modules:** 8 practical modules with command-driven examples
+
+👉 [Start Swagger Codegen Course](03-swagger-codegen/course-outline.md)
+
+---
+
 ## 🚀 Getting Started
 
 1. Choose a course:
    - **New to EQXJS?** Start with the [Stub Framework Course](01-stub/course-outline.md)
    - **Need Kafka integration?** Explore the [Kafka Server Course](02-custom-kafka-server/course-outline.md)
+   - **Need API contract code generation?** Start the [Swagger Codegen Course](03-swagger-codegen/course-outline.md)
 
 2. Read the course outline to understand the module structure
 
@@ -49,6 +64,7 @@ Learn how to integrate and manage Kafka messaging with the EQXJS framework for e
 
 - **EQXJS Stub Framework:** [01-stub/README.md](01-stub/README.md)
 - **Kafka Integration:** [02-custom-kafka-server/README.md](02-custom-kafka-server/README.md)
+- **Swagger Codegen:** [03-swagger-codegen/README.md](03-swagger-codegen/README.md)
 
 ---
 
