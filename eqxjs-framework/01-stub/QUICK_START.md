@@ -93,3 +93,25 @@ If the app doesn’t start, double-check:
 - Your Node.js version is 18+
 
 If the app starts successfully, you’re ready to continue with Module 2 and the exercises.
+
+
+### Log Level Setting
+
+**Purpose**: Configures the logging verbosity for the application.
+
+**Why Set This**: 
+- Controls which types of log messages are displayed
+- Helps with debugging development issues
+- Reduces noise in production by filtering unnecessary messages
+- Essential for troubleshooting application behavior
+
+**What It Is**:
+- A configuration property that specifies the minimum severity level of log messages to output
+- Set to `"debug"` - the lowest level, meaning all messages (debug, info, warn, error) will be logged
+- Typically part of a log configuration object in application setup files
+
+**Common Levels** (from least to most severe):
+- `debug` - Detailed information for debugging
+- `info` - General informational messages
+- `warn` - Warning messages for potentially problematic situations
+- `error` - Error messages for failures
