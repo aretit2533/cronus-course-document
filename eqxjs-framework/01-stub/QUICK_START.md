@@ -1,6 +1,11 @@
-# Quick Start: Minimal EQXJS App (`@corp-ais/eqxjs-stub`)
+# Quick Start: Minimal EQXJS App (`@eqxjs-stub`)
 
-This Quick Start boots a minimal NestJS app wired to `@corp-ais/eqxjs-stub` using the actual API: `FrameworkModule.register({ configPath, zone })`.
+**Quick navigation:**
+
+- Course outline: `course-outline.md`
+- Module 2 (full setup walkthrough): `module-02-getting-started.md`
+
+This Quick Start boots a minimal NestJS app wired to `@eqxjs-stub` using the actual API: `FrameworkModule.register({ configPath, zone })`.
 
 ---
 
@@ -11,10 +16,10 @@ npx @nestjs/cli new eqxjs-quickstart
 cd eqxjs-quickstart
 ```
 
-## 2) Install `@corp-ais/eqxjs-stub`
+## 2) Install `@eqxjs-stub`
 
 ```bash
-npm install @corp-ais/eqxjs-stub
+npm install @eqxjs-stub
 ```
 
 ## 3) Add a minimal EQXJS config
@@ -25,8 +30,13 @@ Create `config/development.config.yaml`:
 app:
   component-name: "eqxjs-quickstart"
 
-logging:
+log:
   level: "debug"
+
+# Required by @eqxjs/utils (UtilService.randomNanoId)
+nanoid:
+  alphanum: "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+  len: 21
 
 server:
   timeout: 30000
@@ -38,7 +48,7 @@ Update `src/app.module.ts`:
 
 ```ts
 import { Module } from "@nestjs/common";
-import { FrameworkModule } from "@corp-ais/eqxjs-stub";
+import { FrameworkModule } from "@eqxjs-stub";
 
 @Module({
   imports: [
@@ -73,5 +83,13 @@ bootstrap();
 ```bash
 npm run start:dev
 ```
+
+### Sanity checks
+
+If the app doesn’t start, double-check:
+
+- `config/development.config.yaml` exists (and matches the `zone`)
+- `FrameworkModule.register({ configPath, zone })` points at the right `configPath`
+- Your Node.js version is 18+
 
 If the app starts successfully, you’re ready to continue with Module 2 and the exercises.

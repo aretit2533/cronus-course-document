@@ -36,7 +36,7 @@ Before starting the exercises, ensure you have:
 
 ### Development Environment
 
-- Node.js 18+ installed
+- Node.js 22+ installed
 - npm or yarn package manager
 - TypeScript 4.5+ globally installed
 - Code editor (VS Code recommended)
@@ -62,7 +62,7 @@ cd eqxjs-exercises
 npm init -y
 
 # Install EQXJS Framework
-npm install @corp-ais/eqxjs-stub
+npm install @eqxjs-stub
 
 # Install development dependencies
 npm install -D @nestjs/cli typescript @types/node jest @types/jest
@@ -72,7 +72,7 @@ npm install -D @nestjs/cli typescript @types/node jest @types/jest
 
 ```bash
 # Check versions
-node --version  # Should be 18+
+node --version  # Should be 22+
 npm --version
 npx tsc --version
 ```

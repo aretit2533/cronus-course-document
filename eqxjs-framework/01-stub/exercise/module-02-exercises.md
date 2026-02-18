@@ -27,30 +27,37 @@ Set up a complete development environment for EQXJS Framework development.
 1. **Verify Prerequisites:**
 
    ```bash
-   # Check Node.js (should be 18+)
-   node --version
 
-   # Check npm
-   npm --version
-
-   # Install TypeScript globally if needed
-   npm install -g typescript
-   npx tsc --version
    ```
+
+# Check Node.js (should be 22+)
+
+node --version
+
+# Check npm
+
+npm --version
+
+# Install TypeScript globally if needed
+
+npm install -g typescript
+npx tsc --version
+
+````
 
 2. **Create Project Structure:**
 
-   ```bash
-   mkdir eqxjs-learning-project
-   cd eqxjs-learning-project
-   npm init -y
-   ```
+```bash
+mkdir eqxjs-learning-project
+cd eqxjs-learning-project
+npm init -y
+````
 
 3. **Install EQXJS Framework:**
 
    ```bash
    # Install main framework
-   npm install @corp-ais/eqxjs-stub
+   npm install @eqxjs-stub
 
    # Install NestJS peer dependencies
    npm install @nestjs/common @nestjs/core @nestjs/platform-express reflect-metadata rxjs
@@ -103,7 +110,7 @@ Set up a complete development environment for EQXJS Framework development.
 Run this command to verify your setup:
 
 ```bash
-node -e "console.log('EQXJS Version:', require('@corp-ais/eqxjs-stub/package.json').version)"
+node -e "console.log('EQXJS Version:', require('@eqxjs-stub/package.json').version)"
 ```
 
 ---
@@ -129,7 +136,7 @@ Create a complete basic EQXJS application with proper structure.
 
    ```typescript
    import { Module } from "@nestjs/common";
-   import { FrameworkModule } from "@corp-ais/eqxjs-stub";
+   import { FrameworkModule } from "@eqxjs-stub";
    import { AppController } from "./controllers/app.controller";
    import { AppService } from "./services/app.service";
 

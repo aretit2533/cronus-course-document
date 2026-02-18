@@ -2,6 +2,12 @@
 
 ## Section: Enterprise NestJS Framework Mastery
 
+**How to use this outline**
+
+- Use the module table to jump to the module you’re on.
+- Each module page follows the same pattern: objectives → visual flow → concepts → examples.
+- Pair each module with its matching exercises in `exercise/`.
+
 ---
 
 ## 📖 Course Modules
@@ -38,14 +44,14 @@ Access comprehensive hands-on exercises for all modules.
 
 ### 1.2 EQXJS Ecosystem Components
 
-- @corp-ais/eqxjs-commander - Command handling and configuration
-- @corp-ais/eqxjs-decorator - Custom decorators
-- @corp-ais/eqxjs-transporter-http - HTTP transport layer
-- @corp-ais/eqxjs-logger - Comprehensive logging
-- @corp-ais/eqxjs-pipes - Data transformation pipes
-- @corp-ais/eqxjs-utils - Utility functions and services
-- @corp-ais/eqxjs-exception - Exception handling
-- @corp-ais/eqxjs-security - Security utilities
+- @eqxjs-commander - Command handling and configuration
+- @eqxjs-decorator - Custom decorators
+- @eqxjs-transporter-http - HTTP transport layer
+- @eqxjs-logger - Comprehensive logging
+- @eqxjs-pipes - Data transformation pipes
+- @eqxjs-utils - Utility functions and services
+- @eqxjs-exception - Exception handling
+- @eqxjs-security - Security utilities
 
 ### 1.3 Framework Philosophy
 

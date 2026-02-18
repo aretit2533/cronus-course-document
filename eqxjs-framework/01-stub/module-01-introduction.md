@@ -1,5 +1,16 @@
 # Module 1: Introduction to EQXJS Framework
 
+**Quick navigation:**
+
+- Outline: `course-outline.md`
+- Exercises: `exercise/module-01-exercises.md`
+- Next module: `module-02-getting-started.md`
+
+## Before you start
+
+- You should be comfortable with TypeScript and basic NestJS concepts (modules/providers/controllers).
+- If you prefer learning by doing, run the Quick Start first: `QUICK_START.md`.
+
 ## 📚 Learning Objectives
 
 By the end of this module, you will understand:
@@ -10,19 +21,46 @@ By the end of this module, you will understand:
 - Use cases and benefits for enterprise applications
 - How EQXJS fits into modern microservices architecture
 
-## 🧭 Visual Flow (Mermaid)
+## 🧭 Visual Flow
 
 ```mermaid
-flowchart TB
-  App["Your Service (NestJS App)"] --> Stub["@corp-ais/eqxjs-stub<br/>(FrameworkModule)"]
-  Stub --> Commander["@corp-ais/eqxjs-commander<br/>(config + commands)"]
-  Stub --> Decorator["@corp-ais/eqxjs-decorator<br/>(metadata + decorators)"]
-  Stub --> Http["@corp-ais/eqxjs-transporter-http<br/>HTTP client/transport"]
-  Stub --> Logger["@corp-ais/eqxjs-logger<br/>structured logging"]
-  Stub --> Pipes["@corp-ais/eqxjs-pipes<br/>transform/validate"]
-  Stub --> Utils["@corp-ais/eqxjs-utils<br/>shared utilities"]
-  Stub --> Exception["@corp-ais/eqxjs-exception<br/>standard errors"]
-  Stub --> Security["@corp-ais/eqxjs-security<br/>validation + security"]
+graph TD
+    A[Application Business Logic] --> C[NestJS]
+    C --> Stub[eqxjs-stub]
+    Stub --> Commander["@eqxjs-commander<br/>(config + commands)"]
+    Stub --> Decorator["@eqxjs-decorator<br/>(metadata + decorators)"]
+    Stub --> Http["@eqxjs-transporter-http<br/>HTTP client/transport"]
+    Stub --> Logger["@eqxjs-logger<br/>structured logging"]
+    Stub --> Pipes["@eqxjs-pipes<br/>transform/validate"]
+    Stub --> Utils["@eqxjs-utils<br/>shared utilities"]
+    Stub --> Exception["@eqxjs-exception<br/>standard errors"]
+    Stub --> Security["@eqxjs-security<br/>validation + security"]
+    C --> Commander
+    C --> Decorator
+    C --> Http
+    C --> Logger
+    C --> Pipes
+    C --> Utils
+    C --> Exception
+    C --> Security
+
+    style A fill:#c8e6c9,stroke:#2e7d32,stroke-width:3px,color:#1b5e20
+    style C fill:#bbdefb,stroke:#1565c0,stroke-width:3px,color:#0d47a1
+    style Stub fill:#fff59d,stroke:#f57f17,stroke-width:3px,color:#e65100
+
+    style Commander fill:#ffe0b2,stroke:#ef6c00,stroke-width:2px,color:#bf360c
+    style Decorator fill:#ffe0b2,stroke:#ef6c00,stroke-width:2px,color:#bf360c
+    style Http fill:#ffe0b2,stroke:#ef6c00,stroke-width:2px,color:#bf360c
+    style Logger fill:#ffe0b2,stroke:#ef6c00,stroke-width:2px,color:#bf360c
+    style Pipes fill:#ffe0b2,stroke:#ef6c00,stroke-width:2px,color:#bf360c
+    style Utils fill:#ffe0b2,stroke:#ef6c00,stroke-width:2px,color:#bf360c
+    style Exception fill:#ffe0b2,stroke:#ef6c00,stroke-width:2px,color:#bf360c
+    style Security fill:#ffe0b2,stroke:#ef6c00,stroke-width:2px,color:#bf360c
+
+    linkStyle 0 stroke:#2e7d32,stroke-width:3px
+    linkStyle 1 stroke:#1565c0,stroke-width:3px
+    linkStyle 2,3,4,5,6,7,8,9 stroke:#f57f17,stroke-width:2px
+    linkStyle 10,11,12,13,14,15,16,17 stroke:#1565c0,stroke-width:2px
 ```
 
 ---
@@ -31,7 +69,7 @@ flowchart TB
 
 ### Overview
 
-**EQXJS Framework** (`@corp-ais/eqxjs-stub`) is a comprehensive enterprise-grade NestJS framework stub that serves as a bootstrapping library for building scalable, maintainable, and production-ready applications. It acts as the main entry point for the EQXJS ecosystem, consolidating and integrating multiple specialized modules.
+**EQXJS Framework** (`@eqxjs-stub`) is a comprehensive enterprise-grade NestJS framework stub that serves as a bootstrapping library for building scalable, maintainable, and production-ready applications. It acts as the main entry point for the EQXJS ecosystem, consolidating and integrating multiple specialized modules.
 
 ### Key Characteristics
 
@@ -57,49 +95,49 @@ The EQXJS ecosystem consists of specialized modules that work together to provid
 
 ### Core Modules
 
-#### 1. `@corp-ais/eqxjs-commander`
+#### 1. `@eqxjs-commander`
 
 - **Purpose**: Command handling and configuration management
 - **Features**: Environment-based configuration, command routing
 - **Use Case**: Application configuration and startup commands
 
-#### 2. `@corp-ais/eqxjs-decorator`
+#### 2. `@eqxjs-decorator`
 
 - **Purpose**: Custom decorators for application enhancement
 - **Features**: Method decorators, class decorators, parameter decorators
 - **Use Case**: Cross-cutting concerns, metadata management
 
-#### 3. `@corp-ais/eqxjs-transporter-http`
+#### 3. `@eqxjs-transporter-http`
 
 - **Purpose**: HTTP transport layer
 - **Features**: HTTP client management, request/response handling
 - **Use Case**: External API integration, HTTP communications
 
-#### 4. `@corp-ais/eqxjs-logger`
+#### 4. `@eqxjs-logger`
 
 - **Purpose**: Comprehensive logging capabilities
 - **Features**: Structured logging, log levels, output formatting
 - **Use Case**: Application monitoring, debugging, audit trails
 
-#### 5. `@corp-ais/eqxjs-pipes`
+#### 5. `@eqxjs-pipes`
 
 - **Purpose**: Data transformation pipes
 - **Features**: Input validation, data transformation, sanitization
 - **Use Case**: Request/response data processing
 
-#### 6. `@corp-ais/eqxjs-utils`
+#### 6. `@eqxjs-utils`
 
 - **Purpose**: Utility functions and services
 - **Features**: Common utilities, helper functions, shared services
 - **Use Case**: Cross-application utilities
 
-#### 7. `@corp-ais/eqxjs-exception`
+#### 7. `@eqxjs-exception`
 
 - **Purpose**: Exception handling framework
 - **Features**: Custom exceptions, error handling, error formatting
 - **Use Case**: Standardized error management
 
-#### 8. `@corp-ais/eqxjs-security`
+#### 8. `@eqxjs-security`
 
 - **Purpose**: Security utilities and validation
 - **Features**: Authentication, authorization, input validation
@@ -231,6 +269,12 @@ Each module has a single, well-defined responsibility:
 - **Best Practices**: Enterprise-proven patterns built-in
 
 #### For Organizations
+
+---
+
+## Next up
+
+Continue to `module-02-getting-started.md` for a step-by-step setup walkthrough, then complete `exercise/module-01-exercises.md`.
 
 - **Faster Time-to-Market**: Accelerated development cycles
 - **Reduced Maintenance**: Standardized, well-tested components

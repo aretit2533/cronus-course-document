@@ -35,7 +35,7 @@ Let's build a comprehensive e-commerce platform using the EQXJS Framework:
 ```typescript
 // src/app.module.ts
 import { Module } from "@nestjs/common";
-import { FrameworkModule } from "@corp-ais/eqxjs-stub";
+import { FrameworkModule } from "@eqxjs-stub";
 import {
   ProductsModule,
   OrdersModule,

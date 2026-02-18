@@ -1,5 +1,18 @@
 # Module 2: Getting Started & Setup
 
+**Quick navigation:**
+
+- Outline: `course-outline.md`
+- Quick Start (minimal path): `QUICK_START.md`
+- Exercises: `exercise/module-02-exercises.md`
+- Previous module: `module-01-introduction.md`
+- Next module: `module-03-framework-configuration.md`
+
+## Before you start
+
+- Make sure Node.js 22+ is installed and available on your PATH.
+- Keep one terminal open for running the app while you follow along.
+
 ## 📚 Learning Objectives
 
 By the end of this module, you will be able to:
@@ -15,7 +28,7 @@ By the end of this module, you will be able to:
 
 ```mermaid
 flowchart TD
-  A[nest new my-eqxjs-app] --> B["Install @corp-ais/eqxjs-stub<br/>+ NestJS peer deps"]
+  A[nest new my-eqxjs-app] --> B["Install @eqxjs-stub<br/>+ NestJS peer deps"]
   B --> C["Create config/{zone}.config.yaml"]
   C --> D["AppModule imports<br/>FrameworkModule.register({ configPath, zone })"]
   D --> E["main.ts: create app<br/>+ enableShutdownHooks + listen"]
@@ -30,7 +43,7 @@ flowchart TD
 
 Before installing EQXJS Framework, ensure you have:
 
-- **Node.js 18+** - Latest LTS version recommended
+- **Node.js 22+** - Latest LTS version recommended
 - **TypeScript 4.5+** - For type safety and modern JavaScript features
 - **npm or yarn** - Package manager
 - **Git** - Version control system
@@ -39,7 +52,7 @@ Before installing EQXJS Framework, ensure you have:
 
 ```bash
 # Check Node.js version
-node --version  # Should be 18.0.0 or higher
+node --version  # Should be 22.0.0 or higher
 
 # Check npm version
 npm --version
@@ -67,7 +80,7 @@ npx tsc --init
 
 ```bash
 # Install the main framework
-npm install @corp-ais/eqxjs-stub
+npm install @eqxjs-stub
 
 # Install NestJS dependencies (peer dependencies)
 npm install @nestjs/common @nestjs/core @nestjs/platform-express
@@ -83,7 +96,7 @@ npm install -D @nestjs/cli @nestjs/testing typescript @types/node
 npm list --depth=0
 
 # Verify EQXJS installation
-node -e "console.log(require('@corp-ais/eqxjs-stub'))"
+node -e "console.log(require('@eqxjs-stub'))"
 ```
 
 ---
@@ -181,7 +194,7 @@ Create `src/app.module.ts`:
 
 ```typescript
 import { Module } from "@nestjs/common";
-import { FrameworkModule } from "@corp-ais/eqxjs-stub";
+import { FrameworkModule } from "@eqxjs-stub";
 
 @Module({
   imports: [
@@ -320,7 +333,7 @@ Update `src/app.module.ts`:
 
 ```typescript
 import { Module } from "@nestjs/common";
-import { FrameworkModule } from "@corp-ais/eqxjs-stub";
+import { FrameworkModule } from "@eqxjs-stub";
 import { AppController } from "./app.controller";
 
 @Module({

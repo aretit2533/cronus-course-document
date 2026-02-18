@@ -127,7 +127,7 @@ Set up basic FrameworkModule configuration with different zones.
 
    ```typescript
    import { Module } from "@nestjs/common";
-   import { FrameworkModule } from "@corp-ais/eqxjs-stub";
+   import { FrameworkModule } from "@eqxjs-stub";
    import { ConfigModule } from "./config/config.module";
    import { AppController } from "./app.controller";
    import { AppService } from "./app.service";

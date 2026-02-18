@@ -121,7 +121,7 @@ Set up and configure EQXJS built-in health indicators.
 
    ```typescript
    import { Module } from "@nestjs/common";
-   import { FrameworkModule } from "@corp-ais/eqxjs-stub";
+   import { FrameworkModule } from "@eqxjs-stub";
    import { HealthModule } from "./health/health.module";
    import { AppController } from "./app.controller";
 

@@ -1,5 +1,17 @@
 # Module 4: Health Checks & Monitoring
 
+**Quick navigation:**
+
+- Outline: `course-outline.md`
+- Exercises: `exercise/module-04-exercises.md`
+- Previous module: `module-03-framework-configuration.md`
+- Next module: `module-05-interceptors-http.md`
+
+## Before you start
+
+- Ensure you can start your app locally (Module 2) before adding health endpoints.
+- If you’re deploying to Kubernetes, map “liveness” and “readiness” to your probe configuration.
+
 ## 📚 Learning Objectives
 
 By the end of this module, you will understand:

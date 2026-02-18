@@ -36,7 +36,7 @@ This course teaches how to use `@eqxjs/custom-kafka-server` (a custom NestJS mic
 
 ## 📋 Prerequisites
 
-- Node.js 18+
+- Node.js 22+
 - NestJS fundamentals (modules, DI, microservices)
 - Kafka basics (topics, partitions, consumer groups)
 - A Kafka cluster available (local Docker is fine)

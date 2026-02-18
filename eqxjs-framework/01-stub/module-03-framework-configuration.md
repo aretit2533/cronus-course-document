@@ -1,5 +1,17 @@
 # Module 3: Framework Module Configuration
 
+**Quick navigation:**
+
+- Outline: `course-outline.md`
+- Exercises: `exercise/module-03-exercises.md`
+- Previous module: `module-02-getting-started.md`
+- Next module: `module-04-health-monitoring.md`
+
+## Before you start
+
+- You should have a project that already boots with `FrameworkModule.register({ configPath, zone })`.
+- Keep your config files open while reading this module (you’ll reference them often).
+
 ## 📚 Learning Objectives
 
 By the end of this module, you will understand:

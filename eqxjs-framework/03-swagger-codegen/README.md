@@ -34,7 +34,7 @@ Key outcomes:
 
 ## 📋 Prerequisites
 
-- Node.js 18+
+- Node.js 22+
 - TypeScript and NestJS fundamentals
 - Basic understanding of Swagger/OpenAPI
 

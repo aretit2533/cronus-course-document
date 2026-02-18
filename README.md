@@ -135,7 +135,7 @@ kafka-console-consumer.sh \
 | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **[EQXJS Stub Framework](eqxjs-framework/README.md)**                                     | Complete enterprise NestJS framework with decorators, interceptors, health monitoring, and more | 10      | [📚 Outline](eqxjs-framework/01-stub/course-outline.md) \| [⚡ Quick Start](eqxjs-framework/01-stub/QUICK_START.md) \| [💡 Exercises](eqxjs-framework/01-stub/exercise/README.md) |
 | **[EQXJS Custom Kafka Server](eqxjs-framework/02-custom-kafka-server/course-outline.md)** | Kafka integration, consumer/producer management, resilience patterns                            | 6       | [📚 Outline](eqxjs-framework/02-custom-kafka-server/course-outline.md) \| [💡 Exercises](eqxjs-framework/02-custom-kafka-server/exercise/README.md)                               |
-| **[EQXJS Swagger Codegen](eqxjs-framework/03-swagger-codegen/course-outline.md)**         | Swagger/OpenAPI contract-first code generation for NestJS server + TypeScript client SDKs      | 8       | [📚 Outline](eqxjs-framework/03-swagger-codegen/course-outline.md) \| [📖 Course](eqxjs-framework/03-swagger-codegen/README.md)                                                |
+| **[EQXJS Swagger Codegen](eqxjs-framework/03-swagger-codegen/course-outline.md)**         | Swagger/OpenAPI contract-first code generation for NestJS server + TypeScript client SDKs       | 8       | [📚 Outline](eqxjs-framework/03-swagger-codegen/course-outline.md) \| [📖 Course](eqxjs-framework/03-swagger-codegen/README.md)                                                   |
 
 ---
 
@@ -171,16 +171,16 @@ kafka-console-consumer.sh \
 
 ### 📚 Sub-Course 3: EQXJS Swagger Codegen (8 Modules)
 
-| Module       | Topic                                                                                                               | Content                                                                             | Duration   |
-| ------------ | ------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ---------- |
-| **Module 1** | [Introduction to Swagger Code Generation](eqxjs-framework/03-swagger-codegen/module-01-introduction.md)            | [View](eqxjs-framework/03-swagger-codegen/module-01-introduction.md)               | 45-60 min  |
-| **Module 2** | [Installation and CLI Setup](eqxjs-framework/03-swagger-codegen/module-02-installation-cli-setup.md)               | [View](eqxjs-framework/03-swagger-codegen/module-02-installation-cli-setup.md)     | 45-75 min  |
-| **Module 3** | [Working with Swagger 2.0 and OpenAPI 3.0](eqxjs-framework/03-swagger-codegen/module-03-swagger-openapi-formats.md) | [View](eqxjs-framework/03-swagger-codegen/module-03-swagger-openapi-formats.md)    | 60-90 min  |
-| **Module 4** | [Server Code Generation (NestJS)](eqxjs-framework/03-swagger-codegen/module-04-server-code-generation.md)          | [View](eqxjs-framework/03-swagger-codegen/module-04-server-code-generation.md)     | 75-105 min |
-| **Module 5** | [Client SDK Generation (TypeScript + Axios)](eqxjs-framework/03-swagger-codegen/module-05-client-sdk-generation.md) | [View](eqxjs-framework/03-swagger-codegen/module-05-client-sdk-generation.md)      | 60-90 min  |
-| **Module 6** | [Validation and Testing Flags](eqxjs-framework/03-swagger-codegen/module-06-validation-testing.md)                 | [View](eqxjs-framework/03-swagger-codegen/module-06-validation-testing.md)         | 60-90 min  |
-| **Module 7** | [DTO-Only and Shared Contract Patterns](eqxjs-framework/03-swagger-codegen/module-07-dto-only-contracts.md)        | [View](eqxjs-framework/03-swagger-codegen/module-07-dto-only-contracts.md)         | 45-75 min  |
-| **Module 8** | [Production Workflow and CI/CD Integration](eqxjs-framework/03-swagger-codegen/module-08-production-cicd.md)       | [View](eqxjs-framework/03-swagger-codegen/module-08-production-cicd.md)            | 60-90 min  |
+| Module       | Topic                                                                                                               | Content                                                                         | Duration   |
+| ------------ | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------- |
+| **Module 1** | [Introduction to Swagger Code Generation](eqxjs-framework/03-swagger-codegen/module-01-introduction.md)             | [View](eqxjs-framework/03-swagger-codegen/module-01-introduction.md)            | 45-60 min  |
+| **Module 2** | [Installation and CLI Setup](eqxjs-framework/03-swagger-codegen/module-02-installation-cli-setup.md)                | [View](eqxjs-framework/03-swagger-codegen/module-02-installation-cli-setup.md)  | 45-75 min  |
+| **Module 3** | [Working with Swagger 2.0 and OpenAPI 3.0](eqxjs-framework/03-swagger-codegen/module-03-swagger-openapi-formats.md) | [View](eqxjs-framework/03-swagger-codegen/module-03-swagger-openapi-formats.md) | 60-90 min  |
+| **Module 4** | [Server Code Generation (NestJS)](eqxjs-framework/03-swagger-codegen/module-04-server-code-generation.md)           | [View](eqxjs-framework/03-swagger-codegen/module-04-server-code-generation.md)  | 75-105 min |
+| **Module 5** | [Client SDK Generation (TypeScript + Axios)](eqxjs-framework/03-swagger-codegen/module-05-client-sdk-generation.md) | [View](eqxjs-framework/03-swagger-codegen/module-05-client-sdk-generation.md)   | 60-90 min  |
+| **Module 6** | [Validation and Testing Flags](eqxjs-framework/03-swagger-codegen/module-06-validation-testing.md)                  | [View](eqxjs-framework/03-swagger-codegen/module-06-validation-testing.md)      | 60-90 min  |
+| **Module 7** | [DTO-Only and Shared Contract Patterns](eqxjs-framework/03-swagger-codegen/module-07-dto-only-contracts.md)         | [View](eqxjs-framework/03-swagger-codegen/module-07-dto-only-contracts.md)      | 45-75 min  |
+| **Module 8** | [Production Workflow and CI/CD Integration](eqxjs-framework/03-swagger-codegen/module-08-production-cicd.md)        | [View](eqxjs-framework/03-swagger-codegen/module-08-production-cicd.md)         | 60-90 min  |
 
 ---
 
@@ -227,24 +227,24 @@ kafka-console-consumer.sh \
 
 ```bash
 # Install EQXJS Framework
-npm install @corp-ais/eqxjs-stub
+npm install @eqxjs-stub
 
 # Create configuration
 mkdir config
 touch config/development.config.yaml
 
 # Add to your NestJS app
-import { FrameworkModule } from '@corp-ais/eqxjs-stub';
+import { FrameworkModule } from '@eqxjs-stub';
 ```
 
 **Custom Kafka Server:**
 
 ```bash
 # Install Custom Kafka Server
-npm install @corp-ais/eqxjs-custom-kafka-server
+npm install @eqxjs-custom-kafka-server
 
 # Configure Kafka transport
-import { CustomServerKafka } from '@corp-ais/eqxjs-custom-kafka-server';
+import { CustomServerKafka } from '@eqxjs-custom-kafka-server';
 ```
 
 **Swagger Codegen:**
@@ -274,8 +274,8 @@ npx @eqxjs/swagger-codegen generate -i ./openapi.yaml -o ./types --mode dtos
 
 ### Course Modules
 
-| Module       | Topic                                    | Content                                                    | Exercises                                       |
-| ------------ | ---------------------------------------- | ---------------------------------------------------------- | ----------------------------------------------- |
+| Module       | Topic                                    | Content                                                    | Exercises                                      |
+| ------------ | ---------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------- |
 | **Module 1** | Introduction to EQXJS Framework          | [View](eqxjs-template/module-01-introduction.md)           | [Exercises](eqxjs-template/exercise/README.md) |
 | **Module 2** | Getting Started with EQXJS Template      | [View](eqxjs-template/module-02-getting-started.md)        | [Exercises](eqxjs-template/exercise/README.md) |
 | **Module 3** | Template Architecture Deep Dive          | [View](eqxjs-template/module-03-architecture.md)           | [Exercises](eqxjs-template/exercise/README.md) |
@@ -368,7 +368,7 @@ Comprehensive understanding of modern backend architectures with all courses.
 
 ### EQXJS Template Course
 
-- **Runtime**: Node.js 18+
+- **Runtime**: Node.js 22+
 - **Language**: TypeScript
 - **Framework**: NestJS 10.x, EQXJS Stub 2.4.0
 - **Messaging**: Kafka (CustomServerKafka)
@@ -542,7 +542,7 @@ npm i -g @nestjs/cli
 
 ```bash
 node --version  # Should be >= 20
-npm install @corp-ais/eqxjs-stub
+npm install @eqxjs-stub
 ```
 
 **For Kafka:**

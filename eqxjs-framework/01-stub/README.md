@@ -1,5 +1,11 @@
 # EQXJS Framework Developer Training Course
 
+**Start here (self-study flow):**
+
+1. Read the course outline: `course-outline.md`
+2. Do the Quick Start once: `QUICK_START.md`
+3. Work module-by-module (read → implement → exercises)
+
 ## 🎓 Course Overview
 
 Welcome to the comprehensive EQXJS Framework Developer Training Course! This course is designed to transform developers into proficient users of the EQXJS ecosystem, covering everything from basic setup to advanced enterprise patterns.
@@ -25,6 +31,13 @@ This course consists of **10 comprehensive modules**, each building upon the pre
 - **Location:** [01-stub/](./)
 - **Course Outline:** [course-outline.md](course-outline.md)
 - **Hands-On Exercises:** [exercise/README.md](exercise/README.md)
+
+### How to use each module
+
+- Start with the **Learning Objectives** to know what matters.
+- Skim the **Visual Flow** diagram to understand the moving pieces.
+- Read the module content top-to-bottom once, then implement while re-reading.
+- Finish the corresponding exercises before moving to the next module.
 
 ### 🗂️ Course Modules
 
@@ -104,7 +117,7 @@ By the end of this course, you will be able to:
 
 ### Development Environment
 
-- Node.js 18+ installed
+- Node.js 22+ installed
 - npm or yarn package manager
 - TypeScript 4.5+ global installation
 - Code editor (VS Code recommended)
@@ -208,14 +221,14 @@ Each module includes practical exercises:
 
 ### EQXJS Modules
 
-- `@corp-ais/eqxjs-commander` - Configuration management
-- `@corp-ais/eqxjs-decorator` - Custom decorators
-- `@corp-ais/eqxjs-transporter-http` - HTTP transport
-- `@corp-ais/eqxjs-logger` - Logging framework
-- `@corp-ais/eqxjs-pipes` - Data transformation
-- `@corp-ais/eqxjs-utils` - Utility services
-- `@corp-ais/eqxjs-exception` - Exception handling
-- `@corp-ais/eqxjs-security` - Security utilities
+- `@eqxjs-commander` - Configuration management
+- `@eqxjs-decorator` - Custom decorators
+- `@eqxjs-transporter-http` - HTTP transport
+- `@eqxjs-logger` - Logging framework
+- `@eqxjs-pipes` - Data transformation
+- `@eqxjs-utils` - Utility services
+- `@eqxjs-exception` - Exception handling
+- `@eqxjs-security` - Security utilities
 
 ### Supporting Technologies
 

@@ -130,16 +130,16 @@ Azure Managed Identity support for secure authentication.
 
 The `@eqxjs/stub` module consolidates these ecosystem modules:
 
-| Module                             | Purpose                                       |
-| ---------------------------------- | --------------------------------------------- |
-| `@corp-ais/eqxjs-commander`        | Command handling and configuration management |
-| `@corp-ais/eqxjs-decorator`        | Custom decorators for enhanced functionality  |
-| `@corp-ais/eqxjs-transporter-http` | HTTP transport layer                          |
-| `@corp-ais/eqxjs-logger`           | Advanced logging with context                 |
-| `@corp-ais/eqxjs-pipes`            | Data transformation pipes                     |
-| `@corp-ais/eqxjs-utils`            | Utility functions and services                |
-| `@corp-ais/eqxjs-exception`        | Exception handling framework                  |
-| `@corp-ais/eqxjs-security`         | Security utilities and validation             |
+| Module                    | Purpose                                       |
+| ------------------------- | --------------------------------------------- |
+| `@eqxjs-commander`        | Command handling and configuration management |
+| `@eqxjs-decorator`        | Custom decorators for enhanced functionality  |
+| `@eqxjs-transporter-http` | HTTP transport layer                          |
+| `@eqxjs-logger`           | Advanced logging with context                 |
+| `@eqxjs-pipes`            | Data transformation pipes                     |
+| `@eqxjs-utils`            | Utility functions and services                |
+| `@eqxjs-exception`        | Exception handling framework                  |
+| `@eqxjs-security`         | Security utilities and validation             |
 
 ---
 

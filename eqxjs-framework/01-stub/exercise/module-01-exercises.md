@@ -34,17 +34,17 @@ Explore the EQXJS Framework package and understand its structure.
 2. **Install the EQXJS stub package:**
 
    ```bash
-   npm install @corp-ais/eqxjs-stub
+   npm install @eqxjs-stub
    ```
 
 3. **Explore the package structure:**
 
    ```bash
    # View package information
-   npm list @corp-ais/eqxjs-stub
+   npm list @eqxjs-stub
 
    # Explore node_modules
-   ls -la node_modules/@corp-ais/eqxjs-stub/
+   ls -la node_modules/@eqxjs-stub/
    ```
 
 4. **Create a simple exploration script:**
@@ -52,7 +52,7 @@ Explore the EQXJS Framework package and understand its structure.
    Create `explore-framework.js`:
 
    ```javascript
-   const stub = require("@corp-ais/eqxjs-stub");
+   const stub = require("@eqxjs-stub");
 
    console.log("EQXJS Framework Exploration");
    console.log("============================");
@@ -102,14 +102,14 @@ Research and document the EQXJS ecosystem modules and their purposes.
 
 2. **Research each module:**
    For each of these modules, find information about:
-   - `@corp-ais/eqxjs-commander`
-   - `@corp-ais/eqxjs-decorator`
-   - `@corp-ais/eqxjs-transporter-http`
-   - `@corp-ais/eqxjs-logger`
-   - `@corp-ais/eqxjs-pipes`
-   - `@corp-ais/eqxjs-utils`
-   - `@corp-ais/eqxjs-exception`
-   - `@corp-ais/eqxjs-security`
+   - `@eqxjs-commander`
+   - `@eqxjs-decorator`
+   - `@eqxjs-transporter-http`
+   - `@eqxjs-logger`
+   - `@eqxjs-pipes`
+   - `@eqxjs-utils`
+   - `@eqxjs-exception`
+   - `@eqxjs-security`
 
 3. **Document your findings:**
    For each module, document:
@@ -123,14 +123,14 @@ Research and document the EQXJS ecosystem modules and their purposes.
 ```markdown
 # EQXJS Ecosystem Module Research
 
-## Module: @corp-ais/eqxjs-commander
+## Module: @eqxjs-commander
 
 - **Purpose**: [Your research]
 - **Key Features**: [List key features]
 - **Use Cases**: [Typical scenarios]
 - **Integration**: [How it works with the framework]
 
-## Module: @corp-ais/eqxjs-decorator
+## Module: @eqxjs-decorator
 
 - **Purpose**: [Your research]
 - **Key Features**: [List key features]
@@ -362,7 +362,7 @@ After completing these exercises, reflect on:
 
 ### Common Issues
 
-**Issue**: Cannot install @corp-ais/eqxjs-stub
+**Issue**: Cannot install @eqxjs-stub
 
 - **Solution**: Check your npm configuration and network access
 - **Alternative**: Contact course administrator for package access
