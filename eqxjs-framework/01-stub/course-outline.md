@@ -24,6 +24,7 @@
 | Module 8  | [Graceful Shutdown & Production Best Practices](module-08-shutdown-production.md) | [Exercises](exercise/module-08-exercises.md) |
 | Module 9  | [Practical Implementation](module-09-practical-implementation.md)                 | [Exercises](exercise/module-09-exercises.md) |
 | Module 10 | [Advanced Patterns & Integration](module-10-advanced-patterns.md)                 | [Exercises](exercise/module-10-exercises.md) |
+| Module 11 | [Logging System & Best Practices](module-11-logger.md)                            | [Exercises](exercise/module-11-exercises.md) |
 
 ### 💡 [Complete Exercise Guide](exercise/README.md)
 
@@ -339,6 +340,40 @@ Access comprehensive hands-on exercises for all modules.
 - Framework evolution
 - New features
 - Community contributions
+
+---
+
+## Module 11: Logging System & Best Practices
+
+📚 **[View Module 11: Logging System & Best Practices](module-11-logger.md)**
+
+### 11.1 Logger Architecture
+
+- EQXJS LoggerService overview
+- Structured logging and JSON formatting
+- Log levels and configuration
+- Context-aware logging
+
+### 11.2 Configuration & Setup
+
+- YAML configuration for logging
+- Environment-specific log levels
+- File output configuration
+- External service integration
+
+### 11.3 Structured Logging Patterns
+
+- Adding context to logs
+- Correlation IDs for tracing
+- Error logging with stack traces
+- Performance considerations
+
+### 11.4 Production Logging Practices
+
+- Sensitive data masking
+- Log rotation and cleanup
+- Monitoring and alerting
+- Integration with Datadog, CloudWatch, Splunk
 
 ---
 
