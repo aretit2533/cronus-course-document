@@ -12,19 +12,17 @@
 
 ## 📖 Course Modules
 
-| Module    | Topic                                                                             | Exercises                                    |
-| --------- | --------------------------------------------------------------------------------- | -------------------------------------------- |
-| Module 1  | [Introduction to EQXJS Framework](module-01-introduction.md)                      | [Exercises](exercise/module-01-exercises.md) |
-| Module 2  | [Getting Started & Setup](module-02-getting-started.md)                           | [Exercises](exercise/module-02-exercises.md) |
-| Module 3  | [Framework Module Configuration](module-03-framework-configuration.md)            | [Exercises](exercise/module-03-exercises.md) |
-| Module 4  | [Health Checks & Monitoring](module-04-health-monitoring.md)                      | [Exercises](exercise/module-04-exercises.md) |
-| Module 5  | [Interceptors & HTTP Handling](module-05-interceptors-http.md)                    | [Exercises](exercise/module-05-exercises.md) |
-| Module 6  | [Context Management & Domain Services](module-06-context-domain.md)               | [Exercises](exercise/module-06-exercises.md) |
-| Module 7  | [Decorators & Validation](module-07-decorators-validation.md)                     | [Exercises](exercise/module-07-exercises.md) |
-| Module 8  | [Graceful Shutdown & Production Best Practices](module-08-shutdown-production.md) | [Exercises](exercise/module-08-exercises.md) |
-| Module 9  | [Practical Implementation](module-09-practical-implementation.md)                 | [Exercises](exercise/module-09-exercises.md) |
-| Module 10 | [Advanced Patterns & Integration](module-10-advanced-patterns.md)                 | [Exercises](exercise/module-10-exercises.md) |
-| Module 11 | [Logging System & Best Practices](module-11-logger.md)                            | [Exercises](exercise/module-11-exercises.md) |
+| Module   | Topic                                                                             | Exercises                                    |
+| -------- | --------------------------------------------------------------------------------- | -------------------------------------------- |
+| Module 1 | [Introduction to EQXJS Framework](module-01-introduction.md)                      | [Exercises](exercise/module-01-exercises.md) |
+| Module 2 | [Getting Started & Setup](module-02-getting-started.md)                           | [Exercises](exercise/module-02-exercises.md) |
+| Module 3 | [Framework Module Configuration](module-03-framework-configuration.md)            | [Exercises](exercise/module-03-exercises.md) |
+| Module 4 | [Health Checks & Monitoring](module-04-health-monitoring.md)                      | [Exercises](exercise/module-04-exercises.md) |
+| Module 5 | [Interceptors & HTTP Handling](module-05-interceptors-http.md)                    | [Exercises](exercise/module-05-exercises.md) |
+| Module 6 | [Context Management & Domain Services](module-06-context-domain.md)               | [Exercises](exercise/module-06-exercises.md) |
+| Module 7 | [Decorators & Validation](module-07-decorators-validation.md)                     | [Exercises](exercise/module-07-exercises.md) |
+| Module 8 | [Graceful Shutdown & Production Best Practices](module-08-shutdown-production.md) | [Exercises](exercise/module-08-exercises.md) |
+| Module 9 | [Logging System & Best Practices](module-09-logger.md)                            | [Exercises](exercise/module-09-exercises.md) |
 
 ### 💡 [Complete Exercise Guide](exercise/README.md)
 
@@ -283,92 +281,32 @@ Access comprehensive hands-on exercises for all modules.
 
 ---
 
-## Module 9: Practical Implementation
+## Module 9: Logging System & Best Practices
 
-📚 **[View Module 9: Practical Implementation](module-09-practical-implementation.md)**
+📚 **[View Module 9: Logging System & Best Practices](module-09-logger.md)**
 
-### 9.1 Building Complete Applications
-
-- Application architecture
-- Module organization
-- Configuration management
-
-### 9.2 Integration Patterns
-
-- Database integration
-- Message queue integration
-- External service integration
-
-### 9.3 Testing Strategies
-
-- Unit testing
-- Integration testing
-- End-to-end testing
-
-### 9.4 Deployment & Operations
-
-- CI/CD pipelines
-- Monitoring setup
-- Log management
-
----
-
-## Module 10: Advanced Patterns & Integration
-
-📚 **[View Module 10: Advanced Patterns & Integration](module-10-advanced-patterns.md)**
-
-### 10.1 Advanced Architecture Patterns
-
-- Microservices patterns
-- Event-driven architecture
-- CQRS implementation
-
-### 10.2 Enterprise Integration
-
-- API gateway patterns
-- Service mesh integration
-- Message broker integration
-
-### 10.3 Scalability & Performance
-
-- Horizontal scaling
-- Load balancing
-- Performance monitoring
-
-### 10.4 Future Roadmap
-
-- Framework evolution
-- New features
-- Community contributions
-
----
-
-## Module 11: Logging System & Best Practices
-
-📚 **[View Module 11: Logging System & Best Practices](module-11-logger.md)**
-
-### 11.1 Logger Architecture
+### 9.1 Logger Architecture
 
 - EQXJS LoggerService overview
 - Structured logging and JSON formatting
 - Log levels and configuration
 - Context-aware logging
 
-### 11.2 Configuration & Setup
+### 9.2 Configuration & Setup
 
 - YAML configuration for logging
 - Environment-specific log levels
 - File output configuration
 - External service integration
 
-### 11.3 Structured Logging Patterns
+### 9.3 Structured Logging Patterns
 
 - Adding context to logs
 - Correlation IDs for tracing
 - Error logging with stack traces
 - Performance considerations
 
-### 11.4 Production Logging Practices
+### 9.4 Production Logging Practices
 
 - Sensitive data masking
 - Log rotation and cleanup

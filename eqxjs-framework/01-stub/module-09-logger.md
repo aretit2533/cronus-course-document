@@ -1,4 +1,4 @@
-# Module 11: Logging System & Best Practices
+# Module 9: Logging System & Best Practices
 
 ## 🔗 Ecosystem Component: `@eqxjs-logger`
 
@@ -12,8 +12,8 @@
 
 - Course outline: `course-outline.md`
 - EQXJS Ecosystem: See `course-outline.md` section 1.2
-- Exercises: `exercise/module-11-exercises.md`
-- Previous module: `module-10-advanced-patterns.md`
+- Exercises: `exercise/module-09-exercises.md`
+- Previous module: `module-08-shutdown-production.md`
 
 ## Before you start
 
@@ -51,7 +51,7 @@ flowchart TD
 
 ---
 
-## 🔍 11.1 Logger Architecture (@eqxjs-logger)
+## 🔍 9.1 Logger Architecture (@eqxjs-logger)
 
 ### Overview
 
@@ -107,7 +107,7 @@ Application shutdown
 
 ---
 
-## 📝 11.2 Configuration & Setup
+## 📝 9.2 Configuration & Setup
 
 ### YAML Configuration
 
@@ -170,7 +170,7 @@ log-service:
 
 ---
 
-## 💡 11.3 Using LoggerService
+## 💡 9.3 Using LoggerService
 
 ### Injecting LoggerService
 
@@ -264,7 +264,7 @@ this.logger.error("Database connection failed", {
 
 ---
 
-## 🎯 11.4 Structured Logging Patterns
+## 🎯 9.4 Structured Logging Patterns
 
 ### Adding Context
 
@@ -352,7 +352,7 @@ async deleteUser(id: string) {
 
 ---
 
-## 🚀 11.5 Production Logging Practices
+## 🚀 9.5 Production Logging Practices
 
 ### Performance Considerations
 
@@ -421,7 +421,7 @@ this.logger.error("Critical system error", {
 
 ---
 
-## 🔧 11.6 Advanced Topics
+## 🔧 9.6 Advanced Topics
 
 ### Custom Log Formatting
 
